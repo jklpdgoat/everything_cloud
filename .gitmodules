@@ -1,0 +1,3 @@
+[submodule "learn-terraform-init"]
+	path = learn-terraform-init
+	url = ./learn-terraform-init
