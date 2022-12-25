@@ -1,3 +1,0 @@
-[submodule "learn-terraform-init"]
-	path = learn-terraform-init
-	url = https://github.com/hashicorp/learn-terraform-init
