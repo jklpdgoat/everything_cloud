@@ -1,0 +1,841 @@
+2022-12-30T20:19:48.624+0800 [INFO]  Terraform version: 1.3.6
+2022-12-30T20:19:48.625+0800 [DEBUG] using github.com/hashicorp/go-tfe v1.9.0
+2022-12-30T20:19:48.625+0800 [DEBUG] using github.com/hashicorp/hcl/v2 v2.15.0
+2022-12-30T20:19:48.625+0800 [DEBUG] using github.com/hashicorp/terraform-config-inspect v0.0.0-20210209133302-4fd17a0faac2
+2022-12-30T20:19:48.625+0800 [DEBUG] using github.com/hashicorp/terraform-svchost v0.0.0-20200729002733-f050f53b9734
+2022-12-30T20:19:48.625+0800 [DEBUG] using github.com/zclconf/go-cty v1.12.1
+2022-12-30T20:19:48.625+0800 [INFO]  Go runtime version: go1.19.3
+2022-12-30T20:19:48.625+0800 [INFO]  CLI args: []string{"terraform", "destroy"}
+2022-12-30T20:19:48.625+0800 [TRACE] Stdout is a terminal of width 119
+2022-12-30T20:19:48.625+0800 [TRACE] Stderr is a terminal of width 119
+2022-12-30T20:19:48.625+0800 [TRACE] Stdin is a terminal
+2022-12-30T20:19:48.625+0800 [DEBUG] Attempting to open CLI config file: /home/jklp/.terraformrc
+2022-12-30T20:19:48.625+0800 [DEBUG] File doesn't exist, but doesn't need to. Ignoring.
+2022-12-30T20:19:48.625+0800 [INFO]  Loading CLI configuration from /home/jklp/.terraform.d/credentials.tfrc.json
+2022-12-30T20:19:48.625+0800 [DEBUG] ignoring non-existing provider search directory terraform.d/plugins
+2022-12-30T20:19:48.625+0800 [DEBUG] ignoring non-existing provider search directory /home/jklp/.terraform.d/plugins
+2022-12-30T20:19:48.625+0800 [DEBUG] ignoring non-existing provider search directory /home/jklp/.local/share/terraform/plugins
+2022-12-30T20:19:48.625+0800 [DEBUG] ignoring non-existing provider search directory /nix/store/wn7x7nic1kv0dhymj7z900zrbhlkmg1g-shared-mime-info-2.2/share/terraform/plugins
+2022-12-30T20:19:48.625+0800 [DEBUG] ignoring non-existing provider search directory /nix/store/d61ddlf3g6aldi1zbpdfi2a062xwxszg-gnome-shell-43.2/share/terraform/plugins
+2022-12-30T20:19:48.625+0800 [DEBUG] ignoring non-existing provider search directory /nix/store/68rgsss8d6y09d4wyxxl5nyv33cybc3f-gtk+3-3.24.34/share/gsettings-schemas/gtk+3-3.24.34/terraform/plugins
+2022-12-30T20:19:48.625+0800 [DEBUG] ignoring non-existing provider search directory /nix/store/jl89lpf15gjlnhw7lmxizl28i6x8llsr-gsettings-desktop-schemas-43.0/share/gsettings-schemas/gsettings-desktop-schemas-43.0/terraform/plugins
+2022-12-30T20:19:48.625+0800 [DEBUG] ignoring non-existing provider search directory /nix/store/x4rn3v4wgj3yq918yjrxda8gppmrlw17-gnome-keyring-42.1/share/gsettings-schemas/gnome-keyring-42.1/terraform/plugins
+2022-12-30T20:19:48.625+0800 [DEBUG] ignoring non-existing provider search directory /nix/store/69cfigv54wlg19qxxrx3dfpls59dlcvq-mutter-43.2/share/gsettings-schemas/mutter-43.2/terraform/plugins
+2022-12-30T20:19:48.625+0800 [DEBUG] ignoring non-existing provider search directory /nix/store/74y306jlbrnw4lvgpwwjkgqp6pgg7i4y-evolution-data-server-3.46.2/share/gsettings-schemas/evolution-data-server-3.46.2/terraform/plugins
+2022-12-30T20:19:48.625+0800 [DEBUG] ignoring non-existing provider search directory /nix/store/x01m0z5v07yyflwa1dr88kwfv3wlyjwv-gtk4-4.8.2/share/gsettings-schemas/gtk4-4.8.2/terraform/plugins
+2022-12-30T20:19:48.625+0800 [DEBUG] ignoring non-existing provider search directory /nix/store/dwz9kqgwywi8nnh4nvs7hl60ir0xnp24-gdm-43.0/share/gsettings-schemas/gdm-43.0/terraform/plugins
+2022-12-30T20:19:48.625+0800 [DEBUG] ignoring non-existing provider search directory /nix/store/f6gzgpzdcqq8ffn7rw1fp976virvn39f-gnome-clocks-43.0/share/gsettings-schemas/gnome-clocks-43.0/terraform/plugins
+2022-12-30T20:19:48.625+0800 [DEBUG] ignoring non-existing provider search directory /nix/store/9kiskjbkym7d8jb73fchhwp70xz676bm-ibus-1.5.27/share/gsettings-schemas/ibus-1.5.27/terraform/plugins
+2022-12-30T20:19:48.625+0800 [DEBUG] ignoring non-existing provider search directory /nix/store/bbgi92hiljs414ax2kh115m1c5vbg887-gnome-settings-daemon-43.0/share/gsettings-schemas/gnome-settings-daemon-43.0/terraform/plugins
+2022-12-30T20:19:48.625+0800 [DEBUG] ignoring non-existing provider search directory /nix/store/l4mdbd6vr6daqlwvvcg16g9cxbhmrgbs-libgweather-4.2.0/share/gsettings-schemas/libgweather-4.2.0/terraform/plugins
+2022-12-30T20:19:48.625+0800 [DEBUG] ignoring non-existing provider search directory /nix/store/zdha0j0sjm23mm2b3nmi3js0dj155b55-libnma-1.10.4/share/gsettings-schemas/libnma-1.10.4/terraform/plugins
+2022-12-30T20:19:48.625+0800 [DEBUG] ignoring non-existing provider search directory /nix/store/d61ddlf3g6aldi1zbpdfi2a062xwxszg-gnome-shell-43.2/share/gsettings-schemas/gnome-shell-43.2/terraform/plugins
+2022-12-30T20:19:48.625+0800 [DEBUG] ignoring non-existing provider search directory /nix/store/2s5l1h7783xrlj893iywa0grgx0f39nh-gnome-mimeapps/share/terraform/plugins
+2022-12-30T20:19:48.625+0800 [DEBUG] ignoring non-existing provider search directory /nix/store/qq48v3jpp4ya7qg1i0rnpj3isglbm5gx-desktops/share/terraform/plugins
+2022-12-30T20:19:48.625+0800 [DEBUG] ignoring non-existing provider search directory /home/jklp/.nix-profile/share/terraform/plugins
+2022-12-30T20:19:48.625+0800 [DEBUG] ignoring non-existing provider search directory /etc/profiles/per-user/jklp/share/terraform/plugins
+2022-12-30T20:19:48.625+0800 [DEBUG] ignoring non-existing provider search directory /nix/var/nix/profiles/default/share/terraform/plugins
+2022-12-30T20:19:48.625+0800 [DEBUG] ignoring non-existing provider search directory /run/current-system/sw/share/terraform/plugins
+2022-12-30T20:19:48.625+0800 [DEBUG] ignoring non-existing provider search directory /nix/store/d61ddlf3g6aldi1zbpdfi2a062xwxszg-gnome-shell-43.2/share/gsettings-schemas/gnome-shell-43.2/terraform/plugins
+2022-12-30T20:19:48.625+0800 [DEBUG] ignoring non-existing provider search directory /nix/store/22j8vy079rv8is8g1pwfpqlcldgnpsyx-gnome-shell-extensions-43.1/share/gsettings-schemas/gnome-shell-extensions-43.1/terraform/plugins
+2022-12-30T20:19:48.625+0800 [DEBUG] ignoring non-existing provider search directory /nix/store/vvjfd8pgzj1g89mgszf27ka5h624b1c9-gnome-session-43.0/share/terraform/plugins
+2022-12-30T20:19:48.625+0800 [DEBUG] ignoring non-existing provider search directory /nix/store/jl89lpf15gjlnhw7lmxizl28i6x8llsr-gsettings-desktop-schemas-43.0/share/gsettings-schemas/gsettings-desktop-schemas-43.0/terraform/plugins
+2022-12-30T20:19:48.625+0800 [DEBUG] ignoring non-existing provider search directory /nix/store/68rgsss8d6y09d4wyxxl5nyv33cybc3f-gtk+3-3.24.34/share/gsettings-schemas/gtk+3-3.24.34/terraform/plugins
+2022-12-30T20:19:48.625+0800 [DEBUG] ignoring non-existing provider search directory /nix/store/bbgi92hiljs414ax2kh115m1c5vbg887-gnome-settings-daemon-43.0/share/gsettings-schemas/gnome-settings-daemon-43.0/terraform/plugins
+2022-12-30T20:19:48.625+0800 [DEBUG] ignoring non-existing provider search directory /nix/store/vvjfd8pgzj1g89mgszf27ka5h624b1c9-gnome-session-43.0/share/gsettings-schemas/gnome-session-43.0/terraform/plugins
+2022-12-30T20:19:48.625+0800 [DEBUG] ignoring non-existing provider search directory /nix/store/d61ddlf3g6aldi1zbpdfi2a062xwxszg-gnome-shell-43.2/share/terraform/plugins
+2022-12-30T20:19:48.625+0800 [INFO]  CLI command args: []string{"destroy"}
+2022-12-30T20:19:48.626+0800 [TRACE] Meta.Backend: no config given or present on disk, so returning nil config
+2022-12-30T20:19:48.626+0800 [TRACE] Meta.Backend: backend has not previously been initialized in this working directory
+2022-12-30T20:19:48.626+0800 [DEBUG] New state was assigned lineage "adb15a6b-735f-954a-687c-47e0c4f2053e"
+2022-12-30T20:19:48.626+0800 [TRACE] Meta.Backend: using default local state only (no backend configuration, and no existing initialized backend)
+2022-12-30T20:19:48.626+0800 [TRACE] Meta.Backend: instantiated backend of type <nil>
+2022-12-30T20:19:48.626+0800 [TRACE] providercache.fillMetaCache: scanning directory .terraform/providers
+2022-12-30T20:19:48.626+0800 [TRACE] getproviders.SearchLocalDirectory: found registry.terraform.io/hashicorp/aws v2.13.0 for linux_amd64 at .terraform/providers/registry.terraform.io/hashicorp/aws/2.13.0/linux_amd64
+2022-12-30T20:19:48.626+0800 [TRACE] getproviders.SearchLocalDirectory: found registry.terraform.io/hashicorp/random v3.4.3 for linux_amd64 at .terraform/providers/registry.terraform.io/hashicorp/random/3.4.3/linux_amd64
+2022-12-30T20:19:48.626+0800 [TRACE] providercache.fillMetaCache: including .terraform/providers/registry.terraform.io/hashicorp/aws/2.13.0/linux_amd64 as a candidate package for registry.terraform.io/hashicorp/aws 2.13.0
+2022-12-30T20:19:48.626+0800 [TRACE] providercache.fillMetaCache: including .terraform/providers/registry.terraform.io/hashicorp/random/3.4.3/linux_amd64 as a candidate package for registry.terraform.io/hashicorp/random 3.4.3
+2022-12-30T20:19:48.652+0800 [TRACE] providercache.fillMetaCache: using cached result from previous scan of .terraform/providers
+2022-12-30T20:19:48.928+0800 [DEBUG] checking for provisioner in "."
+2022-12-30T20:19:48.928+0800 [DEBUG] checking for provisioner in "/nix/store/sg1gyskrcjqa2svrjx9indn1iwb97x9m-terraform-1.3.6/bin"
+2022-12-30T20:19:48.928+0800 [TRACE] Meta.Backend: backend <nil> does not support operations, so wrapping it in a local backend
+2022-12-30T20:19:48.929+0800 [INFO]  backend/local: starting Apply operation
+2022-12-30T20:19:48.933+0800 [TRACE] backend/local: requesting state manager for workspace "default"
+2022-12-30T20:19:48.933+0800 [TRACE] backend/local: state manager for workspace "default" will:
+ - read initial snapshot from terraform.tfstate
+ - write new snapshots to terraform.tfstate
+ - create any backup at terraform.tfstate.backup
+2022-12-30T20:19:48.933+0800 [TRACE] backend/local: requesting state lock for workspace "default"
+2022-12-30T20:19:48.934+0800 [TRACE] statemgr.Filesystem: preparing to manage state snapshots at terraform.tfstate
+2022-12-30T20:19:48.934+0800 [TRACE] statemgr.Filesystem: existing snapshot has lineage "78837d77-9b36-6662-fe98-9faf873c2838" serial 8
+2022-12-30T20:19:48.934+0800 [TRACE] statemgr.Filesystem: locking terraform.tfstate using fcntl flock
+2022-12-30T20:19:48.934+0800 [TRACE] statemgr.Filesystem: writing lock metadata to .terraform.tfstate.lock.info
+2022-12-30T20:19:48.934+0800 [TRACE] backend/local: reading remote state for workspace "default"
+2022-12-30T20:19:48.934+0800 [TRACE] statemgr.Filesystem: reading latest snapshot from terraform.tfstate
+2022-12-30T20:19:48.934+0800 [TRACE] statemgr.Filesystem: read snapshot with lineage "78837d77-9b36-6662-fe98-9faf873c2838" serial 8
+2022-12-30T20:19:48.934+0800 [TRACE] backend/local: populating backend.LocalRun for current working directory
+2022-12-30T20:19:48.935+0800 [TRACE] Config.VerifyDependencySelections: provider registry.terraform.io/hashicorp/random has 3.4.3 to satisfy ">= 2.1.2"
+2022-12-30T20:19:48.935+0800 [TRACE] Config.VerifyDependencySelections: provider registry.terraform.io/hashicorp/aws has 2.13.0 to satisfy "~> 2.13.0"
+2022-12-30T20:19:48.935+0800 [TRACE] terraform.NewContext: starting
+2022-12-30T20:19:48.935+0800 [TRACE] terraform.NewContext: complete
+2022-12-30T20:19:48.935+0800 [TRACE] backend/local: requesting interactive input, if necessary
+2022-12-30T20:19:48.935+0800 [TRACE] LoadSchemas: retrieving schema for provider type "registry.terraform.io/hashicorp/aws"
+2022-12-30T20:19:48.935+0800 [TRACE] terraform.contextPlugins: Initializing provider "registry.terraform.io/hashicorp/aws" to read its schema
+2022-12-30T20:19:48.935+0800 [DEBUG] created provider logger: level=trace
+2022-12-30T20:19:48.935+0800 [INFO]  provider: configuring client automatic mTLS
+2022-12-30T20:19:48.944+0800 [DEBUG] provider: starting plugin: path=.terraform/providers/registry.terraform.io/hashicorp/aws/2.13.0/linux_amd64/terraform-provider-aws_v2.13.0_x4 args=[.terraform/providers/registry.terraform.io/hashicorp/aws/2.13.0/linux_amd64/terraform-provider-aws_v2.13.0_x4]
+2022-12-30T20:19:48.944+0800 [DEBUG] provider: plugin started: path=.terraform/providers/registry.terraform.io/hashicorp/aws/2.13.0/linux_amd64/terraform-provider-aws_v2.13.0_x4 pid=232192
+2022-12-30T20:19:48.944+0800 [DEBUG] provider: waiting for RPC address: path=.terraform/providers/registry.terraform.io/hashicorp/aws/2.13.0/linux_amd64/terraform-provider-aws_v2.13.0_x4
+2022-12-30T20:19:48.954+0800 [INFO]  provider.terraform-provider-aws_v2.13.0_x4: configuring server automatic mTLS: timestamp=2022-12-30T20:19:48.953+0800
+2022-12-30T20:19:48.976+0800 [DEBUG] provider: using plugin: version=5
+2022-12-30T20:19:48.976+0800 [DEBUG] provider.terraform-provider-aws_v2.13.0_x4: plugin address: address=/tmp/plugin899980371 network=unix timestamp=2022-12-30T20:19:48.975+0800
+2022-12-30T20:19:48.999+0800 [TRACE] GRPCProvider: GetProviderSchema
+2022-12-30T20:19:48.999+0800 [TRACE] provider.stdio: waiting for stdio data
+2022-12-30T20:19:48.999+0800 [DEBUG] provider.stdio: received EOF, stopping recv loop: err="rpc error: code = Unimplemented desc = unknown service plugin.GRPCStdio"
+2022-12-30T20:19:49.013+0800 [DEBUG] No provider meta schema returned
+2022-12-30T20:19:49.028+0800 [TRACE] GRPCProvider: Close
+2022-12-30T20:19:49.031+0800 [DEBUG] provider: plugin process exited: path=.terraform/providers/registry.terraform.io/hashicorp/aws/2.13.0/linux_amd64/terraform-provider-aws_v2.13.0_x4 pid=232192
+2022-12-30T20:19:49.031+0800 [DEBUG] provider: plugin exited
+2022-12-30T20:19:49.031+0800 [TRACE] LoadSchemas: retrieving schema for provider type "registry.terraform.io/hashicorp/random"
+2022-12-30T20:19:49.031+0800 [TRACE] terraform.contextPlugins: Initializing provider "registry.terraform.io/hashicorp/random" to read its schema
+2022-12-30T20:19:49.031+0800 [DEBUG] created provider logger: level=trace
+2022-12-30T20:19:49.031+0800 [INFO]  provider: configuring client automatic mTLS
+2022-12-30T20:19:49.035+0800 [DEBUG] provider: starting plugin: path=.terraform/providers/registry.terraform.io/hashicorp/random/3.4.3/linux_amd64/terraform-provider-random_v3.4.3_x5 args=[.terraform/providers/registry.terraform.io/hashicorp/random/3.4.3/linux_amd64/terraform-provider-random_v3.4.3_x5]
+2022-12-30T20:19:49.035+0800 [DEBUG] provider: plugin started: path=.terraform/providers/registry.terraform.io/hashicorp/random/3.4.3/linux_amd64/terraform-provider-random_v3.4.3_x5 pid=232215
+2022-12-30T20:19:49.035+0800 [DEBUG] provider: waiting for RPC address: path=.terraform/providers/registry.terraform.io/hashicorp/random/3.4.3/linux_amd64/terraform-provider-random_v3.4.3_x5
+2022-12-30T20:19:49.038+0800 [INFO]  provider.terraform-provider-random_v3.4.3_x5: configuring server automatic mTLS: timestamp=2022-12-30T20:19:49.038+0800
+2022-12-30T20:19:49.047+0800 [DEBUG] provider: using plugin: version=5
+2022-12-30T20:19:49.047+0800 [DEBUG] provider.terraform-provider-random_v3.4.3_x5: plugin address: address=/tmp/plugin3935808213 network=unix timestamp=2022-12-30T20:19:49.047+0800
+2022-12-30T20:19:49.058+0800 [TRACE] GRPCProvider: GetProviderSchema
+2022-12-30T20:19:49.058+0800 [TRACE] provider.stdio: waiting for stdio data
+2022-12-30T20:19:49.058+0800 [TRACE] provider.terraform-provider-random_v3.4.3_x5: Received request: tf_proto_version=5.3 tf_provider_addr=registry.terraform.io/hashicorp/random tf_rpc=GetProviderSchema @caller=github.com/hashicorp/terraform-plugin-go@v0.14.0/tfprotov5/tf5server/server.go:491 @module=sdk.proto tf_req_id=b1ee7cc4-aafd-c2c9-fcca-4680bd334a17 timestamp=2022-12-30T20:19:49.058+0800
+2022-12-30T20:19:49.058+0800 [TRACE] provider.terraform-provider-random_v3.4.3_x5: Sending request downstream: tf_provider_addr=registry.terraform.io/hashicorp/random tf_req_id=b1ee7cc4-aafd-c2c9-fcca-4680bd334a17 @caller=github.com/hashicorp/terraform-plugin-go@v0.14.0/tfprotov5/internal/tf5serverlogging/downstream_request.go:17 @module=sdk.proto tf_proto_version=5.3 tf_rpc=GetProviderSchema timestamp=2022-12-30T20:19:49.058+0800
+2022-12-30T20:19:49.058+0800 [TRACE] provider.terraform-provider-random_v3.4.3_x5: Checking ProviderSchema lock: tf_provider_addr=registry.terraform.io/hashicorp/random tf_req_id=b1ee7cc4-aafd-c2c9-fcca-4680bd334a17 tf_rpc=GetProviderSchema @caller=github.com/hashicorp/terraform-plugin-framework@v0.11.1/internal/fwserver/server.go:203 @module=sdk.framework timestamp=2022-12-30T20:19:49.058+0800
+2022-12-30T20:19:49.059+0800 [DEBUG] provider.terraform-provider-random_v3.4.3_x5: Calling provider defined Provider GetSchema: @module=sdk.framework tf_provider_addr=registry.terraform.io/hashicorp/random tf_req_id=b1ee7cc4-aafd-c2c9-fcca-4680bd334a17 tf_rpc=GetProviderSchema @caller=github.com/hashicorp/terraform-plugin-framework@v0.11.1/internal/fwserver/server.go:211 timestamp=2022-12-30T20:19:49.058+0800
+2022-12-30T20:19:49.059+0800 [DEBUG] provider.terraform-provider-random_v3.4.3_x5: Called provider defined Provider GetSchema: tf_rpc=GetProviderSchema @caller=github.com/hashicorp/terraform-plugin-framework@v0.11.1/internal/fwserver/server.go:213 @module=sdk.framework tf_provider_addr=registry.terraform.io/hashicorp/random tf_req_id=b1ee7cc4-aafd-c2c9-fcca-4680bd334a17 timestamp=2022-12-30T20:19:49.059+0800
+2022-12-30T20:19:49.059+0800 [TRACE] provider.terraform-provider-random_v3.4.3_x5: Checking ResourceSchemas lock: @caller=github.com/hashicorp/terraform-plugin-framework@v0.11.1/internal/fwserver/server.go:273 @module=sdk.framework tf_provider_addr=registry.terraform.io/hashicorp/random tf_req_id=b1ee7cc4-aafd-c2c9-fcca-4680bd334a17 tf_rpc=GetProviderSchema timestamp=2022-12-30T20:19:49.059+0800
+2022-12-30T20:19:49.059+0800 [TRACE] provider.terraform-provider-random_v3.4.3_x5: Checking ResourceTypes lock: tf_req_id=b1ee7cc4-aafd-c2c9-fcca-4680bd334a17 tf_rpc=GetProviderSchema @caller=github.com/hashicorp/terraform-plugin-framework@v0.11.1/internal/fwserver/server.go:330 @module=sdk.framework tf_provider_addr=registry.terraform.io/hashicorp/random timestamp=2022-12-30T20:19:49.059+0800
+2022-12-30T20:19:49.059+0800 [DEBUG] provider.terraform-provider-random_v3.4.3_x5: Calling provider defined Provider GetResources: tf_rpc=GetProviderSchema @caller=github.com/hashicorp/terraform-plugin-framework@v0.11.1/internal/fwserver/server.go:338 @module=sdk.framework tf_provider_addr=registry.terraform.io/hashicorp/random tf_req_id=b1ee7cc4-aafd-c2c9-fcca-4680bd334a17 timestamp=2022-12-30T20:19:49.059+0800
+2022-12-30T20:19:49.059+0800 [DEBUG] provider.terraform-provider-random_v3.4.3_x5: Called provider defined Provider GetResources: tf_req_id=b1ee7cc4-aafd-c2c9-fcca-4680bd334a17 tf_rpc=GetProviderSchema @caller=github.com/hashicorp/terraform-plugin-framework@v0.11.1/internal/fwserver/server.go:340 @module=sdk.framework tf_provider_addr=registry.terraform.io/hashicorp/random timestamp=2022-12-30T20:19:49.059+0800
+2022-12-30T20:19:49.059+0800 [TRACE] provider.terraform-provider-random_v3.4.3_x5: Found resource type: tf_req_id=b1ee7cc4-aafd-c2c9-fcca-4680bd334a17 tf_resource_type=random_string tf_rpc=GetProviderSchema @caller=github.com/hashicorp/terraform-plugin-framework@v0.11.1/internal/fwserver/server.go:291 @module=sdk.framework tf_provider_addr=registry.terraform.io/hashicorp/random timestamp=2022-12-30T20:19:49.059+0800
+2022-12-30T20:19:49.059+0800 [DEBUG] provider.terraform-provider-random_v3.4.3_x5: Calling provider defined ResourceType GetSchema: @module=sdk.framework tf_rpc=GetProviderSchema tf_provider_addr=registry.terraform.io/hashicorp/random tf_req_id=b1ee7cc4-aafd-c2c9-fcca-4680bd334a17 tf_resource_type=random_string @caller=github.com/hashicorp/terraform-plugin-framework@v0.11.1/internal/fwserver/server.go:293 timestamp=2022-12-30T20:19:49.059+0800
+2022-12-30T20:19:49.059+0800 [DEBUG] provider.terraform-provider-random_v3.4.3_x5: Called provider defined ResourceType GetSchema: @module=sdk.framework tf_req_id=b1ee7cc4-aafd-c2c9-fcca-4680bd334a17 tf_resource_type=random_string tf_rpc=GetProviderSchema @caller=github.com/hashicorp/terraform-plugin-framework@v0.11.1/internal/fwserver/server.go:295 tf_provider_addr=registry.terraform.io/hashicorp/random timestamp=2022-12-30T20:19:49.059+0800
+2022-12-30T20:19:49.059+0800 [TRACE] provider.terraform-provider-random_v3.4.3_x5: Found resource type: tf_provider_addr=registry.terraform.io/hashicorp/random tf_req_id=b1ee7cc4-aafd-c2c9-fcca-4680bd334a17 tf_resource_type=random_uuid tf_rpc=GetProviderSchema @caller=github.com/hashicorp/terraform-plugin-framework@v0.11.1/internal/fwserver/server.go:291 @module=sdk.framework timestamp=2022-12-30T20:19:49.059+0800
+2022-12-30T20:19:49.059+0800 [DEBUG] provider.terraform-provider-random_v3.4.3_x5: Calling provider defined ResourceType GetSchema: @caller=github.com/hashicorp/terraform-plugin-framework@v0.11.1/internal/fwserver/server.go:293 @module=sdk.framework tf_req_id=b1ee7cc4-aafd-c2c9-fcca-4680bd334a17 tf_resource_type=random_uuid tf_provider_addr=registry.terraform.io/hashicorp/random tf_rpc=GetProviderSchema timestamp=2022-12-30T20:19:49.059+0800
+2022-12-30T20:19:49.059+0800 [DEBUG] provider.terraform-provider-random_v3.4.3_x5: Called provider defined ResourceType GetSchema: tf_provider_addr=registry.terraform.io/hashicorp/random tf_req_id=b1ee7cc4-aafd-c2c9-fcca-4680bd334a17 tf_rpc=GetProviderSchema @caller=github.com/hashicorp/terraform-plugin-framework@v0.11.1/internal/fwserver/server.go:295 @module=sdk.framework tf_resource_type=random_uuid timestamp=2022-12-30T20:19:49.059+0800
+2022-12-30T20:19:49.059+0800 [TRACE] provider.terraform-provider-random_v3.4.3_x5: Found resource type: tf_req_id=b1ee7cc4-aafd-c2c9-fcca-4680bd334a17 tf_rpc=GetProviderSchema @caller=github.com/hashicorp/terraform-plugin-framework@v0.11.1/internal/fwserver/server.go:291 tf_provider_addr=registry.terraform.io/hashicorp/random tf_resource_type=random_id @module=sdk.framework timestamp=2022-12-30T20:19:49.059+0800
+2022-12-30T20:19:49.059+0800 [DEBUG] provider.terraform-provider-random_v3.4.3_x5: Calling provider defined ResourceType GetSchema: @module=sdk.framework tf_provider_addr=registry.terraform.io/hashicorp/random @caller=github.com/hashicorp/terraform-plugin-framework@v0.11.1/internal/fwserver/server.go:293 tf_req_id=b1ee7cc4-aafd-c2c9-fcca-4680bd334a17 tf_resource_type=random_id tf_rpc=GetProviderSchema timestamp=2022-12-30T20:19:49.059+0800
+2022-12-30T20:19:49.059+0800 [DEBUG] provider.terraform-provider-random_v3.4.3_x5: Called provider defined ResourceType GetSchema: tf_req_id=b1ee7cc4-aafd-c2c9-fcca-4680bd334a17 tf_resource_type=random_id tf_rpc=GetProviderSchema @caller=github.com/hashicorp/terraform-plugin-framework@v0.11.1/internal/fwserver/server.go:295 @module=sdk.framework tf_provider_addr=registry.terraform.io/hashicorp/random timestamp=2022-12-30T20:19:49.059+0800
+2022-12-30T20:19:49.059+0800 [TRACE] provider.terraform-provider-random_v3.4.3_x5: Found resource type: @module=sdk.framework tf_provider_addr=registry.terraform.io/hashicorp/random tf_req_id=b1ee7cc4-aafd-c2c9-fcca-4680bd334a17 tf_resource_type=random_integer tf_rpc=GetProviderSchema @caller=github.com/hashicorp/terraform-plugin-framework@v0.11.1/internal/fwserver/server.go:291 timestamp=2022-12-30T20:19:49.059+0800
+2022-12-30T20:19:49.059+0800 [DEBUG] provider.terraform-provider-random_v3.4.3_x5: Calling provider defined ResourceType GetSchema: @caller=github.com/hashicorp/terraform-plugin-framework@v0.11.1/internal/fwserver/server.go:293 tf_provider_addr=registry.terraform.io/hashicorp/random tf_rpc=GetProviderSchema @module=sdk.framework tf_req_id=b1ee7cc4-aafd-c2c9-fcca-4680bd334a17 tf_resource_type=random_integer timestamp=2022-12-30T20:19:49.059+0800
+2022-12-30T20:19:49.059+0800 [DEBUG] provider.terraform-provider-random_v3.4.3_x5: Called provider defined ResourceType GetSchema: tf_provider_addr=registry.terraform.io/hashicorp/random tf_req_id=b1ee7cc4-aafd-c2c9-fcca-4680bd334a17 tf_resource_type=random_integer tf_rpc=GetProviderSchema @caller=github.com/hashicorp/terraform-plugin-framework@v0.11.1/internal/fwserver/server.go:295 @module=sdk.framework timestamp=2022-12-30T20:19:49.059+0800
+2022-12-30T20:19:49.059+0800 [TRACE] provider.terraform-provider-random_v3.4.3_x5: Found resource type: @caller=github.com/hashicorp/terraform-plugin-framework@v0.11.1/internal/fwserver/server.go:291 @module=sdk.framework tf_resource_type=random_password tf_provider_addr=registry.terraform.io/hashicorp/random tf_req_id=b1ee7cc4-aafd-c2c9-fcca-4680bd334a17 tf_rpc=GetProviderSchema timestamp=2022-12-30T20:19:49.059+0800
+2022-12-30T20:19:49.059+0800 [DEBUG] provider.terraform-provider-random_v3.4.3_x5: Calling provider defined ResourceType GetSchema: tf_provider_addr=registry.terraform.io/hashicorp/random @module=sdk.framework tf_req_id=b1ee7cc4-aafd-c2c9-fcca-4680bd334a17 tf_resource_type=random_password tf_rpc=GetProviderSchema @caller=github.com/hashicorp/terraform-plugin-framework@v0.11.1/internal/fwserver/server.go:293 timestamp=2022-12-30T20:19:49.059+0800
+2022-12-30T20:19:49.059+0800 [DEBUG] provider.terraform-provider-random_v3.4.3_x5: Called provider defined ResourceType GetSchema: tf_provider_addr=registry.terraform.io/hashicorp/random tf_req_id=b1ee7cc4-aafd-c2c9-fcca-4680bd334a17 tf_resource_type=random_password tf_rpc=GetProviderSchema @caller=github.com/hashicorp/terraform-plugin-framework@v0.11.1/internal/fwserver/server.go:295 @module=sdk.framework timestamp=2022-12-30T20:19:49.059+0800
+2022-12-30T20:19:49.059+0800 [TRACE] provider.terraform-provider-random_v3.4.3_x5: Found resource type: @module=sdk.framework @caller=github.com/hashicorp/terraform-plugin-framework@v0.11.1/internal/fwserver/server.go:291 tf_provider_addr=registry.terraform.io/hashicorp/random tf_req_id=b1ee7cc4-aafd-c2c9-fcca-4680bd334a17 tf_resource_type=random_pet tf_rpc=GetProviderSchema timestamp=2022-12-30T20:19:49.059+0800
+2022-12-30T20:19:49.059+0800 [DEBUG] provider.terraform-provider-random_v3.4.3_x5: Calling provider defined ResourceType GetSchema: @module=sdk.framework @caller=github.com/hashicorp/terraform-plugin-framework@v0.11.1/internal/fwserver/server.go:293 tf_provider_addr=registry.terraform.io/hashicorp/random tf_req_id=b1ee7cc4-aafd-c2c9-fcca-4680bd334a17 tf_resource_type=random_pet tf_rpc=GetProviderSchema timestamp=2022-12-30T20:19:49.059+0800
+2022-12-30T20:19:49.059+0800 [DEBUG] provider.terraform-provider-random_v3.4.3_x5: Called provider defined ResourceType GetSchema: tf_provider_addr=registry.terraform.io/hashicorp/random tf_resource_type=random_pet @caller=github.com/hashicorp/terraform-plugin-framework@v0.11.1/internal/fwserver/server.go:295 @module=sdk.framework tf_req_id=b1ee7cc4-aafd-c2c9-fcca-4680bd334a17 tf_rpc=GetProviderSchema timestamp=2022-12-30T20:19:49.059+0800
+2022-12-30T20:19:49.059+0800 [TRACE] provider.terraform-provider-random_v3.4.3_x5: Found resource type: tf_req_id=b1ee7cc4-aafd-c2c9-fcca-4680bd334a17 @caller=github.com/hashicorp/terraform-plugin-framework@v0.11.1/internal/fwserver/server.go:291 @module=sdk.framework tf_provider_addr=registry.terraform.io/hashicorp/random tf_resource_type=random_shuffle tf_rpc=GetProviderSchema timestamp=2022-12-30T20:19:49.059+0800
+2022-12-30T20:19:49.059+0800 [DEBUG] provider.terraform-provider-random_v3.4.3_x5: Calling provider defined ResourceType GetSchema: tf_resource_type=random_shuffle tf_provider_addr=registry.terraform.io/hashicorp/random @module=sdk.framework tf_req_id=b1ee7cc4-aafd-c2c9-fcca-4680bd334a17 tf_rpc=GetProviderSchema @caller=github.com/hashicorp/terraform-plugin-framework@v0.11.1/internal/fwserver/server.go:293 timestamp=2022-12-30T20:19:49.059+0800
+2022-12-30T20:19:49.059+0800 [DEBUG] provider.terraform-provider-random_v3.4.3_x5: Called provider defined ResourceType GetSchema: tf_provider_addr=registry.terraform.io/hashicorp/random tf_req_id=b1ee7cc4-aafd-c2c9-fcca-4680bd334a17 tf_resource_type=random_shuffle @caller=github.com/hashicorp/terraform-plugin-framework@v0.11.1/internal/fwserver/server.go:295 @module=sdk.framework tf_rpc=GetProviderSchema timestamp=2022-12-30T20:19:49.059+0800
+2022-12-30T20:19:49.059+0800 [TRACE] provider.terraform-provider-random_v3.4.3_x5: Checking DataSourceSchemas lock: @module=sdk.framework tf_provider_addr=registry.terraform.io/hashicorp/random tf_req_id=b1ee7cc4-aafd-c2c9-fcca-4680bd334a17 tf_rpc=GetProviderSchema @caller=github.com/hashicorp/terraform-plugin-framework@v0.11.1/internal/fwserver/server.go:128 timestamp=2022-12-30T20:19:49.059+0800
+2022-12-30T20:19:49.059+0800 [TRACE] provider.terraform-provider-random_v3.4.3_x5: Checking DataSourceTypes lock: @caller=github.com/hashicorp/terraform-plugin-framework@v0.11.1/internal/fwserver/server.go:185 @module=sdk.framework tf_provider_addr=registry.terraform.io/hashicorp/random tf_req_id=b1ee7cc4-aafd-c2c9-fcca-4680bd334a17 tf_rpc=GetProviderSchema timestamp=2022-12-30T20:19:49.059+0800
+2022-12-30T20:19:49.059+0800 [DEBUG] provider.terraform-provider-random_v3.4.3_x5: Calling provider defined Provider GetDataSources: @module=sdk.framework tf_provider_addr=registry.terraform.io/hashicorp/random tf_req_id=b1ee7cc4-aafd-c2c9-fcca-4680bd334a17 tf_rpc=GetProviderSchema @caller=github.com/hashicorp/terraform-plugin-framework@v0.11.1/internal/fwserver/server.go:193 timestamp=2022-12-30T20:19:49.059+0800
+2022-12-30T20:19:49.059+0800 [DEBUG] provider.terraform-provider-random_v3.4.3_x5: Called provider defined Provider GetDataSources: @module=sdk.framework tf_provider_addr=registry.terraform.io/hashicorp/random tf_req_id=b1ee7cc4-aafd-c2c9-fcca-4680bd334a17 tf_rpc=GetProviderSchema @caller=github.com/hashicorp/terraform-plugin-framework@v0.11.1/internal/fwserver/server.go:195 timestamp=2022-12-30T20:19:49.059+0800
+2022-12-30T20:19:49.059+0800 [TRACE] provider.terraform-provider-random_v3.4.3_x5: Received downstream response: tf_rpc=GetProviderSchema @caller=github.com/hashicorp/terraform-plugin-go@v0.14.0/tfprotov5/internal/tf5serverlogging/downstream_request.go:37 diagnostic_error_count=0 diagnostic_warning_count=0 tf_proto_version=5.3 tf_provider_addr=registry.terraform.io/hashicorp/random tf_req_duration_ms=0 @module=sdk.proto tf_req_id=b1ee7cc4-aafd-c2c9-fcca-4680bd334a17 timestamp=2022-12-30T20:19:49.059+0800
+2022-12-30T20:19:49.059+0800 [TRACE] provider.terraform-provider-random_v3.4.3_x5: Served request: tf_proto_version=5.3 tf_provider_addr=registry.terraform.io/hashicorp/random tf_req_id=b1ee7cc4-aafd-c2c9-fcca-4680bd334a17 @caller=github.com/hashicorp/terraform-plugin-go@v0.14.0/tfprotov5/tf5server/server.go:510 @module=sdk.proto tf_rpc=GetProviderSchema timestamp=2022-12-30T20:19:49.059+0800
+2022-12-30T20:19:49.060+0800 [DEBUG] No provider meta schema returned
+2022-12-30T20:19:49.060+0800 [TRACE] GRPCProvider: Close
+2022-12-30T20:19:49.061+0800 [DEBUG] provider.stdio: received EOF, stopping recv loop: err="rpc error: code = Unavailable desc = error reading from server: EOF"
+2022-12-30T20:19:49.062+0800 [DEBUG] provider: plugin process exited: path=.terraform/providers/registry.terraform.io/hashicorp/random/3.4.3/linux_amd64/terraform-provider-random_v3.4.3_x5 pid=232215
+2022-12-30T20:19:49.062+0800 [DEBUG] provider: plugin exited
+2022-12-30T20:19:49.062+0800 [TRACE] Context.Input: Prompting for provider arguments
+2022-12-30T20:19:49.062+0800 [TRACE] Context.Input: Provider provider.aws declared at main.tf:14,1-15
+2022-12-30T20:19:49.062+0800 [TRACE] Context.Input: Provider provider.random declared at main.tf:18,1-18
+2022-12-30T20:19:49.062+0800 [TRACE] Context.Input: Input for provider.aws: map[string]cty.Value{}
+2022-12-30T20:19:49.062+0800 [TRACE] Context.Input: Input for provider.random: map[string]cty.Value{}
+2022-12-30T20:19:49.062+0800 [TRACE] backend/local: running validation operation
+2022-12-30T20:19:49.062+0800 [DEBUG] Building and walking validate graph
+2022-12-30T20:19:49.062+0800 [TRACE] building graph for walkValidate
+2022-12-30T20:19:49.062+0800 [TRACE] Executing graph transform *terraform.ConfigTransformer
+2022-12-30T20:19:49.062+0800 [TRACE] ConfigTransformer: Starting for path:
+2022-12-30T20:19:49.062+0800 [TRACE] Completed graph transform *terraform.ConfigTransformer with new graph:
+  aws_instance.web - *terraform.NodeValidatableResource
+  data.aws_ami.amazon_linux - *terraform.NodeValidatableResource
+  random_pet.name - *terraform.NodeValidatableResource
+  ------
+2022-12-30T20:19:49.062+0800 [TRACE] Executing graph transform *terraform.RootVariableTransformer
+2022-12-30T20:19:49.062+0800 [TRACE] Completed graph transform *terraform.RootVariableTransformer with new graph:
+  aws_instance.web - *terraform.NodeValidatableResource
+  data.aws_ami.amazon_linux - *terraform.NodeValidatableResource
+  random_pet.name - *terraform.NodeValidatableResource
+  var.aws_region - *terraform.NodeRootVariable
+  ------
+2022-12-30T20:19:49.062+0800 [TRACE] Executing graph transform *terraform.ModuleVariableTransformer
+2022-12-30T20:19:49.062+0800 [TRACE] Completed graph transform *terraform.ModuleVariableTransformer (no changes)
+2022-12-30T20:19:49.062+0800 [TRACE] Executing graph transform *terraform.LocalTransformer
+2022-12-30T20:19:49.062+0800 [TRACE] Completed graph transform *terraform.LocalTransformer (no changes)
+2022-12-30T20:19:49.062+0800 [TRACE] Executing graph transform *terraform.OutputTransformer
+2022-12-30T20:19:49.062+0800 [TRACE] OutputTransformer: adding domain_name as *terraform.nodeExpandOutput
+2022-12-30T20:19:49.062+0800 [TRACE] OutputTransformer: adding application_url as *terraform.nodeExpandOutput
+2022-12-30T20:19:49.062+0800 [TRACE] Completed graph transform *terraform.OutputTransformer with new graph:
+  aws_instance.web - *terraform.NodeValidatableResource
+  data.aws_ami.amazon_linux - *terraform.NodeValidatableResource
+  output.application_url (expand) - *terraform.nodeExpandOutput
+  output.domain_name (expand) - *terraform.nodeExpandOutput
+  random_pet.name - *terraform.NodeValidatableResource
+  var.aws_region - *terraform.NodeRootVariable
+  ------
+2022-12-30T20:19:49.062+0800 [TRACE] Executing graph transform *terraform.OrphanResourceInstanceTransformer
+2022-12-30T20:19:49.062+0800 [TRACE] Completed graph transform *terraform.OrphanResourceInstanceTransformer (no changes)
+2022-12-30T20:19:49.062+0800 [TRACE] Executing graph transform *terraform.StateTransformer
+2022-12-30T20:19:49.062+0800 [TRACE] StateTransformer: pointless no-op call, creating no nodes at all
+2022-12-30T20:19:49.062+0800 [TRACE] Completed graph transform *terraform.StateTransformer (no changes)
+2022-12-30T20:19:49.062+0800 [TRACE] Executing graph transform *terraform.AttachStateTransformer
+2022-12-30T20:19:49.062+0800 [TRACE] Completed graph transform *terraform.AttachStateTransformer (no changes)
+2022-12-30T20:19:49.062+0800 [TRACE] Executing graph transform *terraform.OrphanOutputTransformer
+2022-12-30T20:19:49.062+0800 [TRACE] Completed graph transform *terraform.OrphanOutputTransformer (no changes)
+2022-12-30T20:19:49.062+0800 [TRACE] Executing graph transform *terraform.AttachResourceConfigTransformer
+2022-12-30T20:19:49.062+0800 [TRACE] AttachResourceConfigTransformer: attaching to "random_pet.name" (*terraform.NodeValidatableResource) config from main.tf:20,1-29
+2022-12-30T20:19:49.062+0800 [TRACE] AttachResourceConfigTransformer: attaching provider meta configs to random_pet.name
+2022-12-30T20:19:49.062+0800 [TRACE] AttachResourceConfigTransformer: attaching to "aws_instance.web" (*terraform.NodeValidatableResource) config from main.tf:32,1-30
+2022-12-30T20:19:49.062+0800 [TRACE] AttachResourceConfigTransformer: attaching provider meta configs to aws_instance.web
+2022-12-30T20:19:49.062+0800 [TRACE] AttachResourceConfigTransformer: attaching to "data.aws_ami.amazon_linux" (*terraform.NodeValidatableResource) config from hcl.Range{Filename:"main.tf", Start:hcl.Pos{Line:22, Column:1, Byte:267}, End:hcl.Pos{Line:22, Column:30, Byte:296}}
+2022-12-30T20:19:49.062+0800 [TRACE] AttachResourceConfigTransformer: attaching provider meta configs to data.aws_ami.amazon_linux
+2022-12-30T20:19:49.062+0800 [TRACE] Completed graph transform *terraform.AttachResourceConfigTransformer (no changes)
+2022-12-30T20:19:49.062+0800 [TRACE] Executing graph transform *terraform.graphTransformerMulti
+2022-12-30T20:19:49.062+0800 [TRACE] (graphTransformerMulti) Executing graph transform *terraform.ProviderConfigTransformer
+2022-12-30T20:19:49.062+0800 [TRACE] ProviderConfigTransformer: attaching to "provider[\"registry.terraform.io/hashicorp/aws\"]" provider configuration from main.tf:14,1-15
+2022-12-30T20:19:49.062+0800 [TRACE] ProviderConfigTransformer: attaching to "provider[\"registry.terraform.io/hashicorp/random\"]" provider configuration from main.tf:18,1-18
+2022-12-30T20:19:49.062+0800 [TRACE] (graphTransformerMulti) Completed graph transform *terraform.ProviderConfigTransformer with new graph:
+  aws_instance.web - *terraform.NodeValidatableResource
+  data.aws_ami.amazon_linux - *terraform.NodeValidatableResource
+  output.application_url (expand) - *terraform.nodeExpandOutput
+  output.domain_name (expand) - *terraform.nodeExpandOutput
+  provider["registry.terraform.io/hashicorp/aws"] - *terraform.NodeApplyableProvider
+  provider["registry.terraform.io/hashicorp/random"] - *terraform.NodeApplyableProvider
+  random_pet.name - *terraform.NodeValidatableResource
+  var.aws_region - *terraform.NodeRootVariable
+  ------
+2022-12-30T20:19:49.062+0800 [TRACE] (graphTransformerMulti) Executing graph transform *terraform.MissingProviderTransformer
+2022-12-30T20:19:49.062+0800 [TRACE] (graphTransformerMulti) Completed graph transform *terraform.MissingProviderTransformer (no changes)
+2022-12-30T20:19:49.062+0800 [TRACE] (graphTransformerMulti) Executing graph transform *terraform.ProviderTransformer
+2022-12-30T20:19:49.062+0800 [TRACE] ProviderTransformer: exact match for provider["registry.terraform.io/hashicorp/random"] serving random_pet.name
+2022-12-30T20:19:49.062+0800 [DEBUG] ProviderTransformer: "random_pet.name" (*terraform.NodeValidatableResource) needs provider["registry.terraform.io/hashicorp/random"]
+2022-12-30T20:19:49.062+0800 [TRACE] ProviderTransformer: exact match for provider["registry.terraform.io/hashicorp/aws"] serving aws_instance.web
+2022-12-30T20:19:49.062+0800 [DEBUG] ProviderTransformer: "aws_instance.web" (*terraform.NodeValidatableResource) needs provider["registry.terraform.io/hashicorp/aws"]
+2022-12-30T20:19:49.062+0800 [TRACE] ProviderTransformer: exact match for provider["registry.terraform.io/hashicorp/aws"] serving data.aws_ami.amazon_linux
+2022-12-30T20:19:49.062+0800 [DEBUG] ProviderTransformer: "data.aws_ami.amazon_linux" (*terraform.NodeValidatableResource) needs provider["registry.terraform.io/hashicorp/aws"]
+2022-12-30T20:19:49.062+0800 [TRACE] (graphTransformerMulti) Completed graph transform *terraform.ProviderTransformer with new graph:
+  aws_instance.web - *terraform.NodeValidatableResource
+    provider["registry.terraform.io/hashicorp/aws"] - *terraform.NodeApplyableProvider
+  data.aws_ami.amazon_linux - *terraform.NodeValidatableResource
+    provider["registry.terraform.io/hashicorp/aws"] - *terraform.NodeApplyableProvider
+  output.application_url (expand) - *terraform.nodeExpandOutput
+  output.domain_name (expand) - *terraform.nodeExpandOutput
+  provider["registry.terraform.io/hashicorp/aws"] - *terraform.NodeApplyableProvider
+  provider["registry.terraform.io/hashicorp/random"] - *terraform.NodeApplyableProvider
+  random_pet.name - *terraform.NodeValidatableResource
+    provider["registry.terraform.io/hashicorp/random"] - *terraform.NodeApplyableProvider
+  var.aws_region - *terraform.NodeRootVariable
+  ------
+2022-12-30T20:19:49.062+0800 [TRACE] (graphTransformerMulti) Executing graph transform *terraform.PruneProviderTransformer
+2022-12-30T20:19:49.062+0800 [TRACE] (graphTransformerMulti) Completed graph transform *terraform.PruneProviderTransformer (no changes)
+2022-12-30T20:19:49.062+0800 [TRACE] Completed graph transform *terraform.graphTransformerMulti with new graph:
+  aws_instance.web - *terraform.NodeValidatableResource
+    provider["registry.terraform.io/hashicorp/aws"] - *terraform.NodeApplyableProvider
+  data.aws_ami.amazon_linux - *terraform.NodeValidatableResource
+    provider["registry.terraform.io/hashicorp/aws"] - *terraform.NodeApplyableProvider
+  output.application_url (expand) - *terraform.nodeExpandOutput
+  output.domain_name (expand) - *terraform.nodeExpandOutput
+  provider["registry.terraform.io/hashicorp/aws"] - *terraform.NodeApplyableProvider
+  provider["registry.terraform.io/hashicorp/random"] - *terraform.NodeApplyableProvider
+  random_pet.name - *terraform.NodeValidatableResource
+    provider["registry.terraform.io/hashicorp/random"] - *terraform.NodeApplyableProvider
+  var.aws_region - *terraform.NodeRootVariable
+  ------
+2022-12-30T20:19:49.062+0800 [TRACE] Executing graph transform *terraform.RemovedModuleTransformer
+2022-12-30T20:19:49.062+0800 [TRACE] Completed graph transform *terraform.RemovedModuleTransformer (no changes)
+2022-12-30T20:19:49.062+0800 [TRACE] Executing graph transform *terraform.AttachSchemaTransformer
+2022-12-30T20:19:49.062+0800 [TRACE] AttachSchemaTransformer: attaching provider config schema to provider["registry.terraform.io/hashicorp/aws"]
+2022-12-30T20:19:49.062+0800 [TRACE] AttachSchemaTransformer: attaching provider config schema to provider["registry.terraform.io/hashicorp/random"]
+2022-12-30T20:19:49.063+0800 [TRACE] AttachSchemaTransformer: attaching resource schema to random_pet.name
+2022-12-30T20:19:49.063+0800 [TRACE] AttachSchemaTransformer: attaching resource schema to aws_instance.web
+2022-12-30T20:19:49.063+0800 [TRACE] AttachSchemaTransformer: attaching resource schema to data.aws_ami.amazon_linux
+2022-12-30T20:19:49.063+0800 [TRACE] Completed graph transform *terraform.AttachSchemaTransformer (no changes)
+2022-12-30T20:19:49.063+0800 [TRACE] Executing graph transform *terraform.ModuleExpansionTransformer
+2022-12-30T20:19:49.063+0800 [TRACE] Completed graph transform *terraform.ModuleExpansionTransformer (no changes)
+2022-12-30T20:19:49.063+0800 [TRACE] Executing graph transform *terraform.ReferenceTransformer
+2022-12-30T20:19:49.063+0800 [DEBUG] ReferenceTransformer: "provider[\"registry.terraform.io/hashicorp/random\"]" references: []
+2022-12-30T20:19:49.063+0800 [DEBUG] ReferenceTransformer: "random_pet.name" references: []
+2022-12-30T20:19:49.063+0800 [DEBUG] ReferenceTransformer: "aws_instance.web" references: [random_pet.name data.aws_ami.amazon_linux]
+2022-12-30T20:19:49.063+0800 [DEBUG] ReferenceTransformer: "data.aws_ami.amazon_linux" references: []
+2022-12-30T20:19:49.063+0800 [DEBUG] ReferenceTransformer: "var.aws_region" references: []
+2022-12-30T20:19:49.063+0800 [DEBUG] ReferenceTransformer: "output.domain_name (expand)" references: [aws_instance.web]
+2022-12-30T20:19:49.063+0800 [DEBUG] ReferenceTransformer: "output.application_url (expand)" references: [aws_instance.web]
+2022-12-30T20:19:49.063+0800 [DEBUG] ReferenceTransformer: "provider[\"registry.terraform.io/hashicorp/aws\"]" references: []
+2022-12-30T20:19:49.063+0800 [TRACE] Completed graph transform *terraform.ReferenceTransformer with new graph:
+  aws_instance.web - *terraform.NodeValidatableResource
+    data.aws_ami.amazon_linux - *terraform.NodeValidatableResource
+    provider["registry.terraform.io/hashicorp/aws"] - *terraform.NodeApplyableProvider
+    random_pet.name - *terraform.NodeValidatableResource
+  data.aws_ami.amazon_linux - *terraform.NodeValidatableResource
+    provider["registry.terraform.io/hashicorp/aws"] - *terraform.NodeApplyableProvider
+  output.application_url (expand) - *terraform.nodeExpandOutput
+    aws_instance.web - *terraform.NodeValidatableResource
+  output.domain_name (expand) - *terraform.nodeExpandOutput
+    aws_instance.web - *terraform.NodeValidatableResource
+  provider["registry.terraform.io/hashicorp/aws"] - *terraform.NodeApplyableProvider
+  provider["registry.terraform.io/hashicorp/random"] - *terraform.NodeApplyableProvider
+  random_pet.name - *terraform.NodeValidatableResource
+    provider["registry.terraform.io/hashicorp/random"] - *terraform.NodeApplyableProvider
+  var.aws_region - *terraform.NodeRootVariable
+  ------
+2022-12-30T20:19:49.063+0800 [TRACE] Executing graph transform *terraform.AttachDependenciesTransformer
+2022-12-30T20:19:49.063+0800 [TRACE] Completed graph transform *terraform.AttachDependenciesTransformer (no changes)
+2022-12-30T20:19:49.063+0800 [TRACE] Executing graph transform *terraform.attachDataResourceDependsOnTransformer
+2022-12-30T20:19:49.063+0800 [TRACE] attachDataDependenciesTransformer: data.aws_ami.amazon_linux depends on []
+2022-12-30T20:19:49.063+0800 [TRACE] Completed graph transform *terraform.attachDataResourceDependsOnTransformer (no changes)
+2022-12-30T20:19:49.063+0800 [TRACE] Executing graph transform *terraform.DestroyEdgeTransformer
+2022-12-30T20:19:49.063+0800 [TRACE] Completed graph transform *terraform.DestroyEdgeTransformer (no changes)
+2022-12-30T20:19:49.063+0800 [TRACE] Executing graph transform *terraform.pruneUnusedNodesTransformer
+2022-12-30T20:19:49.063+0800 [TRACE] Completed graph transform *terraform.pruneUnusedNodesTransformer (no changes)
+2022-12-30T20:19:49.063+0800 [TRACE] Executing graph transform *terraform.TargetsTransformer
+2022-12-30T20:19:49.063+0800 [TRACE] Completed graph transform *terraform.TargetsTransformer (no changes)
+2022-12-30T20:19:49.063+0800 [TRACE] Executing graph transform *terraform.ForcedCBDTransformer
+2022-12-30T20:19:49.063+0800 [TRACE] Completed graph transform *terraform.ForcedCBDTransformer (no changes)
+2022-12-30T20:19:49.063+0800 [TRACE] Executing graph transform *terraform.CloseProviderTransformer
+2022-12-30T20:19:49.063+0800 [TRACE] Completed graph transform *terraform.CloseProviderTransformer with new graph:
+  aws_instance.web - *terraform.NodeValidatableResource
+    data.aws_ami.amazon_linux - *terraform.NodeValidatableResource
+    provider["registry.terraform.io/hashicorp/aws"] - *terraform.NodeApplyableProvider
+    random_pet.name - *terraform.NodeValidatableResource
+  data.aws_ami.amazon_linux - *terraform.NodeValidatableResource
+    provider["registry.terraform.io/hashicorp/aws"] - *terraform.NodeApplyableProvider
+  output.application_url (expand) - *terraform.nodeExpandOutput
+    aws_instance.web - *terraform.NodeValidatableResource
+  output.domain_name (expand) - *terraform.nodeExpandOutput
+    aws_instance.web - *terraform.NodeValidatableResource
+  provider["registry.terraform.io/hashicorp/aws"] - *terraform.NodeApplyableProvider
+  provider["registry.terraform.io/hashicorp/aws"] (close) - *terraform.graphNodeCloseProvider
+    aws_instance.web - *terraform.NodeValidatableResource
+    data.aws_ami.amazon_linux - *terraform.NodeValidatableResource
+    provider["registry.terraform.io/hashicorp/aws"] - *terraform.NodeApplyableProvider
+  provider["registry.terraform.io/hashicorp/random"] - *terraform.NodeApplyableProvider
+  provider["registry.terraform.io/hashicorp/random"] (close) - *terraform.graphNodeCloseProvider
+    provider["registry.terraform.io/hashicorp/random"] - *terraform.NodeApplyableProvider
+    random_pet.name - *terraform.NodeValidatableResource
+  random_pet.name - *terraform.NodeValidatableResource
+    provider["registry.terraform.io/hashicorp/random"] - *terraform.NodeApplyableProvider
+  var.aws_region - *terraform.NodeRootVariable
+  ------
+2022-12-30T20:19:49.063+0800 [TRACE] Executing graph transform *terraform.CloseRootModuleTransformer
+2022-12-30T20:19:49.063+0800 [TRACE] Completed graph transform *terraform.CloseRootModuleTransformer with new graph:
+  aws_instance.web - *terraform.NodeValidatableResource
+    data.aws_ami.amazon_linux - *terraform.NodeValidatableResource
+    provider["registry.terraform.io/hashicorp/aws"] - *terraform.NodeApplyableProvider
+    random_pet.name - *terraform.NodeValidatableResource
+  data.aws_ami.amazon_linux - *terraform.NodeValidatableResource
+    provider["registry.terraform.io/hashicorp/aws"] - *terraform.NodeApplyableProvider
+  output.application_url (expand) - *terraform.nodeExpandOutput
+    aws_instance.web - *terraform.NodeValidatableResource
+  output.domain_name (expand) - *terraform.nodeExpandOutput
+    aws_instance.web - *terraform.NodeValidatableResource
+  provider["registry.terraform.io/hashicorp/aws"] - *terraform.NodeApplyableProvider
+  provider["registry.terraform.io/hashicorp/aws"] (close) - *terraform.graphNodeCloseProvider
+    aws_instance.web - *terraform.NodeValidatableResource
+    data.aws_ami.amazon_linux - *terraform.NodeValidatableResource
+    provider["registry.terraform.io/hashicorp/aws"] - *terraform.NodeApplyableProvider
+  provider["registry.terraform.io/hashicorp/random"] - *terraform.NodeApplyableProvider
+  provider["registry.terraform.io/hashicorp/random"] (close) - *terraform.graphNodeCloseProvider
+    provider["registry.terraform.io/hashicorp/random"] - *terraform.NodeApplyableProvider
+    random_pet.name - *terraform.NodeValidatableResource
+  random_pet.name - *terraform.NodeValidatableResource
+    provider["registry.terraform.io/hashicorp/random"] - *terraform.NodeApplyableProvider
+  root - *terraform.nodeCloseModule
+    output.application_url (expand) - *terraform.nodeExpandOutput
+    output.domain_name (expand) - *terraform.nodeExpandOutput
+    provider["registry.terraform.io/hashicorp/aws"] (close) - *terraform.graphNodeCloseProvider
+    provider["registry.terraform.io/hashicorp/random"] (close) - *terraform.graphNodeCloseProvider
+    var.aws_region - *terraform.NodeRootVariable
+  var.aws_region - *terraform.NodeRootVariable
+  ------
+2022-12-30T20:19:49.063+0800 [TRACE] Executing graph transform *terraform.TransitiveReductionTransformer
+2022-12-30T20:19:49.063+0800 [TRACE] Completed graph transform *terraform.TransitiveReductionTransformer with new graph:
+  aws_instance.web - *terraform.NodeValidatableResource
+    data.aws_ami.amazon_linux - *terraform.NodeValidatableResource
+    random_pet.name - *terraform.NodeValidatableResource
+  data.aws_ami.amazon_linux - *terraform.NodeValidatableResource
+    provider["registry.terraform.io/hashicorp/aws"] - *terraform.NodeApplyableProvider
+  output.application_url (expand) - *terraform.nodeExpandOutput
+    aws_instance.web - *terraform.NodeValidatableResource
+  output.domain_name (expand) - *terraform.nodeExpandOutput
+    aws_instance.web - *terraform.NodeValidatableResource
+  provider["registry.terraform.io/hashicorp/aws"] - *terraform.NodeApplyableProvider
+  provider["registry.terraform.io/hashicorp/aws"] (close) - *terraform.graphNodeCloseProvider
+    aws_instance.web - *terraform.NodeValidatableResource
+  provider["registry.terraform.io/hashicorp/random"] - *terraform.NodeApplyableProvider
+  provider["registry.terraform.io/hashicorp/random"] (close) - *terraform.graphNodeCloseProvider
+    random_pet.name - *terraform.NodeValidatableResource
+  random_pet.name - *terraform.NodeValidatableResource
+    provider["registry.terraform.io/hashicorp/random"] - *terraform.NodeApplyableProvider
+  root - *terraform.nodeCloseModule
+    output.application_url (expand) - *terraform.nodeExpandOutput
+    output.domain_name (expand) - *terraform.nodeExpandOutput
+    provider["registry.terraform.io/hashicorp/aws"] (close) - *terraform.graphNodeCloseProvider
+    provider["registry.terraform.io/hashicorp/random"] (close) - *terraform.graphNodeCloseProvider
+    var.aws_region - *terraform.NodeRootVariable
+  var.aws_region - *terraform.NodeRootVariable
+  ------
+2022-12-30T20:19:49.063+0800 [DEBUG] Starting graph walk: walkValidate
+2022-12-30T20:19:49.063+0800 [TRACE] vertex "var.aws_region": starting visit (*terraform.NodeRootVariable)
+2022-12-30T20:19:49.063+0800 [TRACE] NodeRootVariable: evaluating var.aws_region
+2022-12-30T20:19:49.063+0800 [TRACE] prepareFinalInputVariableValue: preparing var.aws_region
+2022-12-30T20:19:49.063+0800 [TRACE] prepareFinalInputVariableValue: var.aws_region has a default value
+2022-12-30T20:19:49.063+0800 [TRACE] BuiltinEvalContext: Storing final value for variable var.aws_region
+2022-12-30T20:19:49.063+0800 [TRACE] evalVariableValidations: no validation rules declared for var.aws_region, so skipping
+2022-12-30T20:19:49.063+0800 [TRACE] vertex "var.aws_region": visit complete
+2022-12-30T20:19:49.063+0800 [TRACE] vertex "provider[\"registry.terraform.io/hashicorp/aws\"]": starting visit (*terraform.NodeApplyableProvider)
+2022-12-30T20:19:49.063+0800 [TRACE] vertex "provider[\"registry.terraform.io/hashicorp/random\"]": starting visit (*terraform.NodeApplyableProvider)
+2022-12-30T20:19:49.063+0800 [DEBUG] created provider logger: level=trace
+2022-12-30T20:19:49.063+0800 [INFO]  provider: configuring client automatic mTLS
+2022-12-30T20:19:49.067+0800 [DEBUG] provider: starting plugin: path=.terraform/providers/registry.terraform.io/hashicorp/aws/2.13.0/linux_amd64/terraform-provider-aws_v2.13.0_x4 args=[.terraform/providers/registry.terraform.io/hashicorp/aws/2.13.0/linux_amd64/terraform-provider-aws_v2.13.0_x4]
+2022-12-30T20:19:49.067+0800 [DEBUG] provider: plugin started: path=.terraform/providers/registry.terraform.io/hashicorp/aws/2.13.0/linux_amd64/terraform-provider-aws_v2.13.0_x4 pid=232223
+2022-12-30T20:19:49.067+0800 [DEBUG] provider: waiting for RPC address: path=.terraform/providers/registry.terraform.io/hashicorp/aws/2.13.0/linux_amd64/terraform-provider-aws_v2.13.0_x4
+2022-12-30T20:19:49.078+0800 [INFO]  provider.terraform-provider-aws_v2.13.0_x4: configuring server automatic mTLS: timestamp=2022-12-30T20:19:49.077+0800
+2022-12-30T20:19:49.100+0800 [DEBUG] provider: using plugin: version=5
+2022-12-30T20:19:49.100+0800 [DEBUG] provider.terraform-provider-aws_v2.13.0_x4: plugin address: address=/tmp/plugin622386344 network=unix timestamp=2022-12-30T20:19:49.099+0800
+2022-12-30T20:19:49.131+0800 [TRACE] BuiltinEvalContext: Initialized "provider[\"registry.terraform.io/hashicorp/aws\"]" provider for provider["registry.terraform.io/hashicorp/aws"]
+2022-12-30T20:19:49.131+0800 [TRACE] NodeApplyableProvider: validating configuration for provider["registry.terraform.io/hashicorp/aws"]
+2022-12-30T20:19:49.131+0800 [TRACE] buildProviderConfig for provider["registry.terraform.io/hashicorp/aws"]: using explicit config only
+2022-12-30T20:19:49.131+0800 [TRACE] provider.stdio: waiting for stdio data
+2022-12-30T20:19:49.131+0800 [TRACE] GRPCProvider: GetProviderSchema
+2022-12-30T20:19:49.131+0800 [DEBUG] created provider logger: level=trace
+2022-12-30T20:19:49.131+0800 [INFO]  provider: configuring client automatic mTLS
+2022-12-30T20:19:49.132+0800 [DEBUG] provider.stdio: received EOF, stopping recv loop: err="rpc error: code = Unimplemented desc = unknown service plugin.GRPCStdio"
+2022-12-30T20:19:49.139+0800 [DEBUG] provider: starting plugin: path=.terraform/providers/registry.terraform.io/hashicorp/random/3.4.3/linux_amd64/terraform-provider-random_v3.4.3_x5 args=[.terraform/providers/registry.terraform.io/hashicorp/random/3.4.3/linux_amd64/terraform-provider-random_v3.4.3_x5]
+2022-12-30T20:19:49.139+0800 [DEBUG] provider: plugin started: path=.terraform/providers/registry.terraform.io/hashicorp/random/3.4.3/linux_amd64/terraform-provider-random_v3.4.3_x5 pid=232242
+2022-12-30T20:19:49.139+0800 [DEBUG] provider: waiting for RPC address: path=.terraform/providers/registry.terraform.io/hashicorp/random/3.4.3/linux_amd64/terraform-provider-random_v3.4.3_x5
+2022-12-30T20:19:49.143+0800 [INFO]  provider.terraform-provider-random_v3.4.3_x5: configuring server automatic mTLS: timestamp=2022-12-30T20:19:49.143+0800
+2022-12-30T20:19:49.145+0800 [DEBUG] No provider meta schema returned
+2022-12-30T20:19:49.155+0800 [DEBUG] provider: using plugin: version=5
+2022-12-30T20:19:49.155+0800 [DEBUG] provider.terraform-provider-random_v3.4.3_x5: plugin address: address=/tmp/plugin1430761462 network=unix timestamp=2022-12-30T20:19:49.155+0800
+2022-12-30T20:19:49.160+0800 [TRACE] GRPCProvider: ValidateProviderConfig
+2022-12-30T20:19:49.172+0800 [TRACE] BuiltinEvalContext: Initialized "provider[\"registry.terraform.io/hashicorp/random\"]" provider for provider["registry.terraform.io/hashicorp/random"]
+2022-12-30T20:19:49.172+0800 [TRACE] NodeApplyableProvider: validating configuration for provider["registry.terraform.io/hashicorp/random"]
+2022-12-30T20:19:49.172+0800 [TRACE] buildProviderConfig for provider["registry.terraform.io/hashicorp/random"]: using explicit config only
+2022-12-30T20:19:49.172+0800 [TRACE] vertex "provider[\"registry.terraform.io/hashicorp/random\"]": visit complete
+2022-12-30T20:19:49.172+0800 [TRACE] provider.stdio: waiting for stdio data
+2022-12-30T20:19:49.172+0800 [TRACE] vertex "random_pet.name": starting visit (*terraform.NodeValidatableResource)
+2022-12-30T20:19:49.172+0800 [TRACE] GRPCProvider: ValidateResourceConfig
+2022-12-30T20:19:49.172+0800 [TRACE] GRPCProvider: GetProviderSchema
+2022-12-30T20:19:49.173+0800 [TRACE] provider.terraform-provider-random_v3.4.3_x5: Received request: tf_proto_version=5.3 @module=sdk.proto tf_provider_addr=registry.terraform.io/hashicorp/random tf_req_id=688b28b6-17e0-dac8-207f-0a0cc7bde30a tf_rpc=GetProviderSchema @caller=github.com/hashicorp/terraform-plugin-go@v0.14.0/tfprotov5/tf5server/server.go:491 timestamp=2022-12-30T20:19:49.173+0800
+2022-12-30T20:19:49.173+0800 [TRACE] provider.terraform-provider-random_v3.4.3_x5: Sending request downstream: @caller=github.com/hashicorp/terraform-plugin-go@v0.14.0/tfprotov5/internal/tf5serverlogging/downstream_request.go:17 @module=sdk.proto tf_proto_version=5.3 tf_provider_addr=registry.terraform.io/hashicorp/random tf_rpc=GetProviderSchema tf_req_id=688b28b6-17e0-dac8-207f-0a0cc7bde30a timestamp=2022-12-30T20:19:49.173+0800
+2022-12-30T20:19:49.173+0800 [TRACE] provider.terraform-provider-random_v3.4.3_x5: Checking ProviderSchema lock: tf_req_id=688b28b6-17e0-dac8-207f-0a0cc7bde30a tf_rpc=GetProviderSchema @caller=github.com/hashicorp/terraform-plugin-framework@v0.11.1/internal/fwserver/server.go:203 @module=sdk.framework tf_provider_addr=registry.terraform.io/hashicorp/random timestamp=2022-12-30T20:19:49.173+0800
+2022-12-30T20:19:49.173+0800 [DEBUG] provider.terraform-provider-random_v3.4.3_x5: Calling provider defined Provider GetSchema: tf_provider_addr=registry.terraform.io/hashicorp/random tf_req_id=688b28b6-17e0-dac8-207f-0a0cc7bde30a tf_rpc=GetProviderSchema @caller=github.com/hashicorp/terraform-plugin-framework@v0.11.1/internal/fwserver/server.go:211 @module=sdk.framework timestamp=2022-12-30T20:19:49.173+0800
+2022-12-30T20:19:49.173+0800 [DEBUG] provider.terraform-provider-random_v3.4.3_x5: Called provider defined Provider GetSchema: @module=sdk.framework tf_provider_addr=registry.terraform.io/hashicorp/random tf_req_id=688b28b6-17e0-dac8-207f-0a0cc7bde30a tf_rpc=GetProviderSchema @caller=github.com/hashicorp/terraform-plugin-framework@v0.11.1/internal/fwserver/server.go:213 timestamp=2022-12-30T20:19:49.173+0800
+2022-12-30T20:19:49.173+0800 [TRACE] provider.terraform-provider-random_v3.4.3_x5: Checking ResourceSchemas lock: tf_provider_addr=registry.terraform.io/hashicorp/random tf_req_id=688b28b6-17e0-dac8-207f-0a0cc7bde30a tf_rpc=GetProviderSchema @caller=github.com/hashicorp/terraform-plugin-framework@v0.11.1/internal/fwserver/server.go:273 @module=sdk.framework timestamp=2022-12-30T20:19:49.173+0800
+2022-12-30T20:19:49.173+0800 [TRACE] provider.terraform-provider-random_v3.4.3_x5: Checking ResourceTypes lock: @module=sdk.framework tf_provider_addr=registry.terraform.io/hashicorp/random tf_req_id=688b28b6-17e0-dac8-207f-0a0cc7bde30a tf_rpc=GetProviderSchema @caller=github.com/hashicorp/terraform-plugin-framework@v0.11.1/internal/fwserver/server.go:330 timestamp=2022-12-30T20:19:49.173+0800
+2022-12-30T20:19:49.173+0800 [DEBUG] provider.terraform-provider-random_v3.4.3_x5: Calling provider defined Provider GetResources: @module=sdk.framework tf_provider_addr=registry.terraform.io/hashicorp/random tf_req_id=688b28b6-17e0-dac8-207f-0a0cc7bde30a tf_rpc=GetProviderSchema @caller=github.com/hashicorp/terraform-plugin-framework@v0.11.1/internal/fwserver/server.go:338 timestamp=2022-12-30T20:19:49.173+0800
+2022-12-30T20:19:49.173+0800 [DEBUG] provider.terraform-provider-random_v3.4.3_x5: Called provider defined Provider GetResources: @module=sdk.framework tf_provider_addr=registry.terraform.io/hashicorp/random tf_req_id=688b28b6-17e0-dac8-207f-0a0cc7bde30a tf_rpc=GetProviderSchema @caller=github.com/hashicorp/terraform-plugin-framework@v0.11.1/internal/fwserver/server.go:340 timestamp=2022-12-30T20:19:49.173+0800
+2022-12-30T20:19:49.173+0800 [TRACE] provider.terraform-provider-random_v3.4.3_x5: Found resource type: tf_req_id=688b28b6-17e0-dac8-207f-0a0cc7bde30a tf_resource_type=random_password tf_rpc=GetProviderSchema @caller=github.com/hashicorp/terraform-plugin-framework@v0.11.1/internal/fwserver/server.go:291 @module=sdk.framework tf_provider_addr=registry.terraform.io/hashicorp/random timestamp=2022-12-30T20:19:49.173+0800
+2022-12-30T20:19:49.173+0800 [DEBUG] provider.terraform-provider-random_v3.4.3_x5: Calling provider defined ResourceType GetSchema: tf_provider_addr=registry.terraform.io/hashicorp/random tf_resource_type=random_password @caller=github.com/hashicorp/terraform-plugin-framework@v0.11.1/internal/fwserver/server.go:293 @module=sdk.framework tf_req_id=688b28b6-17e0-dac8-207f-0a0cc7bde30a tf_rpc=GetProviderSchema timestamp=2022-12-30T20:19:49.173+0800
+2022-12-30T20:19:49.173+0800 [DEBUG] provider.terraform-provider-random_v3.4.3_x5: Called provider defined ResourceType GetSchema: tf_req_id=688b28b6-17e0-dac8-207f-0a0cc7bde30a tf_resource_type=random_password tf_provider_addr=registry.terraform.io/hashicorp/random tf_rpc=GetProviderSchema @caller=github.com/hashicorp/terraform-plugin-framework@v0.11.1/internal/fwserver/server.go:295 @module=sdk.framework timestamp=2022-12-30T20:19:49.173+0800
+2022-12-30T20:19:49.173+0800 [TRACE] provider.terraform-provider-random_v3.4.3_x5: Found resource type: tf_provider_addr=registry.terraform.io/hashicorp/random tf_req_id=688b28b6-17e0-dac8-207f-0a0cc7bde30a @module=sdk.framework tf_resource_type=random_pet tf_rpc=GetProviderSchema @caller=github.com/hashicorp/terraform-plugin-framework@v0.11.1/internal/fwserver/server.go:291 timestamp=2022-12-30T20:19:49.173+0800
+2022-12-30T20:19:49.173+0800 [DEBUG] provider.terraform-provider-random_v3.4.3_x5: Calling provider defined ResourceType GetSchema: tf_provider_addr=registry.terraform.io/hashicorp/random tf_rpc=GetProviderSchema @caller=github.com/hashicorp/terraform-plugin-framework@v0.11.1/internal/fwserver/server.go:293 @module=sdk.framework tf_req_id=688b28b6-17e0-dac8-207f-0a0cc7bde30a tf_resource_type=random_pet timestamp=2022-12-30T20:19:49.173+0800
+2022-12-30T20:19:49.173+0800 [DEBUG] provider.terraform-provider-random_v3.4.3_x5: Called provider defined ResourceType GetSchema: tf_req_id=688b28b6-17e0-dac8-207f-0a0cc7bde30a tf_resource_type=random_pet tf_rpc=GetProviderSchema tf_provider_addr=registry.terraform.io/hashicorp/random @module=sdk.framework @caller=github.com/hashicorp/terraform-plugin-framework@v0.11.1/internal/fwserver/server.go:295 timestamp=2022-12-30T20:19:49.173+0800
+2022-12-30T20:19:49.173+0800 [TRACE] provider.terraform-provider-random_v3.4.3_x5: Found resource type: tf_req_id=688b28b6-17e0-dac8-207f-0a0cc7bde30a tf_resource_type=random_shuffle @caller=github.com/hashicorp/terraform-plugin-framework@v0.11.1/internal/fwserver/server.go:291 @module=sdk.framework tf_provider_addr=registry.terraform.io/hashicorp/random tf_rpc=GetProviderSchema timestamp=2022-12-30T20:19:49.173+0800
+2022-12-30T20:19:49.173+0800 [DEBUG] provider.terraform-provider-random_v3.4.3_x5: Calling provider defined ResourceType GetSchema: tf_provider_addr=registry.terraform.io/hashicorp/random tf_resource_type=random_shuffle tf_rpc=GetProviderSchema @module=sdk.framework tf_req_id=688b28b6-17e0-dac8-207f-0a0cc7bde30a @caller=github.com/hashicorp/terraform-plugin-framework@v0.11.1/internal/fwserver/server.go:293 timestamp=2022-12-30T20:19:49.173+0800
+2022-12-30T20:19:49.174+0800 [DEBUG] provider.terraform-provider-random_v3.4.3_x5: Called provider defined ResourceType GetSchema: tf_rpc=GetProviderSchema tf_resource_type=random_shuffle @module=sdk.framework tf_provider_addr=registry.terraform.io/hashicorp/random tf_req_id=688b28b6-17e0-dac8-207f-0a0cc7bde30a @caller=github.com/hashicorp/terraform-plugin-framework@v0.11.1/internal/fwserver/server.go:295 timestamp=2022-12-30T20:19:49.173+0800
+2022-12-30T20:19:49.174+0800 [TRACE] provider.terraform-provider-random_v3.4.3_x5: Found resource type: @caller=github.com/hashicorp/terraform-plugin-framework@v0.11.1/internal/fwserver/server.go:291 @module=sdk.framework tf_provider_addr=registry.terraform.io/hashicorp/random tf_resource_type=random_string tf_rpc=GetProviderSchema tf_req_id=688b28b6-17e0-dac8-207f-0a0cc7bde30a timestamp=2022-12-30T20:19:49.173+0800
+2022-12-30T20:19:49.174+0800 [DEBUG] provider.terraform-provider-random_v3.4.3_x5: Calling provider defined ResourceType GetSchema: tf_req_id=688b28b6-17e0-dac8-207f-0a0cc7bde30a tf_resource_type=random_string @caller=github.com/hashicorp/terraform-plugin-framework@v0.11.1/internal/fwserver/server.go:293 @module=sdk.framework tf_provider_addr=registry.terraform.io/hashicorp/random tf_rpc=GetProviderSchema timestamp=2022-12-30T20:19:49.173+0800
+2022-12-30T20:19:49.174+0800 [DEBUG] provider.terraform-provider-random_v3.4.3_x5: Called provider defined ResourceType GetSchema: @module=sdk.framework tf_provider_addr=registry.terraform.io/hashicorp/random tf_req_id=688b28b6-17e0-dac8-207f-0a0cc7bde30a @caller=github.com/hashicorp/terraform-plugin-framework@v0.11.1/internal/fwserver/server.go:295 tf_resource_type=random_string tf_rpc=GetProviderSchema timestamp=2022-12-30T20:19:49.173+0800
+2022-12-30T20:19:49.174+0800 [TRACE] provider.terraform-provider-random_v3.4.3_x5: Found resource type: @caller=github.com/hashicorp/terraform-plugin-framework@v0.11.1/internal/fwserver/server.go:291 tf_provider_addr=registry.terraform.io/hashicorp/random tf_rpc=GetProviderSchema @module=sdk.framework tf_req_id=688b28b6-17e0-dac8-207f-0a0cc7bde30a tf_resource_type=random_uuid timestamp=2022-12-30T20:19:49.173+0800
+2022-12-30T20:19:49.174+0800 [DEBUG] provider.terraform-provider-random_v3.4.3_x5: Calling provider defined ResourceType GetSchema: @module=sdk.framework tf_provider_addr=registry.terraform.io/hashicorp/random tf_resource_type=random_uuid @caller=github.com/hashicorp/terraform-plugin-framework@v0.11.1/internal/fwserver/server.go:293 tf_req_id=688b28b6-17e0-dac8-207f-0a0cc7bde30a tf_rpc=GetProviderSchema timestamp=2022-12-30T20:19:49.173+0800
+2022-12-30T20:19:49.174+0800 [DEBUG] provider.terraform-provider-random_v3.4.3_x5: Called provider defined ResourceType GetSchema: @caller=github.com/hashicorp/terraform-plugin-framework@v0.11.1/internal/fwserver/server.go:295 tf_provider_addr=registry.terraform.io/hashicorp/random tf_resource_type=random_uuid tf_rpc=GetProviderSchema @module=sdk.framework tf_req_id=688b28b6-17e0-dac8-207f-0a0cc7bde30a timestamp=2022-12-30T20:19:49.173+0800
+2022-12-30T20:19:49.174+0800 [TRACE] provider.terraform-provider-random_v3.4.3_x5: Found resource type: tf_req_id=688b28b6-17e0-dac8-207f-0a0cc7bde30a tf_rpc=GetProviderSchema @caller=github.com/hashicorp/terraform-plugin-framework@v0.11.1/internal/fwserver/server.go:291 @module=sdk.framework tf_provider_addr=registry.terraform.io/hashicorp/random tf_resource_type=random_id timestamp=2022-12-30T20:19:49.173+0800
+2022-12-30T20:19:49.174+0800 [DEBUG] provider.terraform-provider-random_v3.4.3_x5: Calling provider defined ResourceType GetSchema: @caller=github.com/hashicorp/terraform-plugin-framework@v0.11.1/internal/fwserver/server.go:293 tf_req_id=688b28b6-17e0-dac8-207f-0a0cc7bde30a tf_rpc=GetProviderSchema @module=sdk.framework tf_provider_addr=registry.terraform.io/hashicorp/random tf_resource_type=random_id timestamp=2022-12-30T20:19:49.173+0800
+2022-12-30T20:19:49.174+0800 [DEBUG] provider.terraform-provider-random_v3.4.3_x5: Called provider defined ResourceType GetSchema: tf_req_id=688b28b6-17e0-dac8-207f-0a0cc7bde30a @caller=github.com/hashicorp/terraform-plugin-framework@v0.11.1/internal/fwserver/server.go:295 tf_resource_type=random_id tf_rpc=GetProviderSchema @module=sdk.framework tf_provider_addr=registry.terraform.io/hashicorp/random timestamp=2022-12-30T20:19:49.173+0800
+2022-12-30T20:19:49.174+0800 [TRACE] provider.terraform-provider-random_v3.4.3_x5: Found resource type: @caller=github.com/hashicorp/terraform-plugin-framework@v0.11.1/internal/fwserver/server.go:291 tf_rpc=GetProviderSchema tf_req_id=688b28b6-17e0-dac8-207f-0a0cc7bde30a tf_resource_type=random_integer @module=sdk.framework tf_provider_addr=registry.terraform.io/hashicorp/random timestamp=2022-12-30T20:19:49.173+0800
+2022-12-30T20:19:49.174+0800 [DEBUG] provider.terraform-provider-random_v3.4.3_x5: Calling provider defined ResourceType GetSchema: @module=sdk.framework tf_provider_addr=registry.terraform.io/hashicorp/random tf_req_id=688b28b6-17e0-dac8-207f-0a0cc7bde30a tf_resource_type=random_integer tf_rpc=GetProviderSchema @caller=github.com/hashicorp/terraform-plugin-framework@v0.11.1/internal/fwserver/server.go:293 timestamp=2022-12-30T20:19:49.173+0800
+2022-12-30T20:19:49.174+0800 [DEBUG] provider.terraform-provider-random_v3.4.3_x5: Called provider defined ResourceType GetSchema: @module=sdk.framework tf_provider_addr=registry.terraform.io/hashicorp/random tf_resource_type=random_integer tf_rpc=GetProviderSchema @caller=github.com/hashicorp/terraform-plugin-framework@v0.11.1/internal/fwserver/server.go:295 tf_req_id=688b28b6-17e0-dac8-207f-0a0cc7bde30a timestamp=2022-12-30T20:19:49.173+0800
+2022-12-30T20:19:49.174+0800 [TRACE] provider.terraform-provider-random_v3.4.3_x5: Checking DataSourceSchemas lock: tf_req_id=688b28b6-17e0-dac8-207f-0a0cc7bde30a tf_rpc=GetProviderSchema @caller=github.com/hashicorp/terraform-plugin-framework@v0.11.1/internal/fwserver/server.go:128 @module=sdk.framework tf_provider_addr=registry.terraform.io/hashicorp/random timestamp=2022-12-30T20:19:49.173+0800
+2022-12-30T20:19:49.174+0800 [TRACE] provider.terraform-provider-random_v3.4.3_x5: Checking DataSourceTypes lock: tf_rpc=GetProviderSchema @caller=github.com/hashicorp/terraform-plugin-framework@v0.11.1/internal/fwserver/server.go:185 @module=sdk.framework tf_provider_addr=registry.terraform.io/hashicorp/random tf_req_id=688b28b6-17e0-dac8-207f-0a0cc7bde30a timestamp=2022-12-30T20:19:49.173+0800
+2022-12-30T20:19:49.174+0800 [DEBUG] provider.terraform-provider-random_v3.4.3_x5: Calling provider defined Provider GetDataSources: @module=sdk.framework tf_provider_addr=registry.terraform.io/hashicorp/random tf_req_id=688b28b6-17e0-dac8-207f-0a0cc7bde30a tf_rpc=GetProviderSchema @caller=github.com/hashicorp/terraform-plugin-framework@v0.11.1/internal/fwserver/server.go:193 timestamp=2022-12-30T20:19:49.173+0800
+2022-12-30T20:19:49.174+0800 [DEBUG] provider.terraform-provider-random_v3.4.3_x5: Called provider defined Provider GetDataSources: tf_rpc=GetProviderSchema @caller=github.com/hashicorp/terraform-plugin-framework@v0.11.1/internal/fwserver/server.go:195 @module=sdk.framework tf_provider_addr=registry.terraform.io/hashicorp/random tf_req_id=688b28b6-17e0-dac8-207f-0a0cc7bde30a timestamp=2022-12-30T20:19:49.173+0800
+2022-12-30T20:19:49.174+0800 [TRACE] provider.terraform-provider-random_v3.4.3_x5: Received downstream response: tf_provider_addr=registry.terraform.io/hashicorp/random @module=sdk.proto tf_proto_version=5.3 diagnostic_error_count=0 diagnostic_warning_count=0 tf_req_duration_ms=0 tf_req_id=688b28b6-17e0-dac8-207f-0a0cc7bde30a tf_rpc=GetProviderSchema @caller=github.com/hashicorp/terraform-plugin-go@v0.14.0/tfprotov5/internal/tf5serverlogging/downstream_request.go:37 timestamp=2022-12-30T20:19:49.173+0800
+2022-12-30T20:19:49.174+0800 [TRACE] provider.terraform-provider-random_v3.4.3_x5: Served request: @caller=github.com/hashicorp/terraform-plugin-go@v0.14.0/tfprotov5/tf5server/server.go:510 @module=sdk.proto tf_proto_version=5.3 tf_provider_addr=registry.terraform.io/hashicorp/random tf_req_id=688b28b6-17e0-dac8-207f-0a0cc7bde30a tf_rpc=GetProviderSchema timestamp=2022-12-30T20:19:49.174+0800
+2022-12-30T20:19:49.174+0800 [DEBUG] No provider meta schema returned
+2022-12-30T20:19:49.175+0800 [TRACE] provider.terraform-provider-random_v3.4.3_x5: Received request: @module=sdk.proto tf_proto_version=5.3 tf_resource_type=random_pet @caller=github.com/hashicorp/terraform-plugin-go@v0.14.0/tfprotov5/tf5server/server.go:679 tf_provider_addr=registry.terraform.io/hashicorp/random tf_req_id=91d0f5f5-618d-7276-2584-64f065ad1f86 tf_rpc=ValidateResourceTypeConfig timestamp=2022-12-30T20:19:49.174+0800
+2022-12-30T20:19:49.175+0800 [TRACE] provider.terraform-provider-random_v3.4.3_x5: Skipping protocol data file writing because no data directory is set. Use the TF_LOG_SDK_PROTO_DATA_DIR environment variable to enable this functionality.: tf_req_id=91d0f5f5-618d-7276-2584-64f065ad1f86 tf_resource_type=random_pet tf_rpc=ValidateResourceTypeConfig tf_proto_version=5.3 tf_provider_addr=registry.terraform.io/hashicorp/random @caller=github.com/hashicorp/terraform-plugin-go@v0.14.0/internal/logging/protocol_data.go:38 @module=sdk.proto timestamp=2022-12-30T20:19:49.174+0800
+2022-12-30T20:19:49.175+0800 [TRACE] provider.terraform-provider-random_v3.4.3_x5: Sending request downstream: tf_provider_addr=registry.terraform.io/hashicorp/random tf_resource_type=random_pet @caller=github.com/hashicorp/terraform-plugin-go@v0.14.0/tfprotov5/internal/tf5serverlogging/downstream_request.go:17 @module=sdk.proto tf_proto_version=5.3 tf_req_id=91d0f5f5-618d-7276-2584-64f065ad1f86 tf_rpc=ValidateResourceTypeConfig timestamp=2022-12-30T20:19:49.175+0800
+2022-12-30T20:19:49.175+0800 [TRACE] provider.terraform-provider-random_v3.4.3_x5: Checking ResourceTypes lock: @module=sdk.framework tf_rpc=ValidateResourceTypeConfig @caller=github.com/hashicorp/terraform-plugin-framework@v0.11.1/internal/fwserver/server.go:330 tf_req_id=91d0f5f5-618d-7276-2584-64f065ad1f86 tf_resource_type=random_pet tf_provider_addr=registry.terraform.io/hashicorp/random timestamp=2022-12-30T20:19:49.175+0800
+2022-12-30T20:19:49.175+0800 [TRACE] provider.terraform-provider-random_v3.4.3_x5: Checking ResourceSchemas lock: @caller=github.com/hashicorp/terraform-plugin-framework@v0.11.1/internal/fwserver/server.go:273 @module=sdk.framework tf_resource_type=random_pet tf_rpc=ValidateResourceTypeConfig tf_provider_addr=registry.terraform.io/hashicorp/random tf_req_id=91d0f5f5-618d-7276-2584-64f065ad1f86 timestamp=2022-12-30T20:19:49.175+0800
+2022-12-30T20:19:49.175+0800 [DEBUG] provider.terraform-provider-random_v3.4.3_x5: Calling provider defined ResourceType NewResource: tf_resource_type=random_pet tf_rpc=ValidateResourceTypeConfig @module=sdk.framework tf_provider_addr=registry.terraform.io/hashicorp/random tf_req_id=91d0f5f5-618d-7276-2584-64f065ad1f86 @caller=github.com/hashicorp/terraform-plugin-framework@v0.11.1/internal/fwserver/server_validateresourceconfig.go:33 timestamp=2022-12-30T20:19:49.175+0800
+2022-12-30T20:19:49.175+0800 [DEBUG] provider.terraform-provider-random_v3.4.3_x5: Called provider defined ResourceType NewResource: tf_rpc=ValidateResourceTypeConfig @module=sdk.framework tf_req_id=91d0f5f5-618d-7276-2584-64f065ad1f86 tf_resource_type=random_pet @caller=github.com/hashicorp/terraform-plugin-framework@v0.11.1/internal/fwserver/server_validateresourceconfig.go:35 tf_provider_addr=registry.terraform.io/hashicorp/random timestamp=2022-12-30T20:19:49.175+0800
+2022-12-30T20:19:49.175+0800 [TRACE] provider.terraform-provider-random_v3.4.3_x5: Type implements TypeWithValidate: tf_req_id=91d0f5f5-618d-7276-2584-64f065ad1f86 tf_rpc=ValidateResourceTypeConfig @module=sdk.framework tf_attribute_path=length tf_provider_addr=registry.terraform.io/hashicorp/random tf_resource_type=random_pet @caller=github.com/hashicorp/terraform-plugin-framework@v0.11.1/internal/fwserver/config.go:74 timestamp=2022-12-30T20:19:49.175+0800
+2022-12-30T20:19:49.175+0800 [DEBUG] provider.terraform-provider-random_v3.4.3_x5: Calling provider defined Type Validate: @module=sdk.framework tf_attribute_path=length tf_req_id=91d0f5f5-618d-7276-2584-64f065ad1f86 tf_resource_type=random_pet @caller=github.com/hashicorp/terraform-plugin-framework@v0.11.1/internal/fwserver/config.go:75 tf_provider_addr=registry.terraform.io/hashicorp/random tf_rpc=ValidateResourceTypeConfig timestamp=2022-12-30T20:19:49.175+0800
+2022-12-30T20:19:49.175+0800 [DEBUG] provider.terraform-provider-random_v3.4.3_x5: Called provider defined Type Validate: tf_resource_type=random_pet tf_rpc=ValidateResourceTypeConfig tf_req_id=91d0f5f5-618d-7276-2584-64f065ad1f86 @caller=github.com/hashicorp/terraform-plugin-framework@v0.11.1/internal/fwserver/config.go:77 @module=sdk.framework tf_attribute_path=length tf_provider_addr=registry.terraform.io/hashicorp/random timestamp=2022-12-30T20:19:49.175+0800
+2022-12-30T20:19:49.175+0800 [TRACE] provider.terraform-provider-random_v3.4.3_x5: Type implements TypeWithValidate: @module=sdk.framework tf_provider_addr=registry.terraform.io/hashicorp/random tf_resource_type=random_pet @caller=github.com/hashicorp/terraform-plugin-framework@v0.11.1/internal/fwserver/config.go:74 tf_req_id=91d0f5f5-618d-7276-2584-64f065ad1f86 tf_rpc=ValidateResourceTypeConfig tf_attribute_path=prefix timestamp=2022-12-30T20:19:49.175+0800
+2022-12-30T20:19:49.175+0800 [DEBUG] provider.terraform-provider-random_v3.4.3_x5: Calling provider defined Type Validate: tf_attribute_path=prefix tf_resource_type=random_pet @caller=github.com/hashicorp/terraform-plugin-framework@v0.11.1/internal/fwserver/config.go:75 @module=sdk.framework tf_req_id=91d0f5f5-618d-7276-2584-64f065ad1f86 tf_rpc=ValidateResourceTypeConfig tf_provider_addr=registry.terraform.io/hashicorp/random timestamp=2022-12-30T20:19:49.175+0800
+2022-12-30T20:19:49.175+0800 [DEBUG] provider.terraform-provider-random_v3.4.3_x5: Called provider defined Type Validate: tf_provider_addr=registry.terraform.io/hashicorp/random tf_resource_type=random_pet tf_rpc=ValidateResourceTypeConfig @caller=github.com/hashicorp/terraform-plugin-framework@v0.11.1/internal/fwserver/config.go:77 @module=sdk.framework tf_attribute_path=prefix tf_req_id=91d0f5f5-618d-7276-2584-64f065ad1f86 timestamp=2022-12-30T20:19:49.175+0800
+2022-12-30T20:19:49.175+0800 [TRACE] provider.terraform-provider-random_v3.4.3_x5: Type implements TypeWithValidate: tf_provider_addr=registry.terraform.io/hashicorp/random tf_req_id=91d0f5f5-618d-7276-2584-64f065ad1f86 tf_rpc=ValidateResourceTypeConfig @caller=github.com/hashicorp/terraform-plugin-framework@v0.11.1/internal/fwserver/config.go:74 @module=sdk.framework tf_attribute_path=separator tf_resource_type=random_pet timestamp=2022-12-30T20:19:49.175+0800
+2022-12-30T20:19:49.175+0800 [DEBUG] provider.terraform-provider-random_v3.4.3_x5: Calling provider defined Type Validate: @caller=github.com/hashicorp/terraform-plugin-framework@v0.11.1/internal/fwserver/config.go:75 @module=sdk.framework tf_attribute_path=separator tf_provider_addr=registry.terraform.io/hashicorp/random tf_req_id=91d0f5f5-618d-7276-2584-64f065ad1f86 tf_resource_type=random_pet tf_rpc=ValidateResourceTypeConfig timestamp=2022-12-30T20:19:49.175+0800
+2022-12-30T20:19:49.175+0800 [DEBUG] provider.terraform-provider-random_v3.4.3_x5: Called provider defined Type Validate: @caller=github.com/hashicorp/terraform-plugin-framework@v0.11.1/internal/fwserver/config.go:77 @module=sdk.framework tf_attribute_path=separator tf_provider_addr=registry.terraform.io/hashicorp/random tf_req_id=91d0f5f5-618d-7276-2584-64f065ad1f86 tf_resource_type=random_pet tf_rpc=ValidateResourceTypeConfig timestamp=2022-12-30T20:19:49.175+0800
+2022-12-30T20:19:49.175+0800 [TRACE] provider.terraform-provider-random_v3.4.3_x5: Type implements TypeWithValidate: @caller=github.com/hashicorp/terraform-plugin-framework@v0.11.1/internal/fwserver/config.go:74 tf_attribute_path=id tf_rpc=ValidateResourceTypeConfig @module=sdk.framework tf_provider_addr=registry.terraform.io/hashicorp/random tf_req_id=91d0f5f5-618d-7276-2584-64f065ad1f86 tf_resource_type=random_pet timestamp=2022-12-30T20:19:49.175+0800
+2022-12-30T20:19:49.175+0800 [DEBUG] provider.terraform-provider-random_v3.4.3_x5: Calling provider defined Type Validate: tf_attribute_path=id tf_req_id=91d0f5f5-618d-7276-2584-64f065ad1f86 tf_resource_type=random_pet tf_rpc=ValidateResourceTypeConfig @caller=github.com/hashicorp/terraform-plugin-framework@v0.11.1/internal/fwserver/config.go:75 @module=sdk.framework tf_provider_addr=registry.terraform.io/hashicorp/random timestamp=2022-12-30T20:19:49.175+0800
+2022-12-30T20:19:49.175+0800 [DEBUG] provider.terraform-provider-random_v3.4.3_x5: Called provider defined Type Validate: tf_req_id=91d0f5f5-618d-7276-2584-64f065ad1f86 tf_resource_type=random_pet tf_attribute_path=id tf_provider_addr=registry.terraform.io/hashicorp/random @module=sdk.framework tf_rpc=ValidateResourceTypeConfig @caller=github.com/hashicorp/terraform-plugin-framework@v0.11.1/internal/fwserver/config.go:77 timestamp=2022-12-30T20:19:49.175+0800
+2022-12-30T20:19:49.175+0800 [TRACE] provider.terraform-provider-random_v3.4.3_x5: Received downstream response: tf_rpc=ValidateResourceTypeConfig @caller=github.com/hashicorp/terraform-plugin-go@v0.14.0/tfprotov5/internal/tf5serverlogging/downstream_request.go:37 diagnostic_error_count=0 diagnostic_warning_count=0 tf_proto_version=5.3 tf_provider_addr=registry.terraform.io/hashicorp/random tf_req_duration_ms=0 tf_req_id=91d0f5f5-618d-7276-2584-64f065ad1f86 @module=sdk.proto tf_resource_type=random_pet timestamp=2022-12-30T20:19:49.175+0800
+2022-12-30T20:19:49.175+0800 [TRACE] provider.terraform-provider-random_v3.4.3_x5: Served request: tf_proto_version=5.3 tf_req_id=91d0f5f5-618d-7276-2584-64f065ad1f86 tf_rpc=ValidateResourceTypeConfig @caller=github.com/hashicorp/terraform-plugin-go@v0.14.0/tfprotov5/tf5server/server.go:699 tf_resource_type=random_pet @module=sdk.proto tf_provider_addr=registry.terraform.io/hashicorp/random timestamp=2022-12-30T20:19:49.175+0800
+2022-12-30T20:19:49.175+0800 [TRACE] vertex "random_pet.name": visit complete
+2022-12-30T20:19:49.175+0800 [TRACE] vertex "provider[\"registry.terraform.io/hashicorp/random\"] (close)": starting visit (*terraform.graphNodeCloseProvider)
+2022-12-30T20:19:49.175+0800 [TRACE] GRPCProvider: Close
+2022-12-30T20:19:49.175+0800 [DEBUG] provider.stdio: received EOF, stopping recv loop: err="rpc error: code = Unavailable desc = error reading from server: EOF"
+2022-12-30T20:19:49.176+0800 [DEBUG] provider: plugin process exited: path=.terraform/providers/registry.terraform.io/hashicorp/random/3.4.3/linux_amd64/terraform-provider-random_v3.4.3_x5 pid=232242
+2022-12-30T20:19:49.176+0800 [DEBUG] provider: plugin exited
+2022-12-30T20:19:49.176+0800 [TRACE] vertex "provider[\"registry.terraform.io/hashicorp/random\"] (close)": visit complete
+2022-12-30T20:19:49.192+0800 [TRACE] vertex "provider[\"registry.terraform.io/hashicorp/aws\"]": visit complete
+2022-12-30T20:19:49.192+0800 [TRACE] vertex "data.aws_ami.amazon_linux": starting visit (*terraform.NodeValidatableResource)
+2022-12-30T20:19:49.192+0800 [TRACE] GRPCProvider: ValidateDataResourceConfig
+2022-12-30T20:19:49.192+0800 [TRACE] vertex "data.aws_ami.amazon_linux": visit complete
+2022-12-30T20:19:49.192+0800 [TRACE] vertex "aws_instance.web": starting visit (*terraform.NodeValidatableResource)
+2022-12-30T20:19:49.193+0800 [TRACE] GRPCProvider: ValidateResourceConfig
+2022-12-30T20:19:49.194+0800 [TRACE] vertex "aws_instance.web": visit complete
+2022-12-30T20:19:49.194+0800 [TRACE] vertex "output.application_url (expand)": starting visit (*terraform.nodeExpandOutput)
+2022-12-30T20:19:49.194+0800 [TRACE] vertex "provider[\"registry.terraform.io/hashicorp/aws\"] (close)": starting visit (*terraform.graphNodeCloseProvider)
+2022-12-30T20:19:49.194+0800 [TRACE] vertex "output.domain_name (expand)": starting visit (*terraform.nodeExpandOutput)
+2022-12-30T20:19:49.194+0800 [TRACE] GRPCProvider: Close
+2022-12-30T20:19:49.194+0800 [TRACE] vertex "output.domain_name (expand)": expanding dynamic subgraph
+2022-12-30T20:19:49.194+0800 [TRACE] Expanding output: adding output.domain_name as *terraform.NodeApplyableOutput
+2022-12-30T20:19:49.194+0800 [TRACE] vertex "output.domain_name (expand)": entering dynamic subgraph
+2022-12-30T20:19:49.194+0800 [TRACE] vertex "output.domain_name": starting visit (*terraform.NodeApplyableOutput)
+2022-12-30T20:19:49.194+0800 [TRACE] vertex "output.application_url (expand)": expanding dynamic subgraph
+2022-12-30T20:19:49.194+0800 [TRACE] Expanding output: adding output.application_url as *terraform.NodeApplyableOutput
+2022-12-30T20:19:49.194+0800 [TRACE] vertex "output.application_url (expand)": entering dynamic subgraph
+2022-12-30T20:19:49.194+0800 [TRACE] vertex "output.application_url": starting visit (*terraform.NodeApplyableOutput)
+2022-12-30T20:19:49.194+0800 [TRACE] setValue: Saving Create change for output.domain_name in changeset
+2022-12-30T20:19:49.194+0800 [TRACE] setValue: Removing output.domain_name from state (it is now null)
+2022-12-30T20:19:49.194+0800 [TRACE] vertex "output.domain_name": visit complete
+2022-12-30T20:19:49.194+0800 [TRACE] vertex "output.domain_name (expand)": dynamic subgraph completed successfully
+2022-12-30T20:19:49.194+0800 [TRACE] vertex "output.domain_name (expand)": visit complete
+2022-12-30T20:19:49.194+0800 [TRACE] setValue: Saving Create change for output.application_url in changeset
+2022-12-30T20:19:49.194+0800 [TRACE] setValue: Removing output.application_url from state (it is now null)
+2022-12-30T20:19:49.194+0800 [TRACE] vertex "output.application_url": visit complete
+2022-12-30T20:19:49.194+0800 [TRACE] vertex "output.application_url (expand)": dynamic subgraph completed successfully
+2022-12-30T20:19:49.194+0800 [TRACE] vertex "output.application_url (expand)": visit complete
+2022-12-30T20:19:49.196+0800 [DEBUG] provider: plugin process exited: path=.terraform/providers/registry.terraform.io/hashicorp/aws/2.13.0/linux_amd64/terraform-provider-aws_v2.13.0_x4 pid=232223
+2022-12-30T20:19:49.196+0800 [DEBUG] provider: plugin exited
+2022-12-30T20:19:49.196+0800 [TRACE] vertex "provider[\"registry.terraform.io/hashicorp/aws\"] (close)": visit complete
+2022-12-30T20:19:49.196+0800 [TRACE] vertex "root": starting visit (*terraform.nodeCloseModule)
+2022-12-30T20:19:49.196+0800 [TRACE] vertex "root": visit complete
+2022-12-30T20:19:49.196+0800 [TRACE] LoadSchemas: retrieving schema for provider type "registry.terraform.io/hashicorp/aws"
+2022-12-30T20:19:49.196+0800 [TRACE] LoadSchemas: retrieving schema for provider type "registry.terraform.io/hashicorp/random"
+2022-12-30T20:19:49.196+0800 [INFO]  backend/local: apply calling Plan
+2022-12-30T20:19:49.196+0800 [DEBUG] Building and walking plan graph for DestroyMode
+2022-12-30T20:19:49.196+0800 [TRACE] building graph for walkPlanDestroy
+2022-12-30T20:19:49.196+0800 [TRACE] Executing graph transform *terraform.ConfigTransformer
+2022-12-30T20:19:49.196+0800 [TRACE] Completed graph transform *terraform.ConfigTransformer (no changes)
+2022-12-30T20:19:49.196+0800 [TRACE] Executing graph transform *terraform.RootVariableTransformer
+2022-12-30T20:19:49.196+0800 [TRACE] Completed graph transform *terraform.RootVariableTransformer with new graph:
+  var.aws_region - *terraform.NodeRootVariable
+  ------
+2022-12-30T20:19:49.196+0800 [TRACE] Executing graph transform *terraform.ModuleVariableTransformer
+2022-12-30T20:19:49.196+0800 [TRACE] Completed graph transform *terraform.ModuleVariableTransformer (no changes)
+2022-12-30T20:19:49.196+0800 [TRACE] Executing graph transform *terraform.LocalTransformer
+2022-12-30T20:19:49.196+0800 [TRACE] Completed graph transform *terraform.LocalTransformer (no changes)
+2022-12-30T20:19:49.196+0800 [TRACE] Executing graph transform *terraform.OutputTransformer
+2022-12-30T20:19:49.196+0800 [TRACE] OutputTransformer: adding domain_name as *terraform.nodeExpandOutput
+2022-12-30T20:19:49.196+0800 [TRACE] OutputTransformer: adding application_url as *terraform.nodeExpandOutput
+2022-12-30T20:19:49.196+0800 [TRACE] Completed graph transform *terraform.OutputTransformer with new graph:
+  output.application_url (expand) - *terraform.nodeExpandOutput
+  output.domain_name (expand) - *terraform.nodeExpandOutput
+  var.aws_region - *terraform.NodeRootVariable
+  ------
+2022-12-30T20:19:49.196+0800 [TRACE] Executing graph transform *terraform.OrphanResourceInstanceTransformer
+2022-12-30T20:19:49.196+0800 [TRACE] Completed graph transform *terraform.OrphanResourceInstanceTransformer (no changes)
+2022-12-30T20:19:49.196+0800 [TRACE] Executing graph transform *terraform.StateTransformer
+2022-12-30T20:19:49.196+0800 [TRACE] StateTransformer: creating nodes for both current and deposed instance objects
+2022-12-30T20:19:49.196+0800 [TRACE] Completed graph transform *terraform.StateTransformer (no changes)
+2022-12-30T20:19:49.196+0800 [TRACE] Executing graph transform *terraform.AttachStateTransformer
+2022-12-30T20:19:49.196+0800 [TRACE] Completed graph transform *terraform.AttachStateTransformer (no changes)
+2022-12-30T20:19:49.196+0800 [TRACE] Executing graph transform *terraform.OrphanOutputTransformer
+2022-12-30T20:19:49.196+0800 [TRACE] Completed graph transform *terraform.OrphanOutputTransformer (no changes)
+2022-12-30T20:19:49.196+0800 [TRACE] Executing graph transform *terraform.AttachResourceConfigTransformer
+2022-12-30T20:19:49.196+0800 [TRACE] Completed graph transform *terraform.AttachResourceConfigTransformer (no changes)
+2022-12-30T20:19:49.196+0800 [TRACE] Executing graph transform *terraform.graphTransformerMulti
+2022-12-30T20:19:49.196+0800 [TRACE] (graphTransformerMulti) Executing graph transform *terraform.ProviderConfigTransformer
+2022-12-30T20:19:49.196+0800 [TRACE] ProviderConfigTransformer: attaching to "provider[\"registry.terraform.io/hashicorp/aws\"]" provider configuration from main.tf:14,1-15
+2022-12-30T20:19:49.196+0800 [TRACE] ProviderConfigTransformer: attaching to "provider[\"registry.terraform.io/hashicorp/random\"]" provider configuration from main.tf:18,1-18
+2022-12-30T20:19:49.196+0800 [TRACE] (graphTransformerMulti) Completed graph transform *terraform.ProviderConfigTransformer with new graph:
+  output.application_url (expand) - *terraform.nodeExpandOutput
+  output.domain_name (expand) - *terraform.nodeExpandOutput
+  provider["registry.terraform.io/hashicorp/aws"] - *terraform.NodeApplyableProvider
+  provider["registry.terraform.io/hashicorp/random"] - *terraform.NodeApplyableProvider
+  var.aws_region - *terraform.NodeRootVariable
+  ------
+2022-12-30T20:19:49.196+0800 [TRACE] (graphTransformerMulti) Executing graph transform *terraform.MissingProviderTransformer
+2022-12-30T20:19:49.196+0800 [TRACE] (graphTransformerMulti) Completed graph transform *terraform.MissingProviderTransformer (no changes)
+2022-12-30T20:19:49.196+0800 [TRACE] (graphTransformerMulti) Executing graph transform *terraform.ProviderTransformer
+2022-12-30T20:19:49.196+0800 [TRACE] (graphTransformerMulti) Completed graph transform *terraform.ProviderTransformer (no changes)
+2022-12-30T20:19:49.196+0800 [TRACE] (graphTransformerMulti) Executing graph transform *terraform.PruneProviderTransformer
+2022-12-30T20:19:49.196+0800 [DEBUG] pruning unused provider["registry.terraform.io/hashicorp/aws"]
+2022-12-30T20:19:49.196+0800 [DEBUG] pruning unused provider["registry.terraform.io/hashicorp/random"]
+2022-12-30T20:19:49.196+0800 [TRACE] (graphTransformerMulti) Completed graph transform *terraform.PruneProviderTransformer with new graph:
+  output.application_url (expand) - *terraform.nodeExpandOutput
+  output.domain_name (expand) - *terraform.nodeExpandOutput
+  var.aws_region - *terraform.NodeRootVariable
+  ------
+2022-12-30T20:19:49.196+0800 [TRACE] Completed graph transform *terraform.graphTransformerMulti (no changes)
+2022-12-30T20:19:49.196+0800 [TRACE] Executing graph transform *terraform.RemovedModuleTransformer
+2022-12-30T20:19:49.196+0800 [TRACE] Completed graph transform *terraform.RemovedModuleTransformer (no changes)
+2022-12-30T20:19:49.196+0800 [TRACE] Executing graph transform *terraform.AttachSchemaTransformer
+2022-12-30T20:19:49.196+0800 [TRACE] Completed graph transform *terraform.AttachSchemaTransformer (no changes)
+2022-12-30T20:19:49.196+0800 [TRACE] Executing graph transform *terraform.ModuleExpansionTransformer
+2022-12-30T20:19:49.196+0800 [TRACE] Completed graph transform *terraform.ModuleExpansionTransformer (no changes)
+2022-12-30T20:19:49.196+0800 [TRACE] Executing graph transform *terraform.ReferenceTransformer
+2022-12-30T20:19:49.196+0800 [DEBUG] ReferenceTransformer: "var.aws_region" references: []
+2022-12-30T20:19:49.196+0800 [DEBUG] ReferenceTransformer: "output.domain_name (expand)" references: []
+2022-12-30T20:19:49.196+0800 [DEBUG] ReferenceTransformer: "output.application_url (expand)" references: []
+2022-12-30T20:19:49.196+0800 [TRACE] Completed graph transform *terraform.ReferenceTransformer (no changes)
+2022-12-30T20:19:49.196+0800 [TRACE] Executing graph transform *terraform.AttachDependenciesTransformer
+2022-12-30T20:19:49.196+0800 [TRACE] Completed graph transform *terraform.AttachDependenciesTransformer (no changes)
+2022-12-30T20:19:49.196+0800 [TRACE] Executing graph transform *terraform.attachDataResourceDependsOnTransformer
+2022-12-30T20:19:49.196+0800 [TRACE] Completed graph transform *terraform.attachDataResourceDependsOnTransformer (no changes)
+2022-12-30T20:19:49.196+0800 [TRACE] Executing graph transform *terraform.DestroyEdgeTransformer
+2022-12-30T20:19:49.196+0800 [TRACE] Completed graph transform *terraform.DestroyEdgeTransformer (no changes)
+2022-12-30T20:19:49.196+0800 [TRACE] Executing graph transform *terraform.pruneUnusedNodesTransformer
+2022-12-30T20:19:49.196+0800 [TRACE] Completed graph transform *terraform.pruneUnusedNodesTransformer (no changes)
+2022-12-30T20:19:49.196+0800 [TRACE] Executing graph transform *terraform.TargetsTransformer
+2022-12-30T20:19:49.196+0800 [TRACE] Completed graph transform *terraform.TargetsTransformer (no changes)
+2022-12-30T20:19:49.196+0800 [TRACE] Executing graph transform *terraform.ForcedCBDTransformer
+2022-12-30T20:19:49.196+0800 [TRACE] Completed graph transform *terraform.ForcedCBDTransformer (no changes)
+2022-12-30T20:19:49.196+0800 [TRACE] Executing graph transform *terraform.CloseProviderTransformer
+2022-12-30T20:19:49.196+0800 [TRACE] Completed graph transform *terraform.CloseProviderTransformer (no changes)
+2022-12-30T20:19:49.196+0800 [TRACE] Executing graph transform *terraform.CloseRootModuleTransformer
+2022-12-30T20:19:49.196+0800 [TRACE] Completed graph transform *terraform.CloseRootModuleTransformer with new graph:
+  output.application_url (expand) - *terraform.nodeExpandOutput
+  output.domain_name (expand) - *terraform.nodeExpandOutput
+  root - *terraform.nodeCloseModule
+    output.application_url (expand) - *terraform.nodeExpandOutput
+    output.domain_name (expand) - *terraform.nodeExpandOutput
+    var.aws_region - *terraform.NodeRootVariable
+  var.aws_region - *terraform.NodeRootVariable
+  ------
+2022-12-30T20:19:49.196+0800 [TRACE] Executing graph transform *terraform.TransitiveReductionTransformer
+2022-12-30T20:19:49.196+0800 [TRACE] Completed graph transform *terraform.TransitiveReductionTransformer (no changes)
+2022-12-30T20:19:49.196+0800 [DEBUG] Starting graph walk: walkPlanDestroy
+2022-12-30T20:19:49.196+0800 [TRACE] vertex "var.aws_region": starting visit (*terraform.NodeRootVariable)
+2022-12-30T20:19:49.196+0800 [TRACE] NodeRootVariable: evaluating var.aws_region
+2022-12-30T20:19:49.196+0800 [TRACE] prepareFinalInputVariableValue: preparing var.aws_region
+2022-12-30T20:19:49.196+0800 [TRACE] prepareFinalInputVariableValue: var.aws_region has a default value
+2022-12-30T20:19:49.196+0800 [TRACE] prepareFinalInputVariableValue: var.aws_region has no defined value
+2022-12-30T20:19:49.196+0800 [TRACE] BuiltinEvalContext: Storing final value for variable var.aws_region
+2022-12-30T20:19:49.196+0800 [TRACE] evalVariableValidations: no validation rules declared for var.aws_region, so skipping
+2022-12-30T20:19:49.196+0800 [TRACE] vertex "var.aws_region": visit complete
+2022-12-30T20:19:49.196+0800 [TRACE] vertex "output.domain_name (expand)": starting visit (*terraform.nodeExpandOutput)
+2022-12-30T20:19:49.196+0800 [TRACE] vertex "output.domain_name (expand)": expanding dynamic subgraph
+2022-12-30T20:19:49.196+0800 [TRACE] Expanding output: adding output.domain_name as *terraform.NodeDestroyableOutput
+2022-12-30T20:19:49.196+0800 [TRACE] vertex "output.application_url (expand)": starting visit (*terraform.nodeExpandOutput)
+2022-12-30T20:19:49.196+0800 [TRACE] vertex "output.application_url (expand)": expanding dynamic subgraph
+2022-12-30T20:19:49.196+0800 [TRACE] Expanding output: adding output.application_url as *terraform.NodeDestroyableOutput
+2022-12-30T20:19:49.196+0800 [TRACE] vertex "output.application_url (expand)": entering dynamic subgraph
+2022-12-30T20:19:49.196+0800 [TRACE] vertex "output.application_url (destroy)": starting visit (*terraform.NodeDestroyableOutput)
+2022-12-30T20:19:49.196+0800 [TRACE] vertex "output.application_url (destroy)": visit complete
+2022-12-30T20:19:49.196+0800 [TRACE] vertex "output.application_url (expand)": dynamic subgraph completed successfully
+2022-12-30T20:19:49.196+0800 [TRACE] vertex "output.application_url (expand)": visit complete
+2022-12-30T20:19:49.196+0800 [TRACE] vertex "output.domain_name (expand)": entering dynamic subgraph
+2022-12-30T20:19:49.196+0800 [TRACE] vertex "output.domain_name (destroy)": starting visit (*terraform.NodeDestroyableOutput)
+2022-12-30T20:19:49.196+0800 [TRACE] vertex "output.domain_name (destroy)": visit complete
+2022-12-30T20:19:49.196+0800 [TRACE] vertex "output.domain_name (expand)": dynamic subgraph completed successfully
+2022-12-30T20:19:49.196+0800 [TRACE] vertex "output.domain_name (expand)": visit complete
+2022-12-30T20:19:49.196+0800 [TRACE] vertex "root": starting visit (*terraform.nodeCloseModule)
+2022-12-30T20:19:49.196+0800 [TRACE] vertex "root": visit complete
+2022-12-30T20:19:49.196+0800 [TRACE] LoadSchemas: retrieving schema for provider type "registry.terraform.io/hashicorp/aws"
+2022-12-30T20:19:49.196+0800 [TRACE] LoadSchemas: retrieving schema for provider type "registry.terraform.io/hashicorp/random"
+2022-12-30T20:19:49.197+0800 [TRACE] LoadSchemas: retrieving schema for provider type "registry.terraform.io/hashicorp/aws"
+2022-12-30T20:19:49.197+0800 [TRACE] LoadSchemas: retrieving schema for provider type "registry.terraform.io/hashicorp/random"
+2022-12-30T20:19:49.197+0800 [DEBUG] no planned changes, skipping apply graph check
+2022-12-30T20:19:49.197+0800 [INFO]  backend/local: apply calling Apply
+2022-12-30T20:19:49.197+0800 [DEBUG] Building and walking apply graph for DestroyMode plan
+2022-12-30T20:19:49.197+0800 [TRACE] Executing graph transform *terraform.ConfigTransformer
+2022-12-30T20:19:49.197+0800 [TRACE] ConfigTransformer: Starting for path:
+2022-12-30T20:19:49.197+0800 [TRACE] Completed graph transform *terraform.ConfigTransformer with new graph:
+  aws_instance.web (expand) - *terraform.nodeExpandApplyableResource
+  data.aws_ami.amazon_linux (expand) - *terraform.nodeExpandApplyableResource
+  random_pet.name (expand) - *terraform.nodeExpandApplyableResource
+  ------
+2022-12-30T20:19:49.197+0800 [TRACE] Executing graph transform *terraform.RootVariableTransformer
+2022-12-30T20:19:49.197+0800 [TRACE] Completed graph transform *terraform.RootVariableTransformer with new graph:
+  aws_instance.web (expand) - *terraform.nodeExpandApplyableResource
+  data.aws_ami.amazon_linux (expand) - *terraform.nodeExpandApplyableResource
+  random_pet.name (expand) - *terraform.nodeExpandApplyableResource
+  var.aws_region - *terraform.NodeRootVariable
+  ------
+2022-12-30T20:19:49.197+0800 [TRACE] Executing graph transform *terraform.ModuleVariableTransformer
+2022-12-30T20:19:49.197+0800 [TRACE] Completed graph transform *terraform.ModuleVariableTransformer (no changes)
+2022-12-30T20:19:49.197+0800 [TRACE] Executing graph transform *terraform.LocalTransformer
+2022-12-30T20:19:49.197+0800 [TRACE] Completed graph transform *terraform.LocalTransformer (no changes)
+2022-12-30T20:19:49.197+0800 [TRACE] Executing graph transform *terraform.OutputTransformer
+2022-12-30T20:19:49.197+0800 [TRACE] OutputTransformer: adding domain_name as *terraform.nodeExpandOutput
+2022-12-30T20:19:49.197+0800 [TRACE] OutputTransformer: adding application_url as *terraform.nodeExpandOutput
+2022-12-30T20:19:49.197+0800 [TRACE] Completed graph transform *terraform.OutputTransformer with new graph:
+  aws_instance.web (expand) - *terraform.nodeExpandApplyableResource
+  data.aws_ami.amazon_linux (expand) - *terraform.nodeExpandApplyableResource
+  output.application_url (expand) - *terraform.nodeExpandOutput
+  output.domain_name (expand) - *terraform.nodeExpandOutput
+  random_pet.name (expand) - *terraform.nodeExpandApplyableResource
+  var.aws_region - *terraform.NodeRootVariable
+  ------
+2022-12-30T20:19:49.197+0800 [TRACE] Executing graph transform *terraform.DiffTransformer
+2022-12-30T20:19:49.197+0800 [TRACE] Completed graph transform *terraform.DiffTransformer (no changes)
+2022-12-30T20:19:49.197+0800 [TRACE] Executing graph transform *terraform.AttachStateTransformer
+2022-12-30T20:19:49.197+0800 [TRACE] Completed graph transform *terraform.AttachStateTransformer (no changes)
+2022-12-30T20:19:49.197+0800 [TRACE] Executing graph transform *terraform.OrphanOutputTransformer
+2022-12-30T20:19:49.197+0800 [TRACE] Completed graph transform *terraform.OrphanOutputTransformer (no changes)
+2022-12-30T20:19:49.197+0800 [TRACE] Executing graph transform *terraform.AttachResourceConfigTransformer
+2022-12-30T20:19:49.197+0800 [TRACE] AttachResourceConfigTransformer: attaching to "aws_instance.web (expand)" (*terraform.nodeExpandApplyableResource) config from main.tf:32,1-30
+2022-12-30T20:19:49.197+0800 [TRACE] AttachResourceConfigTransformer: attaching provider meta configs to aws_instance.web (expand)
+2022-12-30T20:19:49.197+0800 [TRACE] AttachResourceConfigTransformer: attaching to "random_pet.name (expand)" (*terraform.nodeExpandApplyableResource) config from main.tf:20,1-29
+2022-12-30T20:19:49.197+0800 [TRACE] AttachResourceConfigTransformer: attaching provider meta configs to random_pet.name (expand)
+2022-12-30T20:19:49.197+0800 [TRACE] AttachResourceConfigTransformer: attaching to "data.aws_ami.amazon_linux (expand)" (*terraform.nodeExpandApplyableResource) config from hcl.Range{Filename:"main.tf", Start:hcl.Pos{Line:22, Column:1, Byte:267}, End:hcl.Pos{Line:22, Column:30, Byte:296}}
+2022-12-30T20:19:49.197+0800 [TRACE] AttachResourceConfigTransformer: attaching provider meta configs to data.aws_ami.amazon_linux (expand)
+2022-12-30T20:19:49.197+0800 [TRACE] Completed graph transform *terraform.AttachResourceConfigTransformer (no changes)
+2022-12-30T20:19:49.197+0800 [TRACE] Executing graph transform *terraform.graphTransformerMulti
+2022-12-30T20:19:49.197+0800 [TRACE] (graphTransformerMulti) Executing graph transform *terraform.ProviderConfigTransformer
+2022-12-30T20:19:49.197+0800 [TRACE] ProviderConfigTransformer: attaching to "provider[\"registry.terraform.io/hashicorp/aws\"]" provider configuration from main.tf:14,1-15
+2022-12-30T20:19:49.197+0800 [TRACE] ProviderConfigTransformer: attaching to "provider[\"registry.terraform.io/hashicorp/random\"]" provider configuration from main.tf:18,1-18
+2022-12-30T20:19:49.197+0800 [TRACE] (graphTransformerMulti) Completed graph transform *terraform.ProviderConfigTransformer with new graph:
+  aws_instance.web (expand) - *terraform.nodeExpandApplyableResource
+  data.aws_ami.amazon_linux (expand) - *terraform.nodeExpandApplyableResource
+  output.application_url (expand) - *terraform.nodeExpandOutput
+  output.domain_name (expand) - *terraform.nodeExpandOutput
+  provider["registry.terraform.io/hashicorp/aws"] - *terraform.NodeApplyableProvider
+  provider["registry.terraform.io/hashicorp/random"] - *terraform.NodeApplyableProvider
+  random_pet.name (expand) - *terraform.nodeExpandApplyableResource
+  var.aws_region - *terraform.NodeRootVariable
+  ------
+2022-12-30T20:19:49.197+0800 [TRACE] (graphTransformerMulti) Executing graph transform *terraform.MissingProviderTransformer
+2022-12-30T20:19:49.197+0800 [TRACE] (graphTransformerMulti) Completed graph transform *terraform.MissingProviderTransformer (no changes)
+2022-12-30T20:19:49.197+0800 [TRACE] (graphTransformerMulti) Executing graph transform *terraform.ProviderTransformer
+2022-12-30T20:19:49.197+0800 [TRACE] ProviderTransformer: exact match for provider["registry.terraform.io/hashicorp/aws"] serving data.aws_ami.amazon_linux (expand)
+2022-12-30T20:19:49.197+0800 [DEBUG] ProviderTransformer: "data.aws_ami.amazon_linux (expand)" (*terraform.nodeExpandApplyableResource) needs provider["registry.terraform.io/hashicorp/aws"]
+2022-12-30T20:19:49.197+0800 [TRACE] ProviderTransformer: exact match for provider["registry.terraform.io/hashicorp/aws"] serving aws_instance.web (expand)
+2022-12-30T20:19:49.197+0800 [DEBUG] ProviderTransformer: "aws_instance.web (expand)" (*terraform.nodeExpandApplyableResource) needs provider["registry.terraform.io/hashicorp/aws"]
+2022-12-30T20:19:49.197+0800 [TRACE] ProviderTransformer: exact match for provider["registry.terraform.io/hashicorp/random"] serving random_pet.name (expand)
+2022-12-30T20:19:49.197+0800 [DEBUG] ProviderTransformer: "random_pet.name (expand)" (*terraform.nodeExpandApplyableResource) needs provider["registry.terraform.io/hashicorp/random"]
+2022-12-30T20:19:49.197+0800 [TRACE] (graphTransformerMulti) Completed graph transform *terraform.ProviderTransformer with new graph:
+  aws_instance.web (expand) - *terraform.nodeExpandApplyableResource
+    provider["registry.terraform.io/hashicorp/aws"] - *terraform.NodeApplyableProvider
+  data.aws_ami.amazon_linux (expand) - *terraform.nodeExpandApplyableResource
+    provider["registry.terraform.io/hashicorp/aws"] - *terraform.NodeApplyableProvider
+  output.application_url (expand) - *terraform.nodeExpandOutput
+  output.domain_name (expand) - *terraform.nodeExpandOutput
+  provider["registry.terraform.io/hashicorp/aws"] - *terraform.NodeApplyableProvider
+  provider["registry.terraform.io/hashicorp/random"] - *terraform.NodeApplyableProvider
+  random_pet.name (expand) - *terraform.nodeExpandApplyableResource
+    provider["registry.terraform.io/hashicorp/random"] - *terraform.NodeApplyableProvider
+  var.aws_region - *terraform.NodeRootVariable
+  ------
+2022-12-30T20:19:49.197+0800 [TRACE] (graphTransformerMulti) Executing graph transform *terraform.PruneProviderTransformer
+2022-12-30T20:19:49.197+0800 [TRACE] (graphTransformerMulti) Completed graph transform *terraform.PruneProviderTransformer (no changes)
+2022-12-30T20:19:49.197+0800 [TRACE] Completed graph transform *terraform.graphTransformerMulti with new graph:
+  aws_instance.web (expand) - *terraform.nodeExpandApplyableResource
+    provider["registry.terraform.io/hashicorp/aws"] - *terraform.NodeApplyableProvider
+  data.aws_ami.amazon_linux (expand) - *terraform.nodeExpandApplyableResource
+    provider["registry.terraform.io/hashicorp/aws"] - *terraform.NodeApplyableProvider
+  output.application_url (expand) - *terraform.nodeExpandOutput
+  output.domain_name (expand) - *terraform.nodeExpandOutput
+  provider["registry.terraform.io/hashicorp/aws"] - *terraform.NodeApplyableProvider
+  provider["registry.terraform.io/hashicorp/random"] - *terraform.NodeApplyableProvider
+  random_pet.name (expand) - *terraform.nodeExpandApplyableResource
+    provider["registry.terraform.io/hashicorp/random"] - *terraform.NodeApplyableProvider
+  var.aws_region - *terraform.NodeRootVariable
+  ------
+2022-12-30T20:19:49.197+0800 [TRACE] Executing graph transform *terraform.RemovedModuleTransformer
+2022-12-30T20:19:49.197+0800 [TRACE] Completed graph transform *terraform.RemovedModuleTransformer (no changes)
+2022-12-30T20:19:49.197+0800 [TRACE] Executing graph transform *terraform.AttachSchemaTransformer
+2022-12-30T20:19:49.197+0800 [TRACE] AttachSchemaTransformer: attaching provider config schema to provider["registry.terraform.io/hashicorp/aws"]
+2022-12-30T20:19:49.197+0800 [TRACE] AttachSchemaTransformer: attaching provider config schema to provider["registry.terraform.io/hashicorp/random"]
+2022-12-30T20:19:49.197+0800 [TRACE] AttachSchemaTransformer: attaching resource schema to aws_instance.web (expand)
+2022-12-30T20:19:49.197+0800 [TRACE] AttachSchemaTransformer: attaching resource schema to random_pet.name (expand)
+2022-12-30T20:19:49.197+0800 [TRACE] AttachSchemaTransformer: attaching resource schema to data.aws_ami.amazon_linux (expand)
+2022-12-30T20:19:49.197+0800 [TRACE] Completed graph transform *terraform.AttachSchemaTransformer (no changes)
+2022-12-30T20:19:49.197+0800 [TRACE] Executing graph transform *terraform.ModuleExpansionTransformer
+2022-12-30T20:19:49.197+0800 [TRACE] Completed graph transform *terraform.ModuleExpansionTransformer (no changes)
+2022-12-30T20:19:49.197+0800 [TRACE] Executing graph transform *terraform.ReferenceTransformer
+2022-12-30T20:19:49.197+0800 [DEBUG] ReferenceTransformer: "output.domain_name (expand)" references: []
+2022-12-30T20:19:49.197+0800 [DEBUG] ReferenceTransformer: "output.application_url (expand)" references: []
+2022-12-30T20:19:49.197+0800 [DEBUG] ReferenceTransformer: "provider[\"registry.terraform.io/hashicorp/aws\"]" references: []
+2022-12-30T20:19:49.197+0800 [DEBUG] ReferenceTransformer: "provider[\"registry.terraform.io/hashicorp/random\"]" references: []
+2022-12-30T20:19:49.197+0800 [DEBUG] ReferenceTransformer: "aws_instance.web (expand)" references: []
+2022-12-30T20:19:49.197+0800 [DEBUG] ReferenceTransformer: "random_pet.name (expand)" references: []
+2022-12-30T20:19:49.197+0800 [DEBUG] ReferenceTransformer: "data.aws_ami.amazon_linux (expand)" references: []
+2022-12-30T20:19:49.197+0800 [DEBUG] ReferenceTransformer: "var.aws_region" references: []
+2022-12-30T20:19:49.197+0800 [TRACE] Completed graph transform *terraform.ReferenceTransformer (no changes)
+2022-12-30T20:19:49.197+0800 [TRACE] Executing graph transform *terraform.AttachDependenciesTransformer
+2022-12-30T20:19:49.197+0800 [TRACE] Completed graph transform *terraform.AttachDependenciesTransformer (no changes)
+2022-12-30T20:19:49.197+0800 [TRACE] Executing graph transform *terraform.ForcedCBDTransformer
+2022-12-30T20:19:49.197+0800 [TRACE] Completed graph transform *terraform.ForcedCBDTransformer (no changes)
+2022-12-30T20:19:49.197+0800 [TRACE] Executing graph transform *terraform.DestroyEdgeTransformer
+2022-12-30T20:19:49.197+0800 [TRACE] Completed graph transform *terraform.DestroyEdgeTransformer (no changes)
+2022-12-30T20:19:49.197+0800 [TRACE] Executing graph transform *terraform.CBDEdgeTransformer
+2022-12-30T20:19:49.197+0800 [TRACE] Completed graph transform *terraform.CBDEdgeTransformer (no changes)
+2022-12-30T20:19:49.197+0800 [TRACE] Executing graph transform *terraform.pruneUnusedNodesTransformer
+2022-12-30T20:19:49.197+0800 [DEBUG] pruneUnusedNodes: aws_instance.web (expand) is no longer needed, removing
+2022-12-30T20:19:49.197+0800 [DEBUG] pruneUnusedNodes: random_pet.name (expand) is no longer needed, removing
+2022-12-30T20:19:49.197+0800 [DEBUG] pruneUnusedNodes: data.aws_ami.amazon_linux (expand) is no longer needed, removing
+2022-12-30T20:19:49.197+0800 [DEBUG] pruneUnusedNodes: provider["registry.terraform.io/hashicorp/random"] is no longer needed, removing
+2022-12-30T20:19:49.197+0800 [DEBUG] pruneUnusedNodes: provider["registry.terraform.io/hashicorp/aws"] is no longer needed, removing
+2022-12-30T20:19:49.197+0800 [TRACE] Completed graph transform *terraform.pruneUnusedNodesTransformer with new graph:
+  output.application_url (expand) - *terraform.nodeExpandOutput
+  output.domain_name (expand) - *terraform.nodeExpandOutput
+  var.aws_region - *terraform.NodeRootVariable
+  ------
+2022-12-30T20:19:49.197+0800 [TRACE] Executing graph transform *terraform.TargetsTransformer
+2022-12-30T20:19:49.197+0800 [TRACE] Completed graph transform *terraform.TargetsTransformer (no changes)
+2022-12-30T20:19:49.197+0800 [TRACE] Executing graph transform *terraform.CloseProviderTransformer
+2022-12-30T20:19:49.197+0800 [TRACE] Completed graph transform *terraform.CloseProviderTransformer (no changes)
+2022-12-30T20:19:49.197+0800 [TRACE] Executing graph transform *terraform.CloseRootModuleTransformer
+2022-12-30T20:19:49.197+0800 [TRACE] Completed graph transform *terraform.CloseRootModuleTransformer with new graph:
+  output.application_url (expand) - *terraform.nodeExpandOutput
+  output.domain_name (expand) - *terraform.nodeExpandOutput
+  root - *terraform.nodeCloseModule
+    output.application_url (expand) - *terraform.nodeExpandOutput
+    output.domain_name (expand) - *terraform.nodeExpandOutput
+    var.aws_region - *terraform.NodeRootVariable
+  var.aws_region - *terraform.NodeRootVariable
+  ------
+2022-12-30T20:19:49.197+0800 [TRACE] Executing graph transform *terraform.TransitiveReductionTransformer
+2022-12-30T20:19:49.197+0800 [TRACE] Completed graph transform *terraform.TransitiveReductionTransformer (no changes)
+2022-12-30T20:19:49.197+0800 [DEBUG] Starting graph walk: walkDestroy
+2022-12-30T20:19:49.197+0800 [TRACE] vertex "var.aws_region": starting visit (*terraform.NodeRootVariable)
+2022-12-30T20:19:49.198+0800 [TRACE] NodeRootVariable: evaluating var.aws_region
+2022-12-30T20:19:49.198+0800 [TRACE] prepareFinalInputVariableValue: preparing var.aws_region
+2022-12-30T20:19:49.198+0800 [TRACE] prepareFinalInputVariableValue: var.aws_region has a default value
+2022-12-30T20:19:49.198+0800 [TRACE] prepareFinalInputVariableValue: var.aws_region has no defined value
+2022-12-30T20:19:49.198+0800 [TRACE] BuiltinEvalContext: Storing final value for variable var.aws_region
+2022-12-30T20:19:49.198+0800 [TRACE] evalVariableValidations: no validation rules declared for var.aws_region, so skipping
+2022-12-30T20:19:49.198+0800 [TRACE] vertex "var.aws_region": visit complete
+2022-12-30T20:19:49.198+0800 [TRACE] vertex "output.domain_name (expand)": starting visit (*terraform.nodeExpandOutput)
+2022-12-30T20:19:49.198+0800 [TRACE] vertex "output.application_url (expand)": starting visit (*terraform.nodeExpandOutput)
+2022-12-30T20:19:49.198+0800 [TRACE] vertex "output.application_url (expand)": expanding dynamic subgraph
+2022-12-30T20:19:49.198+0800 [TRACE] Expanding output: adding output.application_url as *terraform.NodeDestroyableOutput
+2022-12-30T20:19:49.198+0800 [TRACE] vertex "output.application_url (expand)": entering dynamic subgraph
+2022-12-30T20:19:49.198+0800 [TRACE] vertex "output.application_url (destroy)": starting visit (*terraform.NodeDestroyableOutput)
+2022-12-30T20:19:49.198+0800 [TRACE] vertex "output.application_url (destroy)": visit complete
+2022-12-30T20:19:49.198+0800 [TRACE] vertex "output.application_url (expand)": dynamic subgraph completed successfully
+2022-12-30T20:19:49.198+0800 [TRACE] vertex "output.application_url (expand)": visit complete
+2022-12-30T20:19:49.198+0800 [TRACE] vertex "output.domain_name (expand)": expanding dynamic subgraph
+2022-12-30T20:19:49.198+0800 [TRACE] Expanding output: adding output.domain_name as *terraform.NodeDestroyableOutput
+2022-12-30T20:19:49.198+0800 [TRACE] vertex "output.domain_name (expand)": entering dynamic subgraph
+2022-12-30T20:19:49.198+0800 [TRACE] vertex "output.domain_name (destroy)": starting visit (*terraform.NodeDestroyableOutput)
+2022-12-30T20:19:49.198+0800 [TRACE] vertex "output.domain_name (destroy)": visit complete
+2022-12-30T20:19:49.198+0800 [TRACE] vertex "output.domain_name (expand)": dynamic subgraph completed successfully
+2022-12-30T20:19:49.198+0800 [TRACE] vertex "output.domain_name (expand)": visit complete
+2022-12-30T20:19:49.198+0800 [TRACE] vertex "root": starting visit (*terraform.nodeCloseModule)
+2022-12-30T20:19:49.198+0800 [TRACE] vertex "root": visit complete
+2022-12-30T20:19:49.198+0800 [TRACE] statemgr.Filesystem: not making a backup, because the new snapshot is identical to the old
+2022-12-30T20:19:49.198+0800 [TRACE] statemgr.Filesystem: no state changes since last snapshot
+2022-12-30T20:19:49.198+0800 [TRACE] statemgr.Filesystem: writing snapshot at terraform.tfstate
+2022-12-30T20:19:49.204+0800 [TRACE] statemgr.Filesystem: removing lock metadata file .terraform.tfstate.lock.info
+2022-12-30T20:19:49.204+0800 [TRACE] statemgr.Filesystem: unlocking terraform.tfstate using fcntl flock
