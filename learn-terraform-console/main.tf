@@ -22,3 +22,25 @@ resource "aws_s3_bucket_acl" "data" {
 data "aws_s3_objects" "data_bucket" {
   bucket = aws_s3_bucket.data.bucket
 }
+
+resource "aws_s3_bucket_policy" "public_read" {
+  bucket = aws_s3_bucket.data.id
+
+  policy = jsonencode({
+    "Statement" = [
+      {
+        "Action" = [
+          "s3:GetObject",
+          "s3:GetObjectVersion",
+        ]
+        "Effect"    = "Allow"
+        "Principal" = "*"
+        "Resource" = [
+          "${aws_s3_bucket.data.arn}/*",
+        ]
+        "Sid" = "PublicRead"
+      },
+    ]
+    "Version" = "2012-10-17"
+  })
+}
