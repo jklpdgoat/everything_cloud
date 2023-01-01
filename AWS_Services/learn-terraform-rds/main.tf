@@ -8,10 +8,14 @@ module "vpc" {
   source  = "terraform-aws-modules/vpc/aws"
   version = "2.77.0"
 
-  name                 = "education"
-  cidr                 = "10.0.0.0/16"
-  azs                  = data.aws_availability_zones.available.names
-  public_subnets       = ["10.0.4.0/24", "10.0.5.0/24", "10.0.6.0/24"]
+  name = "education"
+  cidr = "10.0.0.0/16"
+
+  azs            = data.aws_availability_zones.available.names
+  public_subnets = ["10.0.4.0/24", "10.0.5.0/24", "10.0.6.0/24"]
+  # private_subnets = [""]
+
+
   enable_dns_hostnames = true
   enable_dns_support   = true
 }
@@ -59,16 +63,30 @@ resource "aws_db_parameter_group" "education" {
 }
 
 resource "aws_db_instance" "education" {
-  identifier             = "education"
+  identifier              = "education"
+  instance_class          = "db.t3.micro"
+  allocated_storage       = 10
+  engine                  = "postgres"
+  engine_version          = "14.1"
+  username                = "edu"
+  password                = var.db_password
+  db_subnet_group_name    = aws_db_subnet_group.education.name
+  vpc_security_group_ids  = [aws_security_group.rds.id]
+  parameter_group_name    = aws_db_parameter_group.education.name
+  backup_retention_period = 1
+  apply_immediately       = true
+  publicly_accessible     = true
+  skip_final_snapshot     = true
+}
+
+resource "aws_db_instance" "education_replica" {
+  name                   = "education-replica"
+  identifier             = "education-replica"
+  replicate_source_db    = aws_db_instance.education.identifier
   instance_class         = "db.t3.micro"
-  allocated_storage      = 5
-  engine                 = "postgres"
-  engine_version         = "14.1"
-  username               = "edu"
-  password               = var.db_password
-  db_subnet_group_name   = aws_db_subnet_group.education.name
-  vpc_security_group_ids = [aws_security_group.rds.id]
-  parameter_group_name   = aws_db_parameter_group.education.name
+  apply_immediately      = true
   publicly_accessible    = true
   skip_final_snapshot    = true
+  vpc_security_group_ids = [aws_security_group.rds.id]
+  parameter_group_name   = aws_db_parameter_group.education.name
 }
