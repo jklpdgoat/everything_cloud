@@ -1,7 +1,7 @@
 terraform {
   cloud {
     hostname     = "app.terraform.io"
-    organization = "hashicorp-training"
+    organization = "hashicorp-training-jklp"
     workspaces {
       name = "hcup-be-shared"
     }
@@ -10,7 +10,7 @@ terraform {
   required_providers {
     vercel = {
       source  = "vercel/vercel"
-      version = "0.2.0"
+      version = "0.3.0"
     }
   }
 }

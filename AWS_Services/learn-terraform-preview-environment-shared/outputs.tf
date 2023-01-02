@@ -17,3 +17,7 @@ output "ssl_cert_arn" {
 output "vercel_project_id" {
   value = vercel_project.hashicups.id
 }
+
+# output "az_names" {
+#   value = data.aws_availability_zones.available.names
+# }
