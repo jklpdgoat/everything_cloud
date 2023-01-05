@@ -2,7 +2,7 @@ packer {
   # We are using aws
   required_plugins {
     amazon = {
-      version = ">= 1.0.0.0"
+      version = ">= 1.1.1"
       source  = "github.com/hashicorp/amazon"
     }
   }
@@ -11,11 +11,11 @@ packer {
 source "amazon-ebs" "cocktails" {
   # which ami to sue as the base
   # where to save the ami
-  ami_name     = "cocktails-app"
-  source_ami   = "ami-0a606d8395a538502"
-  intance_type = "t2.micro"
-  region       = "us-west-2"
-  ssh_username = "ec2-user"
+  ami_name      = "cocktails-app"
+  source_ami    = "ami-035233c9da2fabf52"
+  instance_type = "t2.micro"
+  region        = "ap-northeast-2"
+  ssh_username  = "ec2-user"
 
 }
 
@@ -25,11 +25,17 @@ build {
     "source.amazon-ebs.cocktails"
   ]
 
-  provisioner "shell" {
-    script = "./app.sh"
+  provisioner "file" {
+    source      = "../cocktails.zip"
+    destination = "/home/ec2-user/cocktails.zip"
   }
 
   provisioner "file" {
+    source      = "./cocktails.service"
+    destination = "/tmp/cocktails.service"
+  }
 
+  provisioner "shell" {
+    script = "./app.sh"
   }
 }
