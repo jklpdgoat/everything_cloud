@@ -1,26 +1,37 @@
 packer {
-  # We are using aws
   required_plugins {
     amazon = {
-      version = ">= 1.1.1"
+      version = ">= 1.0.0"
       source  = "github.com/hashicorp/amazon"
     }
   }
 }
 
+locals {
+  timestamp = regex_replace(timestamp(), "[- TZ:]", "")
+}
+
 source "amazon-ebs" "cocktails" {
-  # which ami to sue as the base
-  # where to save the ami
-  ami_name      = "cocktails-app"
-  source_ami    = "ami-035233c9da2fabf52"
+  ami_name = "cocktails-app-${local.timestamp}"
+
+  source_ami_filter {
+    filters = {
+      name                = "amzn2-ami-hvm-2.*.1-x86_64-gp2"
+      root-device-type    = "ebs"
+      virtualization-type = "hvm"
+    }
+    most_recent = true
+    owners      = ["amazon"]
+  }
+  # source_ami = "ami-013a129d325529d4d"
+
+
   instance_type = "t2.micro"
   region        = "ap-northeast-2"
   ssh_username  = "ec2-user"
-
 }
 
 build {
-  # everything in between
   sources = [
     "source.amazon-ebs.cocktails"
   ]

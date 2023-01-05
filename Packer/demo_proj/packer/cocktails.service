@@ -3,11 +3,12 @@ Description=Cocktails App
 After=cloud-final.service
 
 [Service]
-WorkingDirectory=/home/ec2-user/cocktails-app
-ExecStart=/usr/bin/node /home/ec2-user/cocktails-app/server.js
+WorkingDirectory=/home/ec2-user/cocktails
+ExecStart=/usr/bin/node /home/ec2-user/cocktails/server.js
 Restart=always
 RestartSec=10
 StandardOutput=syslog
+StandardError=syslog
 SyslogIdentifier=cocktails-app
 User=ec2-user
 
