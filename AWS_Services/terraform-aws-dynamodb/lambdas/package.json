@@ -1,0 +1,14 @@
+{
+  "name": "lambdas",
+  "version": "1.0.0",
+  "description": "AWS Serveless using JS?!!!!!!!! tf",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "jklpdgoat",
+  "license": "MIT",
+  "dependencies": {
+    "aws-sdk": "^2.1290.0"
+  }
+}
