@@ -1,1 +1,1 @@
-# Multi-Region Deployment on AWS with Terraform
+# Multi-Region Deployment Terraform State File Architecture on AWS
