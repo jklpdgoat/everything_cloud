@@ -12,6 +12,7 @@ variable "environment_tag" {
   default     = "Learn"
 }
 
-variable "region"{
+variable "region" {
   description = "The region Terraform deploys your instance"
 }
+
