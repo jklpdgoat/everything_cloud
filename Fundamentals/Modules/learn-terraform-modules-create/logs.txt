@@ -1,0 +1,443 @@
+2023-01-11T22:19:57.926+0800 [INFO]  Terraform version: 1.3.6
+2023-01-11T22:19:57.926+0800 [DEBUG] using github.com/hashicorp/go-tfe v1.9.0
+2023-01-11T22:19:57.926+0800 [DEBUG] using github.com/hashicorp/hcl/v2 v2.15.0
+2023-01-11T22:19:57.926+0800 [DEBUG] using github.com/hashicorp/terraform-config-inspect v0.0.0-20210209133302-4fd17a0faac2
+2023-01-11T22:19:57.926+0800 [DEBUG] using github.com/hashicorp/terraform-svchost v0.0.0-20200729002733-f050f53b9734
+2023-01-11T22:19:57.926+0800 [DEBUG] using github.com/zclconf/go-cty v1.12.1
+2023-01-11T22:19:57.926+0800 [INFO]  Go runtime version: go1.19.3
+2023-01-11T22:19:57.926+0800 [INFO]  CLI args: []string{"terraform", "init"}
+2023-01-11T22:19:57.926+0800 [TRACE] Stdout is a terminal of width 119
+2023-01-11T22:19:57.926+0800 [TRACE] Stderr is a terminal of width 119
+2023-01-11T22:19:57.926+0800 [TRACE] Stdin is a terminal
+2023-01-11T22:19:57.926+0800 [DEBUG] Attempting to open CLI config file: /home/jklp/.terraformrc
+2023-01-11T22:19:57.926+0800 [DEBUG] File doesn't exist, but doesn't need to. Ignoring.
+2023-01-11T22:19:57.926+0800 [INFO]  Loading CLI configuration from /home/jklp/.terraform.d/credentials.tfrc.json
+2023-01-11T22:19:57.926+0800 [DEBUG] ignoring non-existing provider search directory terraform.d/plugins
+2023-01-11T22:19:57.926+0800 [DEBUG] ignoring non-existing provider search directory /home/jklp/.terraform.d/plugins
+2023-01-11T22:19:57.926+0800 [DEBUG] ignoring non-existing provider search directory /home/jklp/.local/share/terraform/plugins
+2023-01-11T22:19:57.926+0800 [DEBUG] ignoring non-existing provider search directory /nix/store/wn7x7nic1kv0dhymj7z900zrbhlkmg1g-shared-mime-info-2.2/share/terraform/plugins
+2023-01-11T22:19:57.926+0800 [DEBUG] ignoring non-existing provider search directory /nix/store/d61ddlf3g6aldi1zbpdfi2a062xwxszg-gnome-shell-43.2/share/terraform/plugins
+2023-01-11T22:19:57.926+0800 [DEBUG] ignoring non-existing provider search directory /nix/store/68rgsss8d6y09d4wyxxl5nyv33cybc3f-gtk+3-3.24.34/share/gsettings-schemas/gtk+3-3.24.34/terraform/plugins
+2023-01-11T22:19:57.926+0800 [DEBUG] ignoring non-existing provider search directory /nix/store/jl89lpf15gjlnhw7lmxizl28i6x8llsr-gsettings-desktop-schemas-43.0/share/gsettings-schemas/gsettings-desktop-schemas-43.0/terraform/plugins
+2023-01-11T22:19:57.926+0800 [DEBUG] ignoring non-existing provider search directory /nix/store/x4rn3v4wgj3yq918yjrxda8gppmrlw17-gnome-keyring-42.1/share/gsettings-schemas/gnome-keyring-42.1/terraform/plugins
+2023-01-11T22:19:57.926+0800 [DEBUG] ignoring non-existing provider search directory /nix/store/69cfigv54wlg19qxxrx3dfpls59dlcvq-mutter-43.2/share/gsettings-schemas/mutter-43.2/terraform/plugins
+2023-01-11T22:19:57.926+0800 [DEBUG] ignoring non-existing provider search directory /nix/store/74y306jlbrnw4lvgpwwjkgqp6pgg7i4y-evolution-data-server-3.46.2/share/gsettings-schemas/evolution-data-server-3.46.2/terraform/plugins
+2023-01-11T22:19:57.926+0800 [DEBUG] ignoring non-existing provider search directory /nix/store/x01m0z5v07yyflwa1dr88kwfv3wlyjwv-gtk4-4.8.2/share/gsettings-schemas/gtk4-4.8.2/terraform/plugins
+2023-01-11T22:19:57.926+0800 [DEBUG] ignoring non-existing provider search directory /nix/store/dwz9kqgwywi8nnh4nvs7hl60ir0xnp24-gdm-43.0/share/gsettings-schemas/gdm-43.0/terraform/plugins
+2023-01-11T22:19:57.926+0800 [DEBUG] ignoring non-existing provider search directory /nix/store/f6gzgpzdcqq8ffn7rw1fp976virvn39f-gnome-clocks-43.0/share/gsettings-schemas/gnome-clocks-43.0/terraform/plugins
+2023-01-11T22:19:57.926+0800 [DEBUG] ignoring non-existing provider search directory /nix/store/9kiskjbkym7d8jb73fchhwp70xz676bm-ibus-1.5.27/share/gsettings-schemas/ibus-1.5.27/terraform/plugins
+2023-01-11T22:19:57.926+0800 [DEBUG] ignoring non-existing provider search directory /nix/store/bbgi92hiljs414ax2kh115m1c5vbg887-gnome-settings-daemon-43.0/share/gsettings-schemas/gnome-settings-daemon-43.0/terraform/plugins
+2023-01-11T22:19:57.926+0800 [DEBUG] ignoring non-existing provider search directory /nix/store/l4mdbd6vr6daqlwvvcg16g9cxbhmrgbs-libgweather-4.2.0/share/gsettings-schemas/libgweather-4.2.0/terraform/plugins
+2023-01-11T22:19:57.926+0800 [DEBUG] ignoring non-existing provider search directory /nix/store/zdha0j0sjm23mm2b3nmi3js0dj155b55-libnma-1.10.4/share/gsettings-schemas/libnma-1.10.4/terraform/plugins
+2023-01-11T22:19:57.926+0800 [DEBUG] ignoring non-existing provider search directory /nix/store/d61ddlf3g6aldi1zbpdfi2a062xwxszg-gnome-shell-43.2/share/gsettings-schemas/gnome-shell-43.2/terraform/plugins
+2023-01-11T22:19:57.926+0800 [DEBUG] ignoring non-existing provider search directory /nix/store/2s5l1h7783xrlj893iywa0grgx0f39nh-gnome-mimeapps/share/terraform/plugins
+2023-01-11T22:19:57.926+0800 [DEBUG] ignoring non-existing provider search directory /nix/store/qq48v3jpp4ya7qg1i0rnpj3isglbm5gx-desktops/share/terraform/plugins
+2023-01-11T22:19:57.926+0800 [DEBUG] ignoring non-existing provider search directory /home/jklp/.nix-profile/share/terraform/plugins
+2023-01-11T22:19:57.926+0800 [DEBUG] ignoring non-existing provider search directory /etc/profiles/per-user/jklp/share/terraform/plugins
+2023-01-11T22:19:57.926+0800 [DEBUG] ignoring non-existing provider search directory /nix/var/nix/profiles/default/share/terraform/plugins
+2023-01-11T22:19:57.926+0800 [DEBUG] ignoring non-existing provider search directory /run/current-system/sw/share/terraform/plugins
+2023-01-11T22:19:57.926+0800 [DEBUG] ignoring non-existing provider search directory /nix/store/d61ddlf3g6aldi1zbpdfi2a062xwxszg-gnome-shell-43.2/share/gsettings-schemas/gnome-shell-43.2/terraform/plugins
+2023-01-11T22:19:57.926+0800 [DEBUG] ignoring non-existing provider search directory /nix/store/22j8vy079rv8is8g1pwfpqlcldgnpsyx-gnome-shell-extensions-43.1/share/gsettings-schemas/gnome-shell-extensions-43.1/terraform/plugins
+2023-01-11T22:19:57.926+0800 [DEBUG] ignoring non-existing provider search directory /nix/store/vvjfd8pgzj1g89mgszf27ka5h624b1c9-gnome-session-43.0/share/terraform/plugins
+2023-01-11T22:19:57.926+0800 [DEBUG] ignoring non-existing provider search directory /nix/store/jl89lpf15gjlnhw7lmxizl28i6x8llsr-gsettings-desktop-schemas-43.0/share/gsettings-schemas/gsettings-desktop-schemas-43.0/terraform/plugins
+2023-01-11T22:19:57.926+0800 [DEBUG] ignoring non-existing provider search directory /nix/store/68rgsss8d6y09d4wyxxl5nyv33cybc3f-gtk+3-3.24.34/share/gsettings-schemas/gtk+3-3.24.34/terraform/plugins
+2023-01-11T22:19:57.926+0800 [DEBUG] ignoring non-existing provider search directory /nix/store/bbgi92hiljs414ax2kh115m1c5vbg887-gnome-settings-daemon-43.0/share/gsettings-schemas/gnome-settings-daemon-43.0/terraform/plugins
+2023-01-11T22:19:57.926+0800 [DEBUG] ignoring non-existing provider search directory /nix/store/vvjfd8pgzj1g89mgszf27ka5h624b1c9-gnome-session-43.0/share/gsettings-schemas/gnome-session-43.0/terraform/plugins
+2023-01-11T22:19:57.926+0800 [DEBUG] ignoring non-existing provider search directory /nix/store/d61ddlf3g6aldi1zbpdfi2a062xwxszg-gnome-shell-43.2/share/terraform/plugins
+2023-01-11T22:19:57.926+0800 [INFO]  CLI command args: []string{"init"}
+2023-01-11T22:19:57.927+0800 [TRACE] ModuleInstaller: installing child modules for . into .terraform/modules
+2023-01-11T22:19:57.928+0800 [DEBUG] Module installer: begin ec2_instances
+2023-01-11T22:19:57.928+0800 [TRACE] ModuleInstaller: ec2_instances is not yet installed
+2023-01-11T22:19:57.928+0800 [TRACE] ModuleInstaller: cleaning directory .terraform/modules/ec2_instances prior to install of ec2_instances
+2023-01-11T22:19:57.928+0800 [TRACE] ModuleInstaller: ec2_instances is a registry module at registry.terraform.io/terraform-aws-modules/ec2-instance/aws
+2023-01-11T22:19:57.928+0800 [DEBUG] ec2_instances listing available versions of registry.terraform.io/terraform-aws-modules/ec2-instance/aws at registry.terraform.io
+2023-01-11T22:19:57.928+0800 [DEBUG] Service discovery for registry.terraform.io at https://registry.terraform.io/.well-known/terraform.json
+2023-01-11T22:19:57.928+0800 [TRACE] HTTP client GET request to https://registry.terraform.io/.well-known/terraform.json
+2023-01-11T22:19:58.298+0800 [DEBUG] fetching module versions from "https://registry.terraform.io/v1/modules/terraform-aws-modules/ec2-instance/aws/versions"
+2023-01-11T22:19:58.298+0800 [DEBUG] GET https://registry.terraform.io/v1/modules/terraform-aws-modules/ec2-instance/aws/versions
+2023-01-11T22:19:58.298+0800 [TRACE] HTTP client GET request to https://registry.terraform.io/v1/modules/terraform-aws-modules/ec2-instance/aws/versions
+2023-01-11T22:19:58.536+0800 [DEBUG] found available version "2.16.0" for terraform-aws-modules/ec2-instance/aws
+2023-01-11T22:19:58.536+0800 [DEBUG] found available version "4.3.0" for terraform-aws-modules/ec2-instance/aws
+2023-01-11T22:19:58.536+0800 [DEBUG] found available version "3.0.0" for terraform-aws-modules/ec2-instance/aws
+2023-01-11T22:19:58.536+0800 [DEBUG] found available version "3.2.0" for terraform-aws-modules/ec2-instance/aws
+2023-01-11T22:19:58.536+0800 [DEBUG] found available version "1.6.0" for terraform-aws-modules/ec2-instance/aws
+2023-01-11T22:19:58.536+0800 [DEBUG] found available version "2.1.0" for terraform-aws-modules/ec2-instance/aws
+2023-01-11T22:19:58.536+0800 [DEBUG] found available version "1.12.0" for terraform-aws-modules/ec2-instance/aws
+2023-01-11T22:19:58.536+0800 [DEBUG] found available version "1.24.0" for terraform-aws-modules/ec2-instance/aws
+2023-01-11T22:19:58.536+0800 [DEBUG] found available version "3.3.0" for terraform-aws-modules/ec2-instance/aws
+2023-01-11T22:19:58.536+0800 [DEBUG] found available version "4.2.0" for terraform-aws-modules/ec2-instance/aws
+2023-01-11T22:19:58.536+0800 [DEBUG] found available version "1.17.0" for terraform-aws-modules/ec2-instance/aws
+2023-01-11T22:19:58.536+0800 [DEBUG] found available version "2.17.0" for terraform-aws-modules/ec2-instance/aws
+2023-01-11T22:19:58.536+0800 [DEBUG] found available version "2.4.0" for terraform-aws-modules/ec2-instance/aws
+2023-01-11T22:19:58.536+0800 [DEBUG] found available version "2.5.0" for terraform-aws-modules/ec2-instance/aws
+2023-01-11T22:19:58.536+0800 [DEBUG] found available version "1.15.0" for terraform-aws-modules/ec2-instance/aws
+2023-01-11T22:19:58.536+0800 [DEBUG] found available version "3.5.0" for terraform-aws-modules/ec2-instance/aws
+2023-01-11T22:19:58.536+0800 [DEBUG] found available version "2.10.0" for terraform-aws-modules/ec2-instance/aws
+2023-01-11T22:19:58.536+0800 [DEBUG] found available version "2.11.0" for terraform-aws-modules/ec2-instance/aws
+2023-01-11T22:19:58.536+0800 [DEBUG] found available version "1.0.4" for terraform-aws-modules/ec2-instance/aws
+2023-01-11T22:19:58.536+0800 [DEBUG] found available version "1.1.0" for terraform-aws-modules/ec2-instance/aws
+2023-01-11T22:19:58.536+0800 [DEBUG] found available version "3.4.0" for terraform-aws-modules/ec2-instance/aws
+2023-01-11T22:19:58.536+0800 [DEBUG] found available version "4.1.0" for terraform-aws-modules/ec2-instance/aws
+2023-01-11T22:19:58.536+0800 [DEBUG] found available version "1.10.0" for terraform-aws-modules/ec2-instance/aws
+2023-01-11T22:19:58.536+0800 [DEBUG] found available version "2.20.0" for terraform-aws-modules/ec2-instance/aws
+2023-01-11T22:19:58.536+0800 [DEBUG] found available version "1.16.0" for terraform-aws-modules/ec2-instance/aws
+2023-01-11T22:19:58.536+0800 [DEBUG] found available version "1.2.0" for terraform-aws-modules/ec2-instance/aws
+2023-01-11T22:19:58.536+0800 [DEBUG] found available version "1.0.2" for terraform-aws-modules/ec2-instance/aws
+2023-01-11T22:19:58.536+0800 [DEBUG] found available version "1.20.0" for terraform-aws-modules/ec2-instance/aws
+2023-01-11T22:19:58.536+0800 [DEBUG] found available version "2.21.0" for terraform-aws-modules/ec2-instance/aws
+2023-01-11T22:19:58.536+0800 [DEBUG] found available version "2.14.0" for terraform-aws-modules/ec2-instance/aws
+2023-01-11T22:19:58.536+0800 [DEBUG] found available version "2.6.0" for terraform-aws-modules/ec2-instance/aws
+2023-01-11T22:19:58.536+0800 [DEBUG] found available version "1.8.0" for terraform-aws-modules/ec2-instance/aws
+2023-01-11T22:19:58.536+0800 [DEBUG] found available version "1.0.1" for terraform-aws-modules/ec2-instance/aws
+2023-01-11T22:19:58.536+0800 [DEBUG] found available version "4.1.3" for terraform-aws-modules/ec2-instance/aws
+2023-01-11T22:19:58.536+0800 [DEBUG] found available version "1.4.0" for terraform-aws-modules/ec2-instance/aws
+2023-01-11T22:19:58.536+0800 [DEBUG] found available version "4.2.1" for terraform-aws-modules/ec2-instance/aws
+2023-01-11T22:19:58.536+0800 [DEBUG] found available version "1.23.0" for terraform-aws-modules/ec2-instance/aws
+2023-01-11T22:19:58.536+0800 [DEBUG] found available version "4.0.0" for terraform-aws-modules/ec2-instance/aws
+2023-01-11T22:19:58.536+0800 [DEBUG] found available version "3.6.0" for terraform-aws-modules/ec2-instance/aws
+2023-01-11T22:19:58.536+0800 [DEBUG] found available version "1.18.0" for terraform-aws-modules/ec2-instance/aws
+2023-01-11T22:19:58.536+0800 [DEBUG] found available version "1.5.0" for terraform-aws-modules/ec2-instance/aws
+2023-01-11T22:19:58.536+0800 [DEBUG] found available version "1.7.0" for terraform-aws-modules/ec2-instance/aws
+2023-01-11T22:19:58.536+0800 [DEBUG] found available version "1.22.0" for terraform-aws-modules/ec2-instance/aws
+2023-01-11T22:19:58.536+0800 [DEBUG] found available version "1.14.0" for terraform-aws-modules/ec2-instance/aws
+2023-01-11T22:19:58.536+0800 [DEBUG] found available version "4.1.4" for terraform-aws-modules/ec2-instance/aws
+2023-01-11T22:19:58.536+0800 [DEBUG] found available version "3.2.1" for terraform-aws-modules/ec2-instance/aws
+2023-01-11T22:19:58.536+0800 [DEBUG] found available version "1.11.0" for terraform-aws-modules/ec2-instance/aws
+2023-01-11T22:19:58.536+0800 [DEBUG] found available version "2.18.0" for terraform-aws-modules/ec2-instance/aws
+2023-01-11T22:19:58.536+0800 [DEBUG] found available version "2.8.0" for terraform-aws-modules/ec2-instance/aws
+2023-01-11T22:19:58.536+0800 [DEBUG] found available version "1.0.0" for terraform-aws-modules/ec2-instance/aws
+2023-01-11T22:19:58.536+0800 [DEBUG] found available version "2.9.0" for terraform-aws-modules/ec2-instance/aws
+2023-01-11T22:19:58.536+0800 [DEBUG] found available version "2.13.0" for terraform-aws-modules/ec2-instance/aws
+2023-01-11T22:19:58.536+0800 [DEBUG] found available version "2.15.0" for terraform-aws-modules/ec2-instance/aws
+2023-01-11T22:19:58.536+0800 [DEBUG] found available version "1.21.0" for terraform-aws-modules/ec2-instance/aws
+2023-01-11T22:19:58.536+0800 [DEBUG] found available version "1.0.3" for terraform-aws-modules/ec2-instance/aws
+2023-01-11T22:19:58.536+0800 [DEBUG] found available version "4.1.1" for terraform-aws-modules/ec2-instance/aws
+2023-01-11T22:19:58.536+0800 [DEBUG] found available version "2.2.0" for terraform-aws-modules/ec2-instance/aws
+2023-01-11T22:19:58.536+0800 [DEBUG] found available version "1.19.0" for terraform-aws-modules/ec2-instance/aws
+2023-01-11T22:19:58.536+0800 [DEBUG] found available version "1.25.0" for terraform-aws-modules/ec2-instance/aws
+2023-01-11T22:19:58.536+0800 [DEBUG] found available version "4.1.2" for terraform-aws-modules/ec2-instance/aws
+2023-01-11T22:19:58.536+0800 [DEBUG] found available version "2.7.0" for terraform-aws-modules/ec2-instance/aws
+2023-01-11T22:19:58.536+0800 [DEBUG] found available version "2.12.0" for terraform-aws-modules/ec2-instance/aws
+2023-01-11T22:19:58.536+0800 [DEBUG] found available version "2.19.0" for terraform-aws-modules/ec2-instance/aws
+2023-01-11T22:19:58.536+0800 [DEBUG] found available version "2.3.0" for terraform-aws-modules/ec2-instance/aws
+2023-01-11T22:19:58.536+0800 [DEBUG] found available version "1.3.0" for terraform-aws-modules/ec2-instance/aws
+2023-01-11T22:19:58.536+0800 [DEBUG] found available version "1.13.0" for terraform-aws-modules/ec2-instance/aws
+2023-01-11T22:19:58.536+0800 [DEBUG] found available version "1.9.0" for terraform-aws-modules/ec2-instance/aws
+2023-01-11T22:19:58.536+0800 [DEBUG] found available version "1.2.1" for terraform-aws-modules/ec2-instance/aws
+2023-01-11T22:19:58.536+0800 [DEBUG] found available version "3.1.0" for terraform-aws-modules/ec2-instance/aws
+2023-01-11T22:19:58.536+0800 [DEBUG] found available version "2.0.0" for terraform-aws-modules/ec2-instance/aws
+2023-01-11T22:19:58.537+0800 [DEBUG] looking up module location from "https://registry.terraform.io/v1/modules/terraform-aws-modules/ec2-instance/aws/4.3.0/download"
+2023-01-11T22:19:58.538+0800 [DEBUG] GET https://registry.terraform.io/v1/modules/terraform-aws-modules/ec2-instance/aws/4.3.0/download
+2023-01-11T22:19:58.538+0800 [TRACE] HTTP client GET request to https://registry.terraform.io/v1/modules/terraform-aws-modules/ec2-instance/aws/4.3.0/download
+2023-01-11T22:19:58.556+0800 [TRACE] ModuleInstaller: ec2_instances registry.terraform.io/terraform-aws-modules/ec2-instance/aws 4.3.0 is available at "git::https://github.com/terraform-aws-modules/terraform-aws-ec2-instance?ref=v4.3.0"
+2023-01-11T22:19:58.556+0800 [TRACE] getmodules: fetching "git::https://github.com/terraform-aws-modules/terraform-aws-ec2-instance?ref=v4.3.0" to ".terraform/modules/ec2_instances"
+2023-01-11T22:20:00.037+0800 [TRACE] ModuleInstaller: ec2_instances "git::https://github.com/terraform-aws-modules/terraform-aws-ec2-instance?ref=v4.3.0" was downloaded to .terraform/modules/ec2_instances
+2023-01-11T22:20:00.037+0800 [TRACE] ModuleInstaller: ec2_instances should now be at .terraform/modules/ec2_instances
+2023-01-11T22:20:00.040+0800 [DEBUG] Module installer: ec2_instances installed at .terraform/modules/ec2_instances
+2023-01-11T22:20:00.041+0800 [DEBUG] Module installer: begin vpc
+2023-01-11T22:20:00.041+0800 [TRACE] ModuleInstaller: vpc is not yet installed
+2023-01-11T22:20:00.041+0800 [TRACE] ModuleInstaller: cleaning directory .terraform/modules/vpc prior to install of vpc
+2023-01-11T22:20:00.041+0800 [TRACE] ModuleInstaller: vpc is a registry module at registry.terraform.io/terraform-aws-modules/vpc/aws
+2023-01-11T22:20:00.041+0800 [DEBUG] vpc listing available versions of registry.terraform.io/terraform-aws-modules/vpc/aws at registry.terraform.io
+2023-01-11T22:20:00.041+0800 [DEBUG] fetching module versions from "https://registry.terraform.io/v1/modules/terraform-aws-modules/vpc/aws/versions"
+2023-01-11T22:20:00.041+0800 [DEBUG] GET https://registry.terraform.io/v1/modules/terraform-aws-modules/vpc/aws/versions
+2023-01-11T22:20:00.041+0800 [TRACE] HTTP client GET request to https://registry.terraform.io/v1/modules/terraform-aws-modules/vpc/aws/versions
+2023-01-11T22:20:00.294+0800 [DEBUG] found available version "2.22.0" for terraform-aws-modules/vpc/aws
+2023-01-11T22:20:00.294+0800 [DEBUG] found available version "1.2.0" for terraform-aws-modules/vpc/aws
+2023-01-11T22:20:00.294+0800 [DEBUG] found available version "1.72.0" for terraform-aws-modules/vpc/aws
+2023-01-11T22:20:00.294+0800 [DEBUG] found available version "1.20.0" for terraform-aws-modules/vpc/aws
+2023-01-11T22:20:00.294+0800 [DEBUG] found available version "1.51.0" for terraform-aws-modules/vpc/aws
+2023-01-11T22:20:00.294+0800 [DEBUG] found available version "2.68.0" for terraform-aws-modules/vpc/aws
+2023-01-11T22:20:00.294+0800 [DEBUG] found available version "1.28.0" for terraform-aws-modules/vpc/aws
+2023-01-11T22:20:00.294+0800 [DEBUG] found available version "1.37.0" for terraform-aws-modules/vpc/aws
+2023-01-11T22:20:00.294+0800 [DEBUG] found available version "1.0.2" for terraform-aws-modules/vpc/aws
+2023-01-11T22:20:00.294+0800 [DEBUG] found available version "2.58.0" for terraform-aws-modules/vpc/aws
+2023-01-11T22:20:00.294+0800 [DEBUG] found available version "1.64.0" for terraform-aws-modules/vpc/aws
+2023-01-11T22:20:00.294+0800 [DEBUG] found available version "2.45.0" for terraform-aws-modules/vpc/aws
+2023-01-11T22:20:00.294+0800 [DEBUG] found available version "1.0.3" for terraform-aws-modules/vpc/aws
+2023-01-11T22:20:00.294+0800 [DEBUG] found available version "3.18.1" for terraform-aws-modules/vpc/aws
+2023-01-11T22:20:00.294+0800 [DEBUG] found available version "2.19.0" for terraform-aws-modules/vpc/aws
+2023-01-11T22:20:00.294+0800 [DEBUG] found available version "3.13.0" for terraform-aws-modules/vpc/aws
+2023-01-11T22:20:00.294+0800 [DEBUG] found available version "2.56.0" for terraform-aws-modules/vpc/aws
+2023-01-11T22:20:00.294+0800 [DEBUG] found available version "1.49.0" for terraform-aws-modules/vpc/aws
+2023-01-11T22:20:00.294+0800 [DEBUG] found available version "1.18.0" for terraform-aws-modules/vpc/aws
+2023-01-11T22:20:00.294+0800 [DEBUG] found available version "2.66.0" for terraform-aws-modules/vpc/aws
+2023-01-11T22:20:00.294+0800 [DEBUG] found available version "1.1.0" for terraform-aws-modules/vpc/aws
+2023-01-11T22:20:00.294+0800 [DEBUG] found available version "1.67.0" for terraform-aws-modules/vpc/aws
+2023-01-11T22:20:00.294+0800 [DEBUG] found available version "1.19.0" for terraform-aws-modules/vpc/aws
+2023-01-11T22:20:00.294+0800 [DEBUG] found available version "1.43.0" for terraform-aws-modules/vpc/aws
+2023-01-11T22:20:00.294+0800 [DEBUG] found available version "3.0.0" for terraform-aws-modules/vpc/aws
+2023-01-11T22:20:00.294+0800 [DEBUG] found available version "3.11.5" for terraform-aws-modules/vpc/aws
+2023-01-11T22:20:00.294+0800 [DEBUG] found available version "3.14.0" for terraform-aws-modules/vpc/aws
+2023-01-11T22:20:00.294+0800 [DEBUG] found available version "1.27.0" for terraform-aws-modules/vpc/aws
+2023-01-11T22:20:00.294+0800 [DEBUG] found available version "1.30.0" for terraform-aws-modules/vpc/aws
+2023-01-11T22:20:00.294+0800 [DEBUG] found available version "3.8.0" for terraform-aws-modules/vpc/aws
+2023-01-11T22:20:00.294+0800 [DEBUG] found available version "1.58.0" for terraform-aws-modules/vpc/aws
+2023-01-11T22:20:00.294+0800 [DEBUG] found available version "1.5.1" for terraform-aws-modules/vpc/aws
+2023-01-11T22:20:00.294+0800 [DEBUG] found available version "2.4.0" for terraform-aws-modules/vpc/aws
+2023-01-11T22:20:00.294+0800 [DEBUG] found available version "2.28.0" for terraform-aws-modules/vpc/aws
+2023-01-11T22:20:00.294+0800 [DEBUG] found available version "1.12.0" for terraform-aws-modules/vpc/aws
+2023-01-11T22:20:00.294+0800 [DEBUG] found available version "2.39.0" for terraform-aws-modules/vpc/aws
+2023-01-11T22:20:00.294+0800 [DEBUG] found available version "1.3.0" for terraform-aws-modules/vpc/aws
+2023-01-11T22:20:00.294+0800 [DEBUG] found available version "2.30.0" for terraform-aws-modules/vpc/aws
+2023-01-11T22:20:00.294+0800 [DEBUG] found available version "2.73.0" for terraform-aws-modules/vpc/aws
+2023-01-11T22:20:00.294+0800 [DEBUG] found available version "2.72.0" for terraform-aws-modules/vpc/aws
+2023-01-11T22:20:00.294+0800 [DEBUG] found available version "2.2.0" for terraform-aws-modules/vpc/aws
+2023-01-11T22:20:00.294+0800 [DEBUG] found available version "3.11.3" for terraform-aws-modules/vpc/aws
+2023-01-11T22:20:00.294+0800 [DEBUG] found available version "1.54.0" for terraform-aws-modules/vpc/aws
+2023-01-11T22:20:00.294+0800 [DEBUG] found available version "1.55.0" for terraform-aws-modules/vpc/aws
+2023-01-11T22:20:00.294+0800 [DEBUG] found available version "2.46.0" for terraform-aws-modules/vpc/aws
+2023-01-11T22:20:00.294+0800 [DEBUG] found available version "3.10.0" for terraform-aws-modules/vpc/aws
+2023-01-11T22:20:00.294+0800 [DEBUG] found available version "2.26.0" for terraform-aws-modules/vpc/aws
+2023-01-11T22:20:00.294+0800 [DEBUG] found available version "2.41.0" for terraform-aws-modules/vpc/aws
+2023-01-11T22:20:00.294+0800 [DEBUG] found available version "1.56.0" for terraform-aws-modules/vpc/aws
+2023-01-11T22:20:00.294+0800 [DEBUG] found available version "2.57.0" for terraform-aws-modules/vpc/aws
+2023-01-11T22:20:00.294+0800 [DEBUG] found available version "2.75.0" for terraform-aws-modules/vpc/aws
+2023-01-11T22:20:00.294+0800 [DEBUG] found available version "1.69.0" for terraform-aws-modules/vpc/aws
+2023-01-11T22:20:00.294+0800 [DEBUG] found available version "2.10.0" for terraform-aws-modules/vpc/aws
+2023-01-11T22:20:00.294+0800 [DEBUG] found available version "3.3.0" for terraform-aws-modules/vpc/aws
+2023-01-11T22:20:00.294+0800 [DEBUG] found available version "1.21.0" for terraform-aws-modules/vpc/aws
+2023-01-11T22:20:00.294+0800 [DEBUG] found available version "1.29.0" for terraform-aws-modules/vpc/aws
+2023-01-11T22:20:00.294+0800 [DEBUG] found available version "2.24.0" for terraform-aws-modules/vpc/aws
+2023-01-11T22:20:00.294+0800 [DEBUG] found available version "1.59.0" for terraform-aws-modules/vpc/aws
+2023-01-11T22:20:00.294+0800 [DEBUG] found available version "2.76.0" for terraform-aws-modules/vpc/aws
+2023-01-11T22:20:00.294+0800 [DEBUG] found available version "1.23.0" for terraform-aws-modules/vpc/aws
+2023-01-11T22:20:00.294+0800 [DEBUG] found available version "3.11.4" for terraform-aws-modules/vpc/aws
+2023-01-11T22:20:00.294+0800 [DEBUG] found available version "2.52.0" for terraform-aws-modules/vpc/aws
+2023-01-11T22:20:00.294+0800 [DEBUG] found available version "2.17.0" for terraform-aws-modules/vpc/aws
+2023-01-11T22:20:00.294+0800 [DEBUG] found available version "2.9.0" for terraform-aws-modules/vpc/aws
+2023-01-11T22:20:00.294+0800 [DEBUG] found available version "1.43.2" for terraform-aws-modules/vpc/aws
+2023-01-11T22:20:00.294+0800 [DEBUG] found available version "2.5.0" for terraform-aws-modules/vpc/aws
+2023-01-11T22:20:00.294+0800 [DEBUG] found available version "1.0.1" for terraform-aws-modules/vpc/aws
+2023-01-11T22:20:00.294+0800 [DEBUG] found available version "2.33.0" for terraform-aws-modules/vpc/aws
+2023-01-11T22:20:00.294+0800 [DEBUG] found available version "2.42.0" for terraform-aws-modules/vpc/aws
+2023-01-11T22:20:00.294+0800 [DEBUG] found available version "3.5.0" for terraform-aws-modules/vpc/aws
+2023-01-11T22:20:00.294+0800 [DEBUG] found available version "3.2.0" for terraform-aws-modules/vpc/aws
+2023-01-11T22:20:00.294+0800 [DEBUG] found available version "1.60.0" for terraform-aws-modules/vpc/aws
+2023-01-11T22:20:00.294+0800 [DEBUG] found available version "2.69.0" for terraform-aws-modules/vpc/aws
+2023-01-11T22:20:00.294+0800 [DEBUG] found available version "3.14.1" for terraform-aws-modules/vpc/aws
+2023-01-11T22:20:00.294+0800 [DEBUG] found available version "1.0.0" for terraform-aws-modules/vpc/aws
+2023-01-11T22:20:00.294+0800 [DEBUG] found available version "2.51.0" for terraform-aws-modules/vpc/aws
+2023-01-11T22:20:00.294+0800 [DEBUG] found available version "1.22.0" for terraform-aws-modules/vpc/aws
+2023-01-11T22:20:00.294+0800 [DEBUG] found available version "1.0.4" for terraform-aws-modules/vpc/aws
+2023-01-11T22:20:00.294+0800 [DEBUG] found available version "1.53.0" for terraform-aws-modules/vpc/aws
+2023-01-11T22:20:00.294+0800 [DEBUG] found available version "3.14.4" for terraform-aws-modules/vpc/aws
+2023-01-11T22:20:00.294+0800 [DEBUG] found available version "1.35.0" for terraform-aws-modules/vpc/aws
+2023-01-11T22:20:00.294+0800 [DEBUG] found available version "1.14.0" for terraform-aws-modules/vpc/aws
+2023-01-11T22:20:00.294+0800 [DEBUG] found available version "1.71.0" for terraform-aws-modules/vpc/aws
+2023-01-11T22:20:00.294+0800 [DEBUG] found available version "3.14.3" for terraform-aws-modules/vpc/aws
+2023-01-11T22:20:00.294+0800 [DEBUG] found available version "2.63.0" for terraform-aws-modules/vpc/aws
+2023-01-11T22:20:00.294+0800 [DEBUG] found available version "1.63.0" for terraform-aws-modules/vpc/aws
+2023-01-11T22:20:00.294+0800 [DEBUG] found available version "2.15.0" for terraform-aws-modules/vpc/aws
+2023-01-11T22:20:00.294+0800 [DEBUG] found available version "1.50.0" for terraform-aws-modules/vpc/aws
+2023-01-11T22:20:00.294+0800 [DEBUG] found available version "2.70.0" for terraform-aws-modules/vpc/aws
+2023-01-11T22:20:00.294+0800 [DEBUG] found available version "2.1.0" for terraform-aws-modules/vpc/aws
+2023-01-11T22:20:00.294+0800 [DEBUG] found available version "1.17.0" for terraform-aws-modules/vpc/aws
+2023-01-11T22:20:00.294+0800 [DEBUG] found available version "2.55.0" for terraform-aws-modules/vpc/aws
+2023-01-11T22:20:00.294+0800 [DEBUG] found available version "2.23.0" for terraform-aws-modules/vpc/aws
+2023-01-11T22:20:00.294+0800 [DEBUG] found available version "3.15.0" for terraform-aws-modules/vpc/aws
+2023-01-11T22:20:00.294+0800 [DEBUG] found available version "2.44.0" for terraform-aws-modules/vpc/aws
+2023-01-11T22:20:00.294+0800 [DEBUG] found available version "1.16.0" for terraform-aws-modules/vpc/aws
+2023-01-11T22:20:00.294+0800 [DEBUG] found available version "3.7.0" for terraform-aws-modules/vpc/aws
+2023-01-11T22:20:00.294+0800 [DEBUG] found available version "1.15.0" for terraform-aws-modules/vpc/aws
+2023-01-11T22:20:00.294+0800 [DEBUG] found available version "2.37.0" for terraform-aws-modules/vpc/aws
+2023-01-11T22:20:00.294+0800 [DEBUG] found available version "1.52.0" for terraform-aws-modules/vpc/aws
+2023-01-11T22:20:00.294+0800 [DEBUG] found available version "1.33.0" for terraform-aws-modules/vpc/aws
+2023-01-11T22:20:00.294+0800 [DEBUG] found available version "1.48.0" for terraform-aws-modules/vpc/aws
+2023-01-11T22:20:00.294+0800 [DEBUG] found available version "1.9.1" for terraform-aws-modules/vpc/aws
+2023-01-11T22:20:00.294+0800 [DEBUG] found available version "2.3.0" for terraform-aws-modules/vpc/aws
+2023-01-11T22:20:00.294+0800 [DEBUG] found available version "1.8.0" for terraform-aws-modules/vpc/aws
+2023-01-11T22:20:00.294+0800 [DEBUG] found available version "2.18.0" for terraform-aws-modules/vpc/aws
+2023-01-11T22:20:00.294+0800 [DEBUG] found available version "1.24.0-pre" for terraform-aws-modules/vpc/aws
+2023-01-11T22:20:00.294+0800 [DEBUG] found available version "2.16.0" for terraform-aws-modules/vpc/aws
+2023-01-11T22:20:00.294+0800 [DEBUG] found available version "1.43.1" for terraform-aws-modules/vpc/aws
+2023-01-11T22:20:00.294+0800 [DEBUG] found available version "2.21.0" for terraform-aws-modules/vpc/aws
+2023-01-11T22:20:00.294+0800 [DEBUG] found available version "3.14.2" for terraform-aws-modules/vpc/aws
+2023-01-11T22:20:00.294+0800 [DEBUG] found available version "3.9.0" for terraform-aws-modules/vpc/aws
+2023-01-11T22:20:00.294+0800 [DEBUG] found available version "1.31.0" for terraform-aws-modules/vpc/aws
+2023-01-11T22:20:00.294+0800 [DEBUG] found available version "1.73.0" for terraform-aws-modules/vpc/aws
+2023-01-11T22:20:00.294+0800 [DEBUG] found available version "3.12.0" for terraform-aws-modules/vpc/aws
+2023-01-11T22:20:00.294+0800 [DEBUG] found available version "2.38.0" for terraform-aws-modules/vpc/aws
+2023-01-11T22:20:00.294+0800 [DEBUG] found available version "2.29.0" for terraform-aws-modules/vpc/aws
+2023-01-11T22:20:00.294+0800 [DEBUG] found available version "1.4.1" for terraform-aws-modules/vpc/aws
+2023-01-11T22:20:00.294+0800 [DEBUG] found available version "3.17.0" for terraform-aws-modules/vpc/aws
+2023-01-11T22:20:00.294+0800 [DEBUG] found available version "1.7.0" for terraform-aws-modules/vpc/aws
+2023-01-11T22:20:00.294+0800 [DEBUG] found available version "1.9.0" for terraform-aws-modules/vpc/aws
+2023-01-11T22:20:00.294+0800 [DEBUG] found available version "2.43.0" for terraform-aws-modules/vpc/aws
+2023-01-11T22:20:00.294+0800 [DEBUG] found available version "1.32.0" for terraform-aws-modules/vpc/aws
+2023-01-11T22:20:00.294+0800 [DEBUG] found available version "2.47.0" for terraform-aws-modules/vpc/aws
+2023-01-11T22:20:00.294+0800 [DEBUG] found available version "1.41.0" for terraform-aws-modules/vpc/aws
+2023-01-11T22:20:00.294+0800 [DEBUG] found available version "1.57.0" for terraform-aws-modules/vpc/aws
+2023-01-11T22:20:00.294+0800 [DEBUG] found available version "2.13.0" for terraform-aws-modules/vpc/aws
+2023-01-11T22:20:00.294+0800 [DEBUG] found available version "2.0.0" for terraform-aws-modules/vpc/aws
+2023-01-11T22:20:00.294+0800 [DEBUG] found available version "3.11.1" for terraform-aws-modules/vpc/aws
+2023-01-11T22:20:00.294+0800 [DEBUG] found available version "2.74.0" for terraform-aws-modules/vpc/aws
+2023-01-11T22:20:00.294+0800 [DEBUG] found available version "2.20.0" for terraform-aws-modules/vpc/aws
+2023-01-11T22:20:00.294+0800 [DEBUG] found available version "1.66.0" for terraform-aws-modules/vpc/aws
+2023-01-11T22:20:00.294+0800 [DEBUG] found available version "1.68.0" for terraform-aws-modules/vpc/aws
+2023-01-11T22:20:00.294+0800 [DEBUG] found available version "1.10.0" for terraform-aws-modules/vpc/aws
+2023-01-11T22:20:00.294+0800 [DEBUG] found available version "3.6.0" for terraform-aws-modules/vpc/aws
+2023-01-11T22:20:00.294+0800 [DEBUG] found available version "1.61.0" for terraform-aws-modules/vpc/aws
+2023-01-11T22:20:00.294+0800 [DEBUG] found available version "1.25.0" for terraform-aws-modules/vpc/aws
+2023-01-11T22:20:00.294+0800 [DEBUG] found available version "2.50.0" for terraform-aws-modules/vpc/aws
+2023-01-11T22:20:00.294+0800 [DEBUG] found available version "1.26.0" for terraform-aws-modules/vpc/aws
+2023-01-11T22:20:00.294+0800 [DEBUG] found available version "2.64.0" for terraform-aws-modules/vpc/aws
+2023-01-11T22:20:00.294+0800 [DEBUG] found available version "1.70.0" for terraform-aws-modules/vpc/aws
+2023-01-11T22:20:00.294+0800 [DEBUG] found available version "2.32.0" for terraform-aws-modules/vpc/aws
+2023-01-11T22:20:00.294+0800 [DEBUG] found available version "1.38.0" for terraform-aws-modules/vpc/aws
+2023-01-11T22:20:00.294+0800 [DEBUG] found available version "2.62.0" for terraform-aws-modules/vpc/aws
+2023-01-11T22:20:00.294+0800 [DEBUG] found available version "2.54.0" for terraform-aws-modules/vpc/aws
+2023-01-11T22:20:00.294+0800 [DEBUG] found available version "1.47.0" for terraform-aws-modules/vpc/aws
+2023-01-11T22:20:00.294+0800 [DEBUG] found available version "2.77.0" for terraform-aws-modules/vpc/aws
+2023-01-11T22:20:00.294+0800 [DEBUG] found available version "2.8.0" for terraform-aws-modules/vpc/aws
+2023-01-11T22:20:00.294+0800 [DEBUG] found available version "2.40.0" for terraform-aws-modules/vpc/aws
+2023-01-11T22:20:00.294+0800 [DEBUG] found available version "1.65.0" for terraform-aws-modules/vpc/aws
+2023-01-11T22:20:00.294+0800 [DEBUG] found available version "2.31.0" for terraform-aws-modules/vpc/aws
+2023-01-11T22:20:00.294+0800 [DEBUG] found available version "2.36.0" for terraform-aws-modules/vpc/aws
+2023-01-11T22:20:00.294+0800 [DEBUG] found available version "2.34.0" for terraform-aws-modules/vpc/aws
+2023-01-11T22:20:00.294+0800 [DEBUG] found available version "2.27.0" for terraform-aws-modules/vpc/aws
+2023-01-11T22:20:00.294+0800 [DEBUG] found available version "2.59.0" for terraform-aws-modules/vpc/aws
+2023-01-11T22:20:00.294+0800 [DEBUG] found available version "1.6.0" for terraform-aws-modules/vpc/aws
+2023-01-11T22:20:00.294+0800 [DEBUG] found available version "2.78.0" for terraform-aws-modules/vpc/aws
+2023-01-11T22:20:00.294+0800 [DEBUG] found available version "1.34.0" for terraform-aws-modules/vpc/aws
+2023-01-11T22:20:00.294+0800 [DEBUG] found available version "2.48.0" for terraform-aws-modules/vpc/aws
+2023-01-11T22:20:00.294+0800 [DEBUG] found available version "1.44.0" for terraform-aws-modules/vpc/aws
+2023-01-11T22:20:00.294+0800 [DEBUG] found available version "2.53.0" for terraform-aws-modules/vpc/aws
+2023-01-11T22:20:00.294+0800 [DEBUG] found available version "2.49.0" for terraform-aws-modules/vpc/aws
+2023-01-11T22:20:00.294+0800 [DEBUG] found available version "2.67.0" for terraform-aws-modules/vpc/aws
+2023-01-11T22:20:00.294+0800 [DEBUG] found available version "1.62.0" for terraform-aws-modules/vpc/aws
+2023-01-11T22:20:00.294+0800 [DEBUG] found available version "1.4.0" for terraform-aws-modules/vpc/aws
+2023-01-11T22:20:00.295+0800 [DEBUG] found available version "2.61.0" for terraform-aws-modules/vpc/aws
+2023-01-11T22:20:00.295+0800 [DEBUG] found available version "1.13.0" for terraform-aws-modules/vpc/aws
+2023-01-11T22:20:00.295+0800 [DEBUG] found available version "2.14.0" for terraform-aws-modules/vpc/aws
+2023-01-11T22:20:00.295+0800 [DEBUG] found available version "3.18.0" for terraform-aws-modules/vpc/aws
+2023-01-11T22:20:00.295+0800 [DEBUG] found available version "3.1.0" for terraform-aws-modules/vpc/aws
+2023-01-11T22:20:00.295+0800 [DEBUG] found available version "3.4.0" for terraform-aws-modules/vpc/aws
+2023-01-11T22:20:00.295+0800 [DEBUG] found available version "3.16.0" for terraform-aws-modules/vpc/aws
+2023-01-11T22:20:00.295+0800 [DEBUG] found available version "3.11.0" for terraform-aws-modules/vpc/aws
+2023-01-11T22:20:00.295+0800 [DEBUG] found available version "1.22.1" for terraform-aws-modules/vpc/aws
+2023-01-11T22:20:00.295+0800 [DEBUG] found available version "1.46.0" for terraform-aws-modules/vpc/aws
+2023-01-11T22:20:00.295+0800 [DEBUG] found available version "1.36.0" for terraform-aws-modules/vpc/aws
+2023-01-11T22:20:00.295+0800 [DEBUG] found available version "3.11.2" for terraform-aws-modules/vpc/aws
+2023-01-11T22:20:00.295+0800 [DEBUG] found available version "2.60.0" for terraform-aws-modules/vpc/aws
+2023-01-11T22:20:00.295+0800 [DEBUG] found available version "2.65.0" for terraform-aws-modules/vpc/aws
+2023-01-11T22:20:00.295+0800 [DEBUG] found available version "1.40.0" for terraform-aws-modules/vpc/aws
+2023-01-11T22:20:00.295+0800 [DEBUG] found available version "1.42.0" for terraform-aws-modules/vpc/aws
+2023-01-11T22:20:00.295+0800 [DEBUG] found available version "2.12.0" for terraform-aws-modules/vpc/aws
+2023-01-11T22:20:00.295+0800 [DEBUG] found available version "1.11.0" for terraform-aws-modules/vpc/aws
+2023-01-11T22:20:00.295+0800 [DEBUG] found available version "2.11.0" for terraform-aws-modules/vpc/aws
+2023-01-11T22:20:00.295+0800 [DEBUG] found available version "2.25.0" for terraform-aws-modules/vpc/aws
+2023-01-11T22:20:00.295+0800 [DEBUG] found available version "1.45.0" for terraform-aws-modules/vpc/aws
+2023-01-11T22:20:00.295+0800 [DEBUG] found available version "1.39.0" for terraform-aws-modules/vpc/aws
+2023-01-11T22:20:00.295+0800 [DEBUG] found available version "2.6.0" for terraform-aws-modules/vpc/aws
+2023-01-11T22:20:00.295+0800 [DEBUG] found available version "2.71.0" for terraform-aws-modules/vpc/aws
+2023-01-11T22:20:00.295+0800 [DEBUG] found available version "2.7.0" for terraform-aws-modules/vpc/aws
+2023-01-11T22:20:00.295+0800 [DEBUG] found available version "2.35.0" for terraform-aws-modules/vpc/aws
+2023-01-11T22:20:00.295+0800 [DEBUG] found available version "1.5.0" for terraform-aws-modules/vpc/aws
+2023-01-11T22:20:00.295+0800 [DEBUG] found available version "3.16.1" for terraform-aws-modules/vpc/aws
+2023-01-11T22:20:00.295+0800 [TRACE] ModuleInstaller: vpc ignoring 1.24.0-pre because it is a pre-release and was not requested exactly
+2023-01-11T22:20:00.295+0800 [DEBUG] looking up module location from "https://registry.terraform.io/v1/modules/terraform-aws-modules/vpc/aws/3.18.1/download"
+2023-01-11T22:20:00.295+0800 [DEBUG] GET https://registry.terraform.io/v1/modules/terraform-aws-modules/vpc/aws/3.18.1/download
+2023-01-11T22:20:00.295+0800 [TRACE] HTTP client GET request to https://registry.terraform.io/v1/modules/terraform-aws-modules/vpc/aws/3.18.1/download
+2023-01-11T22:20:00.313+0800 [TRACE] ModuleInstaller: vpc registry.terraform.io/terraform-aws-modules/vpc/aws 3.18.1 is available at "git::https://github.com/terraform-aws-modules/terraform-aws-vpc?ref=v3.18.1"
+2023-01-11T22:20:00.313+0800 [TRACE] getmodules: fetching "git::https://github.com/terraform-aws-modules/terraform-aws-vpc?ref=v3.18.1" to ".terraform/modules/vpc"
+2023-01-11T22:20:03.926+0800 [TRACE] ModuleInstaller: vpc "git::https://github.com/terraform-aws-modules/terraform-aws-vpc?ref=v3.18.1" was downloaded to .terraform/modules/vpc
+2023-01-11T22:20:03.926+0800 [TRACE] ModuleInstaller: vpc should now be at .terraform/modules/vpc
+2023-01-11T22:20:03.944+0800 [DEBUG] Module installer: vpc installed at .terraform/modules/vpc
+2023-01-11T22:20:03.945+0800 [DEBUG] Module installer: begin website_s3_bucket
+2023-01-11T22:20:03.945+0800 [TRACE] ModuleInstaller: website_s3_bucket is not yet installed
+2023-01-11T22:20:03.945+0800 [TRACE] ModuleInstaller: cleaning directory .terraform/modules/website_s3_bucket prior to install of website_s3_bucket
+2023-01-11T22:20:03.945+0800 [TRACE] ModuleInstaller: website_s3_bucket has local path "./modules/aws-s3-static-website-bucket"
+2023-01-11T22:20:03.945+0800 [TRACE] ModuleInstaller: website_s3_bucket uses directory from parent: modules/aws-s3-static-website-bucket
+2023-01-11T22:20:03.945+0800 [DEBUG] Module installer: website_s3_bucket installed at modules/aws-s3-static-website-bucket
+2023-01-11T22:20:03.945+0800 [TRACE] modsdir: writing modules manifest to .terraform/modules/modules.json
+2023-01-11T22:20:03.972+0800 [TRACE] Meta.Backend: no config given or present on disk, so returning nil config
+2023-01-11T22:20:03.972+0800 [TRACE] Meta.Backend: backend has not previously been initialized in this working directory
+2023-01-11T22:20:03.972+0800 [DEBUG] New state was assigned lineage "a9ca435a-94d2-dae6-1c09-511a1c4a4783"
+2023-01-11T22:20:03.972+0800 [TRACE] Meta.Backend: using default local state only (no backend configuration, and no existing initialized backend)
+2023-01-11T22:20:03.972+0800 [TRACE] Meta.Backend: instantiated backend of type <nil>
+2023-01-11T22:20:03.972+0800 [TRACE] providercache.fillMetaCache: scanning directory .terraform/providers
+2023-01-11T22:20:03.972+0800 [TRACE] getproviders.SearchLocalDirectory: failed to resolve symlinks for .terraform/providers: lstat .terraform/providers: no such file or directory
+2023-01-11T22:20:03.972+0800 [TRACE] providercache.fillMetaCache: error while scanning directory .terraform/providers: cannot search .terraform/providers: lstat .terraform/providers: no such file or directory
+2023-01-11T22:20:03.972+0800 [DEBUG] checking for provisioner in "."
+2023-01-11T22:20:03.973+0800 [DEBUG] checking for provisioner in "/nix/store/sg1gyskrcjqa2svrjx9indn1iwb97x9m-terraform-1.3.6/bin"
+2023-01-11T22:20:03.973+0800 [TRACE] Meta.Backend: backend <nil> does not support operations, so wrapping it in a local backend
+2023-01-11T22:20:03.973+0800 [TRACE] backend/local: state manager for workspace "default" will:
+ - read initial snapshot from terraform.tfstate
+ - write new snapshots to terraform.tfstate
+ - create any backup at terraform.tfstate.backup
+2023-01-11T22:20:03.973+0800 [TRACE] statemgr.Filesystem: reading initial snapshot from terraform.tfstate
+2023-01-11T22:20:03.973+0800 [TRACE] statemgr.Filesystem: snapshot file has nil snapshot, but that's okay
+2023-01-11T22:20:03.973+0800 [TRACE] statemgr.Filesystem: read nil snapshot
+2023-01-11T22:20:03.973+0800 [DEBUG] GET https://registry.terraform.io/v1/providers/hashicorp/aws/versions
+2023-01-11T22:20:03.973+0800 [TRACE] HTTP client GET request to https://registry.terraform.io/v1/providers/hashicorp/aws/versions
+2023-01-11T22:20:04.269+0800 [TRACE] providercache.fillMetaCache: scanning directory .terraform/providers
+2023-01-11T22:20:04.269+0800 [TRACE] getproviders.SearchLocalDirectory: failed to resolve symlinks for .terraform/providers: lstat .terraform/providers: no such file or directory
+2023-01-11T22:20:04.269+0800 [TRACE] providercache.fillMetaCache: error while scanning directory .terraform/providers: cannot search .terraform/providers: lstat .terraform/providers: no such file or directory
+2023-01-11T22:20:04.269+0800 [DEBUG] GET https://registry.terraform.io/v1/providers/hashicorp/aws/4.49.0/download/linux/amd64
+2023-01-11T22:20:04.269+0800 [TRACE] HTTP client GET request to https://registry.terraform.io/v1/providers/hashicorp/aws/4.49.0/download/linux/amd64
+2023-01-11T22:20:04.343+0800 [DEBUG] GET https://releases.hashicorp.com/terraform-provider-aws/4.49.0/terraform-provider-aws_4.49.0_SHA256SUMS
+2023-01-11T22:20:04.343+0800 [TRACE] HTTP client GET request to https://releases.hashicorp.com/terraform-provider-aws/4.49.0/terraform-provider-aws_4.49.0_SHA256SUMS
+2023-01-11T22:20:04.763+0800 [DEBUG] GET https://releases.hashicorp.com/terraform-provider-aws/4.49.0/terraform-provider-aws_4.49.0_SHA256SUMS.72D7468F.sig
+2023-01-11T22:20:04.763+0800 [TRACE] HTTP client GET request to https://releases.hashicorp.com/terraform-provider-aws/4.49.0/terraform-provider-aws_4.49.0_SHA256SUMS.72D7468F.sig
+2023-01-11T22:20:04.820+0800 [TRACE] providercache.Dir.InstallPackage: installing registry.terraform.io/hashicorp/aws v4.49.0 from https://releases.hashicorp.com/terraform-provider-aws/4.49.0/terraform-provider-aws_4.49.0_linux_amd64.zip
+2023-01-11T22:20:04.820+0800 [TRACE] HTTP client GET request to https://releases.hashicorp.com/terraform-provider-aws/4.49.0/terraform-provider-aws_4.49.0_linux_amd64.zip
+2023-01-11T22:20:12.864+0800 [DEBUG] Provider signed by 34365D9472D7468F HashiCorp Security (hashicorp.com/security) <security@hashicorp.com>
+2023-01-11T22:20:15.604+0800 [TRACE] providercache.fillMetaCache: scanning directory .terraform/providers
+2023-01-11T22:20:15.604+0800 [TRACE] getproviders.SearchLocalDirectory: found registry.terraform.io/hashicorp/aws v4.49.0 for linux_amd64 at .terraform/providers/registry.terraform.io/hashicorp/aws/4.49.0/linux_amd64
+2023-01-11T22:20:15.604+0800 [TRACE] providercache.fillMetaCache: including .terraform/providers/registry.terraform.io/hashicorp/aws/4.49.0/linux_amd64 as a candidate package for registry.terraform.io/hashicorp/aws 4.49.0
+2023-01-11T22:41:27.282+0800 [INFO]  Terraform version: 1.3.6
+2023-01-11T22:41:27.283+0800 [DEBUG] using github.com/hashicorp/go-tfe v1.9.0
+2023-01-11T22:41:27.283+0800 [DEBUG] using github.com/hashicorp/hcl/v2 v2.15.0
+2023-01-11T22:41:27.283+0800 [DEBUG] using github.com/hashicorp/terraform-config-inspect v0.0.0-20210209133302-4fd17a0faac2
+2023-01-11T22:41:27.283+0800 [DEBUG] using github.com/hashicorp/terraform-svchost v0.0.0-20200729002733-f050f53b9734
+2023-01-11T22:41:27.283+0800 [DEBUG] using github.com/zclconf/go-cty v1.12.1
+2023-01-11T22:41:27.283+0800 [INFO]  Go runtime version: go1.19.3
+2023-01-11T22:41:27.283+0800 [INFO]  CLI args: []string{"terraform", "get"}
+2023-01-11T22:41:27.283+0800 [TRACE] Stdout is a terminal of width 119
+2023-01-11T22:41:27.283+0800 [TRACE] Stderr is a terminal of width 119
+2023-01-11T22:41:27.283+0800 [TRACE] Stdin is a terminal
+2023-01-11T22:41:27.283+0800 [DEBUG] Attempting to open CLI config file: /home/jklp/.terraformrc
+2023-01-11T22:41:27.283+0800 [DEBUG] File doesn't exist, but doesn't need to. Ignoring.
+2023-01-11T22:41:27.283+0800 [INFO]  Loading CLI configuration from /home/jklp/.terraform.d/credentials.tfrc.json
+2023-01-11T22:41:27.283+0800 [DEBUG] ignoring non-existing provider search directory terraform.d/plugins
+2023-01-11T22:41:27.283+0800 [DEBUG] ignoring non-existing provider search directory /home/jklp/.terraform.d/plugins
+2023-01-11T22:41:27.283+0800 [DEBUG] ignoring non-existing provider search directory /home/jklp/.local/share/terraform/plugins
+2023-01-11T22:41:27.283+0800 [DEBUG] ignoring non-existing provider search directory /nix/store/wn7x7nic1kv0dhymj7z900zrbhlkmg1g-shared-mime-info-2.2/share/terraform/plugins
+2023-01-11T22:41:27.283+0800 [DEBUG] ignoring non-existing provider search directory /nix/store/d61ddlf3g6aldi1zbpdfi2a062xwxszg-gnome-shell-43.2/share/terraform/plugins
+2023-01-11T22:41:27.283+0800 [DEBUG] ignoring non-existing provider search directory /nix/store/68rgsss8d6y09d4wyxxl5nyv33cybc3f-gtk+3-3.24.34/share/gsettings-schemas/gtk+3-3.24.34/terraform/plugins
+2023-01-11T22:41:27.283+0800 [DEBUG] ignoring non-existing provider search directory /nix/store/jl89lpf15gjlnhw7lmxizl28i6x8llsr-gsettings-desktop-schemas-43.0/share/gsettings-schemas/gsettings-desktop-schemas-43.0/terraform/plugins
+2023-01-11T22:41:27.283+0800 [DEBUG] ignoring non-existing provider search directory /nix/store/x4rn3v4wgj3yq918yjrxda8gppmrlw17-gnome-keyring-42.1/share/gsettings-schemas/gnome-keyring-42.1/terraform/plugins
+2023-01-11T22:41:27.283+0800 [DEBUG] ignoring non-existing provider search directory /nix/store/69cfigv54wlg19qxxrx3dfpls59dlcvq-mutter-43.2/share/gsettings-schemas/mutter-43.2/terraform/plugins
+2023-01-11T22:41:27.283+0800 [DEBUG] ignoring non-existing provider search directory /nix/store/74y306jlbrnw4lvgpwwjkgqp6pgg7i4y-evolution-data-server-3.46.2/share/gsettings-schemas/evolution-data-server-3.46.2/terraform/plugins
+2023-01-11T22:41:27.283+0800 [DEBUG] ignoring non-existing provider search directory /nix/store/x01m0z5v07yyflwa1dr88kwfv3wlyjwv-gtk4-4.8.2/share/gsettings-schemas/gtk4-4.8.2/terraform/plugins
+2023-01-11T22:41:27.283+0800 [DEBUG] ignoring non-existing provider search directory /nix/store/dwz9kqgwywi8nnh4nvs7hl60ir0xnp24-gdm-43.0/share/gsettings-schemas/gdm-43.0/terraform/plugins
+2023-01-11T22:41:27.283+0800 [DEBUG] ignoring non-existing provider search directory /nix/store/f6gzgpzdcqq8ffn7rw1fp976virvn39f-gnome-clocks-43.0/share/gsettings-schemas/gnome-clocks-43.0/terraform/plugins
+2023-01-11T22:41:27.283+0800 [DEBUG] ignoring non-existing provider search directory /nix/store/9kiskjbkym7d8jb73fchhwp70xz676bm-ibus-1.5.27/share/gsettings-schemas/ibus-1.5.27/terraform/plugins
+2023-01-11T22:41:27.283+0800 [DEBUG] ignoring non-existing provider search directory /nix/store/bbgi92hiljs414ax2kh115m1c5vbg887-gnome-settings-daemon-43.0/share/gsettings-schemas/gnome-settings-daemon-43.0/terraform/plugins
+2023-01-11T22:41:27.283+0800 [DEBUG] ignoring non-existing provider search directory /nix/store/l4mdbd6vr6daqlwvvcg16g9cxbhmrgbs-libgweather-4.2.0/share/gsettings-schemas/libgweather-4.2.0/terraform/plugins
+2023-01-11T22:41:27.283+0800 [DEBUG] ignoring non-existing provider search directory /nix/store/zdha0j0sjm23mm2b3nmi3js0dj155b55-libnma-1.10.4/share/gsettings-schemas/libnma-1.10.4/terraform/plugins
+2023-01-11T22:41:27.283+0800 [DEBUG] ignoring non-existing provider search directory /nix/store/d61ddlf3g6aldi1zbpdfi2a062xwxszg-gnome-shell-43.2/share/gsettings-schemas/gnome-shell-43.2/terraform/plugins
+2023-01-11T22:41:27.283+0800 [DEBUG] ignoring non-existing provider search directory /nix/store/2s5l1h7783xrlj893iywa0grgx0f39nh-gnome-mimeapps/share/terraform/plugins
+2023-01-11T22:41:27.283+0800 [DEBUG] ignoring non-existing provider search directory /nix/store/qq48v3jpp4ya7qg1i0rnpj3isglbm5gx-desktops/share/terraform/plugins
+2023-01-11T22:41:27.283+0800 [DEBUG] ignoring non-existing provider search directory /home/jklp/.nix-profile/share/terraform/plugins
+2023-01-11T22:41:27.283+0800 [DEBUG] ignoring non-existing provider search directory /etc/profiles/per-user/jklp/share/terraform/plugins
+2023-01-11T22:41:27.283+0800 [DEBUG] ignoring non-existing provider search directory /nix/var/nix/profiles/default/share/terraform/plugins
+2023-01-11T22:41:27.283+0800 [DEBUG] ignoring non-existing provider search directory /run/current-system/sw/share/terraform/plugins
+2023-01-11T22:41:27.283+0800 [DEBUG] ignoring non-existing provider search directory /nix/store/d61ddlf3g6aldi1zbpdfi2a062xwxszg-gnome-shell-43.2/share/gsettings-schemas/gnome-shell-43.2/terraform/plugins
+2023-01-11T22:41:27.283+0800 [DEBUG] ignoring non-existing provider search directory /nix/store/22j8vy079rv8is8g1pwfpqlcldgnpsyx-gnome-shell-extensions-43.1/share/gsettings-schemas/gnome-shell-extensions-43.1/terraform/plugins
+2023-01-11T22:41:27.283+0800 [DEBUG] ignoring non-existing provider search directory /nix/store/vvjfd8pgzj1g89mgszf27ka5h624b1c9-gnome-session-43.0/share/terraform/plugins
+2023-01-11T22:41:27.283+0800 [DEBUG] ignoring non-existing provider search directory /nix/store/jl89lpf15gjlnhw7lmxizl28i6x8llsr-gsettings-desktop-schemas-43.0/share/gsettings-schemas/gsettings-desktop-schemas-43.0/terraform/plugins
+2023-01-11T22:41:27.283+0800 [DEBUG] ignoring non-existing provider search directory /nix/store/68rgsss8d6y09d4wyxxl5nyv33cybc3f-gtk+3-3.24.34/share/gsettings-schemas/gtk+3-3.24.34/terraform/plugins
+2023-01-11T22:41:27.283+0800 [DEBUG] ignoring non-existing provider search directory /nix/store/bbgi92hiljs414ax2kh115m1c5vbg887-gnome-settings-daemon-43.0/share/gsettings-schemas/gnome-settings-daemon-43.0/terraform/plugins
+2023-01-11T22:41:27.283+0800 [DEBUG] ignoring non-existing provider search directory /nix/store/vvjfd8pgzj1g89mgszf27ka5h624b1c9-gnome-session-43.0/share/gsettings-schemas/gnome-session-43.0/terraform/plugins
+2023-01-11T22:41:27.283+0800 [DEBUG] ignoring non-existing provider search directory /nix/store/d61ddlf3g6aldi1zbpdfi2a062xwxszg-gnome-shell-43.2/share/terraform/plugins
+2023-01-11T22:41:27.283+0800 [INFO]  CLI command args: []string{"get"}
+2023-01-11T22:41:27.283+0800 [TRACE] ModuleInstaller: installing child modules for . into .terraform/modules
+2023-01-11T22:41:27.285+0800 [DEBUG] Module installer: begin ec2_instances
+2023-01-11T22:41:27.293+0800 [TRACE] ModuleInstaller: Module installer: ec2_instances 4.3.0 already installed in .terraform/modules/ec2_instances
+2023-01-11T22:41:27.293+0800 [DEBUG] Module installer: begin vpc
+2023-01-11T22:41:27.310+0800 [TRACE] ModuleInstaller: Module installer: vpc 3.18.1 already installed in .terraform/modules/vpc
+2023-01-11T22:41:27.310+0800 [DEBUG] Module installer: begin website_s3_bucket
+2023-01-11T22:41:27.311+0800 [TRACE] ModuleInstaller: Module installer: website_s3_bucket <nil> already installed in modules/aws-s3-static-website-bucket
+2023-01-11T22:41:27.311+0800 [TRACE] modsdir: writing modules manifest to .terraform/modules/modules.json
