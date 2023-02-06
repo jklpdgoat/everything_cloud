@@ -32,8 +32,8 @@ variable "spoke_2_sg_vpc_cidr" {
 }
 
 variable "key_name" {
-  description = "AKIA3XFZWUMM7GCPBHQM"
-  default = "5cxAlTPuHLirffZTVJl1hKWPOwpLaOERpTzBP+QV"
+  description = "SSH Key Pair"
+  default = "your key here"
 }
 
 variable "ubuntu_20_ami_sg" {
