@@ -32,8 +32,8 @@ variable "spoke_2_sg_vpc_cidr" {
 }
 
 variable "key_name" {
-  description = "SSH Key Pair"
-  default = "your key here"
+  description = "Bad"
+  default = "Doggie"
 }
 
 variable "ubuntu_20_ami_sg" {
