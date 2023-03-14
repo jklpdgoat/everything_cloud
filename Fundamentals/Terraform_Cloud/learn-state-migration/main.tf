@@ -4,6 +4,16 @@
 ## Terraform configuration
 
 terraform {
+
+  cloud {
+    hostname     = "app.terraform.io"
+    organization = "example-org-0dd834"
+
+    workspaces {
+      name = "learn-terraform-cloud-migrate"
+    }
+  }
+
   required_providers {
     random = {
       source  = "hashicorp/random"
@@ -14,13 +24,13 @@ terraform {
 }
 
 variable "name_length" {
-  description = "The number of words in the pet name"
-  default     = "3"
+  description = "Test new description"
+  default     = "5"
 }
 
 resource "random_pet" "pet_name" {
   length    = var.name_length
-  separator = "-"
+  separator = "_"
 }
 
 output "pet_name" {
